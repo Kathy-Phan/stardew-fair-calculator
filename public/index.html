@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grange Fair Score Calculator</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <p class="typewriter" id="letter"></p>
+    <script src="typewriter.js"></script>
+
+    <h1>Stardew Valley Grange Fair</h1>
+    <p>Add 9 items to maximise you're chance of getting 1st place in the Grange Display Fair!</p>
+
+   
+    <div class="search-bar">
+        <div class="row">
+             <div class="quality-dropdown">
+                <div class="selected">Star</div>
+                    <ul class="options">
+                        <li data-value="" selected></li>
+                        <li data-value="silver"><img src="images/silver.png" /></li>
+                        <li data-value="gold"><img src="images/gold.png" /></li>
+                        <li data-value="iridium"><img src="images/iridium.png" /></li>
+                    </ul>
+                </div>
+
+
+            <input type="text" id="input-box" placeholder="type here..." autocomplete="off">
+            <ul id="item-list"></ul>
+        </div>
+    </div>
+
+    <h3>Chosen Items:</h3>
+    <ul id="chosen-list"></ul>
+
+    <button id="calculate-btn">Calculate Score</button>
+    <p id="score"></p>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    
+    <script src="score.js"></script>
+    <script src="searchBar.js"></script>
+
+</body>
+</html>
