@@ -1,0 +1,164 @@
+{
+  "category": "Mineral",
+  "items": [
+        {"name":"Aerinite","type":"Base","score":3},
+        {"name":"Aerinite","type":"Gemologist","score":3},
+
+        {"name":"Alamite","type":"Base","score":3},
+        {"name":"Alamite","type":"Gemologist","score":3},
+
+        {"name":"Amethyst","type":"Base","score":3},
+        {"name":"Amethyst","type":"Gemologist","score":3},
+
+        {"name":"Aquamarine","type":"Base","score":3},
+        {"name":"Aquamarine","type":"Gemologist","score":4},
+
+        {"name":"Baryte","type":"Base","score":2},
+        {"name":"Baryte","type":"Gemologist","score":2},
+
+        {"name":"Basalt","type":"Base","score":3},
+        {"name":"Basalt","type":"Gemologist","score":4},
+
+        {"name":"Bixite","type":"Base","score":5},
+        {"name":"Bixite","type":"Gemologist","score":5},
+
+        {"name":"Calcite","type":"Base","score":2},
+        {"name":"Calcite","type":"Gemologist","score":3},
+
+        {"name":"Celestine","type":"Base","score":3},
+        {"name":"Celestine","type":"Gemologist","score":3},
+
+        {"name":"Diamond","type":"Base","score":6},
+        {"name":"Diamond","type":"Gemologist","score":6},
+
+        {"name":"Dolomite","type":"Base","score":5},
+        {"name":"Dolomite","type":"Gemologist","score":5},
+
+        {"name":"Earth Crystal","type":"Base","score":2},
+        {"name":"Earth Crystal","type":"Gemologist","score":2},
+
+        {"name":"Emerald","type":"Base","score":4},
+        {"name":"Emerald","type":"Gemologist","score":5},
+
+        {"name":"Esperite","type":"Base","score":3},
+        {"name":"Esperite","type":"Gemologist","score":3},
+
+        {"name":"Fairy Stone","type":"Base","score":4},
+        {"name":"Fairy Stone","type":"Gemologist","score":5},
+
+        {"name":"Fire Opal","type":"Base","score":5},
+        {"name":"Fire Opal","type":"Gemologist","score":6},
+
+        {"name":"Fire Quartz","type":"Base","score":3},
+        {"name":"Fire Quartz","type":"Gemologist","score":3},
+
+        {"name":"Fluorapatite","type":"Base","score":4},
+        {"name":"Fluorapatite","type":"Gemologist","score":4},
+
+        {"name":"Frozen Tear","type":"Base","score":2},
+        {"name":"Frozen Tear","type":"Gemologist","score":3},
+
+        {"name":"Geminite","type":"Base","score":3},
+        {"name":"Geminite","type":"Gemologist","score":3},
+
+        {"name":"Ghost Crystal","type":"Base","score":4},
+        {"name":"Ghost Crystal","type":"Gemologist","score":4},
+
+        {"name":"Granite","type":"Base","score":2},
+        {"name":"Granite","type":"Gemologist","score":3},
+
+        {"name":"Helvite","type":"Base","score":6},
+        {"name":"Helvite","type":"Gemologist","score":6},
+
+        {"name":"Hematite","type":"Base","score":3},
+        {"name":"Hematite","type":"Gemologist","score":3},
+
+        {"name":"Jade","type":"Base","score":4},
+        {"name":"Jade","type":"Gemologist","score":4},
+
+        {"name":"Jagoite","type":"Base","score":3},
+        {"name":"Jagoite","type":"Gemologist","score":3},
+
+        {"name":"Jamborite","type":"Base","score":3},
+        {"name":"Jamborite","type":"Gemologist","score":3},
+
+        {"name":"Jasper","type":"Base","score":3},
+        {"name":"Jasper","type":"Gemologist","score":3},
+
+        {"name":"Kyanite","type":"Base","score":4},
+        {"name":"Kyanite","type":"Gemologist","score":5},
+
+        {"name":"Lemon Stone","type":"Base","score":4},
+        {"name":"Lemon Stone","type":"Gemologist","score":4},
+
+        {"name":"Limestone","type":"Base","score":1},
+        {"name":"Limestone","type":"Gemologist","score":1},
+
+        {"name":"Lunarite","type":"Base","score":4},
+        {"name":"Lunarite","type":"Gemologist","score":4},
+
+        {"name":"Malachite","type":"Base","score":3},
+        {"name":"Malachite","type":"Gemologist","score":3},
+
+        {"name":"Marble","type":"Base","score":3},
+        {"name":"Marble","type":"Gemologist","score":3},
+
+        {"name":"Mudstone","type":"Base","score":2},
+        {"name":"Mudstone","type":"Gemologist","score":2},
+
+        {"name":"Nekoite","type":"Base","score":2},
+        {"name":"Nekoite","type":"Gemologist","score":3},
+
+        {"name":"Neptunite","type":"Base","score":6},
+        {"name":"Neptunite","type":"Gemologist","score":6},
+
+        {"name":"Obsidian","type":"Base","score":4},
+        {"name":"Obsidian","type":"Gemologist","score":4},
+
+        {"name":"Ocean Stone","type":"Base","score":4},
+        {"name":"Ocean Stone","type":"Gemologist","score":4},
+
+        {"name":"Opal","type":"Base","score":3},
+        {"name":"Opal","type":"Gemologist","score":3},
+
+        {"name":"Orpiment","type":"Base","score":2},
+        {"name":"Orpiment","type":"Gemologist","score":3},
+
+        {"name":"Petrified Slime","type":"Base","score":3},
+        {"name":"Petrified Slime","type":"Gemologist","score":3},
+
+        {"name":"Prismatic Shard","type":"Base","score":6},
+        {"name":"Prismatic Shard","type":"Gemologist","score":6},
+
+        {"name":"Pyrite","type":"Base","score":3},
+        {"name":"Pyrite","type":"Gemologist","score":3},
+
+        {"name":"Quartz","type":"Base","score":2},
+        {"name":"Quartz","type":"Gemologist","score":2},
+
+        {"name":"Ruby","type":"Base","score":4},
+        {"name":"Ruby","type":"Gemologist","score":5},
+
+        {"name":"Sandstone","type":"Base","score":2},
+        {"name":"Sandstone","type":"Gemologist","score":2},
+
+        {"name":"Slate","type":"Base","score":2},
+        {"name":"Slate","type":"Gemologist","score":3},
+
+        {"name":"Soapstone","type":"Base","score":3},
+        {"name":"Soapstone","type":"Gemologist","score":3},
+
+        {"name":"Star Shards","type":"Base","score":6},
+        {"name":"Star Shards","type":"Gemologist","score":6},
+
+        {"name":"Thunder Egg","type":"Base","score":3},
+        {"name":"Thunder Egg","type":"Gemologist","score":3},
+
+        {"name":"Tigerseye","type":"Base","score":4},
+        {"name":"Tigerseye","type":"Gemologist","score":5},
+
+        {"name":"Topaz","type":"Base","score":2},
+        {"name":"Topaz","type":"Gemologist","score":3}
+
+    ]
+}

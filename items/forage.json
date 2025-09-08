@@ -1,0 +1,124 @@
+{
+  "category": "Forage",
+  "items": [
+    {"name":"Maple Syrup","type":"Base","quality":{"normal":4,"silver":null,"gold":null,"iridium":null}},
+    {"name":"Maple Syrup","type":"Mastery","quality":{"normal":null,"silver":null,"gold":null,"iridium":null}},
+    {"name":"Maple Syrup","type":"Tiller","quality":{"normal":4,"silver":null,"gold":null,"iridium":null}},
+
+    {"name":"Mystic Syrup","type":"Base","quality":{"normal":6,"silver":null,"gold":null,"iridium":null}},
+    {"name":"Mystic Syrup","type":"Mastery","quality":{"normal":null,"silver":null,"gold":null,"iridium":null}},
+    {"name":"Mystic Syrup","type":"Tiller","quality":{"normal":6,"silver":null,"gold":null,"iridium":null}},
+
+    {"name":"Oak Resin","type":"Base","quality":{"normal":3,"silver":null,"gold":null,"iridium":null}},
+    {"name":"Oak Resin","type":"Mastery","quality":{"normal":null,"silver":null,"gold":null,"iridium":null}},
+    {"name":"Oak Resin","type":"Tiller","quality":{"normal":3,"silver":null,"gold":null,"iridium":null}},
+
+    {"name":"Pine Tar","type":"Base","quality":{"normal":3,"silver":null,"gold":null,"iridium":null}},
+    {"name":"Pine Tar","type":"Mastery","quality":{"normal":null,"silver":null,"gold":null,"iridium":null}},
+    {"name":"Pine Tar","type":"Tiller","quality":{"normal":3,"silver":null,"gold":null,"iridium":null}},
+
+    {"name":"Blue Jazz","type":"Base","quality":{"normal":2,"silver":3,"gold":4,"iridium":7}},
+    {"name":"Blue Jazz","type":"Mastery","quality":{"normal":null,"silver":null,"gold":null,"iridium":null}},
+    {"name":"Blue Jazz","type":"Tiller","quality":{"normal":2,"silver":3,"gold":4,"iridium":7}},
+
+    {"name":"Crocus","type":"Base","quality":{"normal":2,"silver":3,"gold":5,"iridium":7}},
+    {"name":"Crocus","type":"Mastery","quality":{"normal":null,"silver":null,"gold":null,"iridium":null}},
+    {"name":"Crocus","type":"Tiller","quality":{"normal":2,"silver":3,"gold":5,"iridium":7}},
+
+    {"name":"Fairy Rose","type":"Base","quality":{"normal":4,"silver":6,"gold":6,"iridium":8}},
+    {"name":"Fairy Rose","type":"Mastery","quality":{"normal":null,"silver":null,"gold":null,"iridium":null}},
+    {"name":"Fairy Rose","type":"Tiller","quality":{"normal":5,"silver":6,"gold":6,"iridium":8}},
+
+    {"name":"Poppy","type":"Base","quality":{"normal":3,"silver":4,"gold":6,"iridium":8}},
+    {"name":"Poppy","type":"Mastery","quality":{"normal":null,"silver":null,"gold":null,"iridium":null}},
+    {"name":"Poppy","type":"Tiller","quality":{"normal":3,"silver":4,"gold":6,"iridium":8}},
+
+    {"name":"Summer Spangle","type":"Base","quality":{"normal":3,"silver":4,"gold":5,"iridium":7}},
+    {"name":"Summer Spangle","type":"Mastery","quality":{"normal":null,"silver":null,"gold":null,"iridium":null}},
+    {"name":"Summer Spangle","type":"Tiller","quality":{"normal":3,"silver":4,"gold":5,"iridium":7}},
+
+    {"name":"Sunflower","type":"Base","quality":{"normal":2,"silver":4,"gold":5,"iridium":7}},
+    {"name":"Sunflower","type":"Mastery","quality":{"normal":null,"silver":null,"gold":null,"iridium":null}},
+    {"name":"Sunflower","type":"Tiller","quality":{"normal":2,"silver":4,"gold":5,"iridium":7}},
+
+    {"name":"Sweet Pea","type":"Base","quality":{"normal":2,"silver":3,"gold":4,"iridium":7}},
+    {"name":"Sweet Pea","type":"Mastery","quality":{"normal":null,"silver":null,"gold":null,"iridium":null}},
+    {"name":"Sweet Pea","type":"Tiller","quality":{"normal":2,"silver":3,"gold":4,"iridium":7}},
+
+    {"name":"Tulip","type":"Base","quality":{"normal":2,"silver":3,"gold":4,"iridium":6}},
+    {"name":"Tulip","type":"Mastery","quality":{"normal":null,"silver":null,"gold":null,"iridium":null}},
+    {"name":"Tulip","type":"Tiller","quality":{"normal":2,"silver":3,"gold":4,"iridium":6}},
+
+    {"name":"Cave Carrot","type":"Base","quality":{"normal":2,"silver":null,"gold":null,"iridium":null}},
+    {"name":"Cave Carrot","type":"Mastery","quality":{"normal":null,"silver":null,"gold":null,"iridium":null}},
+    {"name":"Cave Carrot","type":"Tiller","quality":{"normal":null,"silver":null,"gold":null,"iridium":null}},
+
+    {"name":"Chanterelle","type":"Base","quality":{"normal":3,"silver":5,"gold":6,"iridium":8}},
+    {"name":"Chanterelle","type":"Mastery","quality":{"normal":null,"silver":null,"gold":null,"iridium":null}},
+    {"name":"Chanterelle","type":"Tiller","quality":{"normal":null,"silver":null,"gold":null,"iridium":null}},
+
+    {"name":"Common Mushroom","type":"Base","quality":{"normal":2,"silver":3,"gold":4,"iridium":6}},
+    {"name":"Common Mushroom","type":"Mastery","quality":{"normal":null,"silver":null,"gold":null,"iridium":null}},
+    {"name":"Common Mushroom","type":"Tiller","quality":{"normal":null,"silver":null,"gold":null,"iridium":null}},
+
+    {"name":"Daffodil","type":"Base","quality":{"normal":2,"silver":3,"gold":4,"iridium":6}},
+    {"name":"Daffodil","type":"Mastery","quality":{"normal":null,"silver":null,"gold":null,"iridium":null}},
+    {"name":"Daffodil","type":"Tiller","quality":{"normal":null,"silver":null,"gold":null,"iridium":null}},
+
+    {"name":"Dandelion","type":"Base","quality":{"normal":2,"silver":3,"gold":4,"iridium":6}},
+    {"name":"Dandelion","type":"Mastery","quality":{"normal":null,"silver":null,"gold":null,"iridium":null}},
+    {"name":"Dandelion","type":"Tiller","quality":{"normal":null,"silver":null,"gold":null,"iridium":null}},
+    
+    {"name":"Ginger","type":"Base","quality":{"normal":2,"silver":null,"gold":null,"iridium":null}},
+    {"name":"Ginger","type":"Mastery","quality":{"normal":null,"silver":null,"gold":null,"iridium":null}},
+    {"name":"Ginger","type":"Tiller","quality":{"normal":null,"silver":null,"gold":null,"iridium":null}},
+
+    {"name":"Hazelnut","type":"Base","quality":{"normal":3,"silver":4,"gold":5,"iridium":7}},
+    {"name":"Hazelnut","type":"Mastery","quality":{"normal":null,"silver":null,"gold":null,"iridium":null}},
+    {"name":"Hazelnut","type":"Tiller","quality":{"normal":null,"silver":null,"gold":null,"iridium":null}},
+
+    {"name":"Holly","type":"Base","quality":{"normal":2,"silver":4,"gold":5,"iridium":7}},
+    {"name":"Holly","type":"Mastery","quality":{"normal":null,"silver":null,"gold":null,"iridium":null}},
+    {"name":"Holly","type":"Tiller","quality":{"normal":null,"silver":null,"gold":null,"iridium":null}},
+
+    {"name":"Leek","type":"Base","quality":{"normal":2,"silver":3,"gold":5,"iridium":7}},
+    {"name":"Leek","type":"Mastery","quality":{"normal":null,"silver":null,"gold":null,"iridium":null}},
+    {"name":"Leek","type":"Tiller","quality":{"normal":null,"silver":null,"gold":null,"iridium":null}},
+
+    {"name":"Magma Cap","type":"Base","quality":{"normal":6,"silver":6,"gold":6,"iridium":8}},
+    {"name":"Magma Cap","type":"Mastery","quality":{"normal":null,"silver":null,"gold":null,"iridium":null}},
+    {"name":"Magma Cap","type":"Tiller","quality":{"normal":null,"silver":null,"gold":null,"iridium":null}},
+
+    {"name":"Morel","type":"Base","quality":{"normal":3,"silver":4,"gold":6,"iridium":8}},
+    {"name":"Morel","type":"Mastery","quality":{"normal":null,"silver":null,"gold":null,"iridium":null}},
+    {"name":"Morel","type":"Tiller","quality":{"normal":null,"silver":null,"gold":null,"iridium":null}},
+
+    {"name":"Purple Mushroom","type":"Base","quality":{"normal":4,"silver":6,"gold":6,"iridium":8}},
+    {"name":"Purple Mushroom","type":"Mastery","quality":{"normal":null,"silver":null,"gold":null,"iridium":null}},
+    {"name":"Purple Mushroom","type":"Tiller","quality":{"normal":null,"silver":null,"gold":null,"iridium":null}},
+
+    {"name":"Red Mushroom","type":"Base","quality":{"normal":2,"silver":4,"gold":5,"iridium":7}},
+    {"name":"Red Mushroom","type":"Mastery","quality":{"normal":null,"silver":null,"gold":null,"iridium":null}},
+    {"name":"Red Mushroom","type":"Tiller","quality":{"normal":null,"silver":null,"gold":null,"iridium":null}},
+
+    {"name":"Sap","type":"Base","quality":{"normal":1,"silver":null,"gold":null,"iridium":null}},
+    {"name":"Sap","type":"Mastery","quality":{"normal":null,"silver":null,"gold":null,"iridium":null}},
+    {"name":"Sap","type":"Tiller","quality":{"normal":null,"silver":null,"gold":null,"iridium":null}},
+
+    {"name":"Snow Yam","type":"Base","quality":{"normal":3,"silver":4,"gold":5,"iridium":8}},
+    {"name":"Snow Yam","type":"Mastery","quality":{"normal":null,"silver":null,"gold":null,"iridium":null}},
+    {"name":"Snow Yam","type":"Tiller","quality":{"normal":null,"silver":null,"gold":null,"iridium":null}},
+
+    {"name":"Spring Onion","type":"Base","quality":{"normal":1,"silver":2,"gold":3,"iridium":5}},
+    {"name":"Spring Onion","type":"Mastery","quality":{"normal":2,"silver":3,"gold":4,"iridium":6}},
+    {"name":"Spring Onion","type":"Tiller","quality":{"normal":null,"silver":null,"gold":null,"iridium":null}},
+
+    {"name":"Wild Horseradish","type":"Base","quality":{"normal":2,"silver":3,"gold":4,"iridium":7}},
+    {"name":"Wild Horseradish","type":"Mastery","quality":{"normal":null,"silver":null,"gold":null,"iridium":null}},
+    {"name":"Wild Horseradish","type":"Tiller","quality":{"normal":null,"silver":null,"gold":null,"iridium":null}},
+
+    {"name":"Winter Root","type":"Base","quality":{"normal":2,"silver":3,"gold":5,"iridium":7}},
+    {"name":"Winter Root","type":"Mastery","quality":{"normal":null,"silver":null,"gold":null,"iridium":null}},
+    {"name":"Winter Root","type":"Tiller","quality":{"normal":null,"silver":null,"gold":null,"iridium":null}}
+  ]
+}

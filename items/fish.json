@@ -1,0 +1,292 @@
+{
+    "category": "Fish",
+    "items": [
+        {"name":"Albacore","type":"Base","quality":{"normal":2,"silver":4,"gold":5,"iridium":7}},
+        {"name":"Albacore","type":"Fisher","quality":{"normal":3,"silver":4,"gold":5,"iridium":7}},
+        {"name":"Albacore","type":"Angler","quality":{"normal":3,"silver":4,"gold":5,"iridium":8}},
+
+        {"name":"Anchovy","type":"Base","quality":{"normal":2,"silver":3,"gold":4,"iridium":6}},
+        {"name":"Anchovy","type":"Fisher","quality":{"normal":2,"silver":3,"gold":4,"iridium":6}},
+        {"name":"Anchovy","type":"Angler","quality":{"normal":2,"silver":3,"gold":4,"iridium":7}},
+
+        {"name":"Angler","type":"Base","quality":{"normal":6,"silver":6,"gold":6,"iridium":8}},
+        {"name":"Angler","type":"Fisher","quality":{"normal":6,"silver":6,"gold":6,"iridium":8}},
+        {"name":"Angler","type":"Angler","quality":{"normal":6,"silver":6,"gold":6,"iridium":8}},
+
+        {"name":"Blobfish","type":"Base","quality":{"normal":6,"silver":6,"gold":6,"iridium":8}},
+        {"name":"Blobfish","type":"Fisher","quality":{"normal":6,"silver":6,"gold":6,"iridium":8}},
+        {"name":"Blobfish","type":"Angler","quality":{"normal":6,"silver":6,"gold":6,"iridium":8}},
+
+        {"name":"Blue Discus","type":"Base","quality":{"normal":3,"silver":4,"gold":5,"iridium":8}},
+        {"name":"Blue Discus","type":"Fisher","quality":{"normal":3,"silver":4,"gold":6,"iridium":8}},
+        {"name":"Blue Discus","type":"Angler","quality":{"normal":3,"silver":5,"gold":6,"iridium":8}},
+
+        {"name":"Bream","type":"Base","quality":{"normal":2,"silver":3,"gold":4,"iridium":7}},
+        {"name":"Bream","type":"Fisher","quality":{"normal":2,"silver":3,"gold":4,"iridium":7}},
+        {"name":"Bream","type":"Angler","quality":{"normal":2,"silver":3,"gold":5,"iridium":7}},
+
+        {"name":"Bullhead","type":"Base","quality":{"normal":2,"silver":4,"gold":5,"iridium":7}},
+        {"name":"Bullhead","type":"Fisher","quality":{"normal":3,"silver":4,"gold":5,"iridium":7}},
+        {"name":"Bullhead","type":"Angler","quality":{"normal":3,"silver":4,"gold":5,"iridium":8}},
+
+        {"name":"Carp","type":"Base","quality":{"normal":2,"silver":3,"gold":4,"iridium":6}},
+        {"name":"Carp","type":"Fisher","quality":{"normal":2,"silver":3,"gold":4,"iridium":6}},
+        {"name":"Carp","type":"Angler","quality":{"normal":2,"silver":3,"gold":4,"iridium":7}},
+
+        {"name":"Catfish","type":"Base","quality":{"normal":4,"silver":5,"gold":6,"iridium":8}},
+        {"name":"Catfish","type":"Fisher","quality":{"normal":4,"silver":6,"gold":6,"iridium":8}},
+        {"name":"Catfish","type":"Angler","quality":{"normal":5,"silver":6,"gold":6,"iridium":8}},
+
+        {"name":"Chub","type":"Base","quality":{"normal":2,"silver":3,"gold":4,"iridium":7}},
+        {"name":"Chub","type":"Fisher","quality":{"normal":2,"silver":3,"gold":5,"iridium":7}},
+        {"name":"Chub","type":"Angler","quality":{"normal":2,"silver":4,"gold":5,"iridium":7}},
+
+        {"name":"Clam","type":"Base","quality":{"normal":2,"silver":3,"gold":4,"iridium":7}},
+        {"name":"Clam","type":"Fisher","quality":{"normal":2,"silver":3,"gold":5,"iridium":7}},
+        {"name":"Clam","type":"Angler","quality":{"normal":2,"silver":4,"gold":5,"iridium":7}},
+
+        {"name":"Cockle","type":"Base","quality":{"normal":2,"silver":3,"gold":4,"iridium":7}},
+        {"name":"Cockle","type":"Fisher","quality":{"normal":2,"silver":3,"gold":5,"iridium":7}},
+        {"name":"Cockle","type":"Angler","quality":{"normal":2,"silver":4,"gold":5,"iridium":7}},
+
+        {"name":"Crab","type":"Base","quality":{"normal":3,"silver":4,"gold":null,"iridium":null}},
+        {"name":"Crab","type":"Fisher","quality":{"normal":3,"silver":4,"gold":null,"iridium":null}},
+        {"name":"Crab","type":"Angler","quality":{"normal":3,"silver":4,"gold":null,"iridium":null}},
+
+        {"name":"Crayfish","type":"Base","quality":{"normal":2,"silver":4,"gold":null,"iridium":null}},
+        {"name":"Crayfish","type":"Fisher","quality":{"normal":3,"silver":4,"gold":null,"iridium":null}},
+        {"name":"Crayfish","type":"Angler","quality":{"normal":3,"silver":4,"gold":null,"iridium":null}},
+
+        {"name":"Crimsonfish","type":"Base","quality":{"normal":6,"silver":6,"gold":6,"iridium":8}},
+        {"name":"Crimsonfish","type":"Fisher","quality":{"normal":6,"silver":6,"gold":6,"iridium":8}},
+        {"name":"Crimsonfish","type":"Angler","quality":{"normal":6,"silver":6,"gold":6,"iridium":8}},
+
+        {"name":"Dorado","type":"Base","quality":{"normal":3,"silver":4,"gold":5,"iridium":8}},
+        {"name":"Dorado","type":"Fisher","quality":{"normal":3,"silver":4,"gold":5,"iridium":8}},
+        {"name":"Dorado","type":"Angler","quality":{"normal":3,"silver":4,"gold":6,"iridium":8}},
+
+        {"name":"Eel","type":"Base","quality":{"normal":2,"silver":4,"gold":5,"iridium":7}},
+        {"name":"Eel","type":"Fisher","quality":{"normal":3,"silver":4,"gold":5,"iridium":8}},
+        {"name":"Eel","type":"Angler","quality":{"normal":3,"silver":4,"gold":5,"iridium":8}},
+
+        {"name":"Flounder","type":"Base","quality":{"normal":3,"silver":4,"gold":5,"iridium":8}},
+        {"name":"Flounder","type":"Fisher","quality":{"normal":3,"silver":4,"gold":5,"iridium":8}},
+        {"name":"Flounder","type":"Angler","quality":{"normal":3,"silver":4,"gold":6,"iridium":8}},
+
+        {"name":"Ghostfish","type":"Base","quality":{"normal":2,"silver":3,"gold":4,"iridium":7}},
+        {"name":"Ghostfish","type":"Fisher","quality":{"normal":2,"silver":3,"gold":4,"iridium":7}},
+        {"name":"Ghostfish","type":"Angler","quality":{"normal":2,"silver":3,"gold":5,"iridium":7}},
+
+        {"name":"Glacierfish","type":"Base","quality":{"normal":6,"silver":6,"gold":6,"iridium":8}},
+        {"name":"Glacierfish","type":"Fisher","quality":{"normal":6,"silver":6,"gold":6,"iridium":8}},
+        {"name":"Glacierfish","type":"Angler","quality":{"normal":6,"silver":6,"gold":6,"iridium":8}},
+
+        {"name":"Glacierfish Jr.","type":"Base","quality":{"normal":6,"silver":6,"gold":6,"iridium":8}},
+        {"name":"Glacierfish Jr.","type":"Fisher","quality":{"normal":6,"silver":6,"gold":6,"iridium":8}},
+        {"name":"Glacierfish Jr.","type":"Angler","quality":{"normal":6,"silver":6,"gold":6,"iridium":8}},
+
+        {"name":"Goby","type":"Base","quality":{"normal":3,"silver":4,"gold":6,"iridium":8}},
+        {"name":"Goby","type":"Fisher","quality":{"normal":3,"silver":5,"gold":6,"iridium":8}},
+        {"name":"Goby","type":"Angler","quality":{"normal":4,"silver":5,"gold":6,"iridium":8}},
+
+        {"name":"Halibut","type":"Base","quality":{"normal":2,"silver":4,"gold":5,"iridium":7}},
+        {"name":"Halibut","type":"Fisher","quality":{"normal":3,"silver":4,"gold":5,"iridium":8}},
+        {"name":"Halibut","type":"Angler","quality":{"normal":3,"silver":4,"gold":5,"iridium":8}},
+
+        {"name":"Herring","type":"Base","quality":{"normal":2,"silver":3,"gold":4,"iridium":6}},
+        {"name":"Herring","type":"Fisher","quality":{"normal":2,"silver":3,"gold":4,"iridium":6}},
+        {"name":"Herring","type":"Angler","quality":{"normal":2,"silver":3,"gold":4,"iridium":7}},
+
+        {"name":"Ice Pip","type":"Base","quality":{"normal":6,"silver":6,"gold":6,"iridium":8}},
+        {"name":"Ice Pip","type":"Fisher","quality":{"normal":6,"silver":6,"gold":6,"iridium":8}},
+        {"name":"Ice Pip","type":"Angler","quality":{"normal":6,"silver":6,"gold":6,"iridium":8}},
+
+        {"name":"Largemouth Bass","type":"Base","quality":{"normal":3,"silver":4,"gold":5,"iridium":8}},
+        {"name":"Largemouth Bass","type":"Fisher","quality":{"normal":3,"silver":4,"gold":5,"iridium":8}},
+        {"name":"Largemouth Bass","type":"Angler","quality":{"normal":3,"silver":4,"gold":6,"iridium":8}},
+
+        {"name":"Lava Eel","type":"Base","quality":{"normal":6,"silver":6,"gold":6,"iridium":8}},
+        {"name":"Lava Eel","type":"Fisher","quality":{"normal":6,"silver":6,"gold":6,"iridium":8}},
+        {"name":"Lava Eel","type":"Angler","quality":{"normal":6,"silver":6,"gold":6,"iridium":8}},
+
+        {"name":"Legend","type":"Base","quality":{"normal":6,"silver":6,"gold":6,"iridium":8}},
+        {"name":"Legend","type":"Fisher","quality":{"normal":6,"silver":6,"gold":6,"iridium":8}},
+        {"name":"Legend","type":"Angler","quality":{"normal":6,"silver":6,"gold":6,"iridium":8}},
+
+        {"name":"Legend II","type":"Base","quality":{"normal":6,"silver":6,"gold":6,"iridium":8}},
+        {"name":"Legend II","type":"Fisher","quality":{"normal":6,"silver":6,"gold":6,"iridium":8}},
+        {"name":"Legend II","type":"Angler","quality":{"normal":6,"silver":6,"gold":6,"iridium":8}},
+
+        {"name":"Lingcod","type":"Base","quality":{"normal":3,"silver":4,"gold":5,"iridium":8}},
+        {"name":"Lingcod","type":"Fisher","quality":{"normal":3,"silver":4,"gold":6,"iridium":8}},
+        {"name":"Lingcod","type":"Angler","quality":{"normal":3,"silver":5,"gold":6,"iridium":8}},
+
+        {"name":"Lionfish","type":"Base","quality":{"normal":3,"silver":4,"gold":5,"iridium":8}},
+        {"name":"Lionfish","type":"Fisher","quality":{"normal":3,"silver":4,"gold":5,"iridium":8}},
+        {"name":"Lionfish","type":"Angler","quality":{"normal":3,"silver":4,"gold":6,"iridium":8}},
+
+        {"name":"Lobster","type":"Base","quality":{"normal":3,"silver":4,"gold":null,"iridium":null}},
+        {"name":"Lobster","type":"Fisher","quality":{"normal":3,"silver":4,"gold":null,"iridium":null}},
+        {"name":"Lobster","type":"Angler","quality":{"normal":3,"silver":5,"gold":null,"iridium":null}},
+
+        {"name":"Midnight Carp","type":"Base","quality":{"normal":3,"silver":4,"gold":6,"iridium":8}},
+        {"name":"Midnight Carp","type":"Fisher","quality":{"normal":3,"silver":5,"gold":6,"iridium":8}},
+        {"name":"Midnight Carp","type":"Angler","quality":{"normal":4,"silver":5,"gold":6,"iridium":8}},
+
+        {"name":"Midnight Squid","type":"Base","quality":{"normal":3,"silver":4,"gold":5,"iridium":8}},
+        {"name":"Midnight Squid","type":"Fisher","quality":{"normal":3,"silver":4,"gold":5,"iridium":8}},
+        {"name":"Midnight Squid","type":"Angler","quality":{"normal":3,"silver":4,"gold":6,"iridium":8}},
+
+        {"name":"Ms. Angler","type":"Base","quality":{"normal":6,"silver":6,"gold":6,"iridium":8}},
+        {"name":"Ms. Angler","type":"Fisher","quality":{"normal":6,"silver":6,"gold":6,"iridium":8}},
+        {"name":"Ms. Angler","type":"Angler","quality":{"normal":6,"silver":6,"gold":6,"iridium":8}},
+
+        {"name":"Mussel","type":"Base","quality":{"normal":2,"silver":3,"gold":4,"iridium":6}},
+        {"name":"Mussel","type":"Fisher","quality":{"normal":2,"silver":3,"gold":4,"iridium":6}},
+        {"name":"Mussel","type":"Angler","quality":{"normal":2,"silver":3,"gold":4,"iridium":7}},
+
+        {"name":"Mutant Carp","type":"Base","quality":{"normal":6,"silver":6,"gold":6,"iridium":8}},
+        {"name":"Mutant Carp","type":"Fisher","quality":{"normal":6,"silver":6,"gold":6,"iridium":8}},
+        {"name":"Mutant Carp","type":"Angler","quality":{"normal":6,"silver":6,"gold":6,"iridium":8}},
+
+        {"name":"Octopus","type":"Base","quality":{"normal":3,"silver":4,"gold":6,"iridium":8}},
+        {"name":"Octopus","type":"Fisher","quality":{"normal":3,"silver":5,"gold":6,"iridium":8}},
+        {"name":"Octopus","type":"Angler","quality":{"normal":4,"silver":5,"gold":6,"iridium":8}},
+
+        {"name":"Oyster","type":"Base","quality":{"normal":2,"silver":3,"gold":4,"iridium":6}},
+        {"name":"Oyster","type":"Fisher","quality":{"normal":2,"silver":3,"gold":4,"iridium":7}},
+        {"name":"Oyster","type":"Angler","quality":{"normal":2,"silver":3,"gold":5,"iridium":7}},
+
+        {"name":"Perch","type":"Base","quality":{"normal":2,"silver":3,"gold":4,"iridium":7}},
+        {"name":"Perch","type":"Fisher","quality":{"normal":2,"silver":3,"gold":5,"iridium":7}},
+        {"name":"Perch","type":"Angler","quality":{"normal":2,"silver":4,"gold":5,"iridium":7}},
+
+        {"name":"Periwinkle","type":"Base","quality":{"normal":2,"silver":3,"gold":null,"iridium":null}},
+        {"name":"Periwinkle","type":"Fisher","quality":{"normal":2,"silver":3,"gold":null,"iridium":null}},
+        {"name":"Periwinkle","type":"Angler","quality":{"normal":2,"silver":3,"gold":null,"iridium":null}},
+
+        {"name":"Pike","type":"Base","quality":{"normal":3,"silver":4,"gold":5,"iridium":8}},
+        {"name":"Pike","type":"Fisher","quality":{"normal":3,"silver":4,"gold":5,"iridium":8}},
+        {"name":"Pike","type":"Angler","quality":{"normal":3,"silver":4,"gold":6,"iridium":8}},
+
+        {"name":"Pufferfish","type":"Base","quality":{"normal":4,"silver":5,"gold":6,"iridium":8}},
+        {"name":"Pufferfish","type":"Fisher","quality":{"normal":4,"silver":6,"gold":6,"iridium":8}},
+        {"name":"Pufferfish","type":"Angler","quality":{"normal":5,"silver":6,"gold":6,"iridium":8}},
+        
+        {"name":"Radioactive Carp","type":"Base","quality":{"normal":6,"silver":6,"gold":6,"iridium":8}},
+        {"name":"Radioactive Carp","type":"Fisher","quality":{"normal":6,"silver":6,"gold":6,"iridium":8}},
+        {"name":"Radioactive Carp","type":"Angler","quality":{"normal":6,"silver":6,"gold":6,"iridium":8}},
+
+        {"name":"Rainbow Trout","type":"Base","quality":{"normal":2,"silver":3,"gold":5,"iridium":7}},
+        {"name":"Rainbow Trout","type":"Fisher","quality":{"normal":2,"silver":4,"gold":5,"iridium":7}},
+        {"name":"Rainbow Trout","type":"Angler","quality":{"normal":3,"silver":4,"gold":5,"iridium":7}},
+
+        {"name":"Red Mullet","type":"Base","quality":{"normal":2,"silver":4,"gold":5,"iridium":7}},
+        {"name":"Red Mullet","type":"Fisher","quality":{"normal":3,"silver":4,"gold":5,"iridium":7}},
+        {"name":"Red Mullet","type":"Angler","quality":{"normal":3,"silver":4,"gold":5,"iridium":8}},
+
+        {"name":"Red Snapper","type":"Base","quality":{"normal":2,"silver":3,"gold":4,"iridium":7}},
+        {"name":"Red Snapper","type":"Fisher","quality":{"normal":2,"silver":3,"gold":5,"iridium":7}},
+        {"name":"Red Snapper","type":"Angler","quality":{"normal":2,"silver":4,"gold":5,"iridium":7}},
+
+        {"name":"Salmon","type":"Base","quality":{"normal":2,"silver":4,"gold":5,"iridium":7}},
+        {"name":"Salmon","type":"Fisher","quality":{"normal":3,"silver":4,"gold":5,"iridium":7}},
+        {"name":"Salmon","type":"Angler","quality":{"normal":3,"silver":4,"gold":5,"iridium":8}},
+
+        {"name":"Sandfish","type":"Base","quality":{"normal":2,"silver":4,"gold":5,"iridium":7}},
+        {"name":"Sandfish","type":"Fisher","quality":{"normal":3,"silver":4,"gold":5,"iridium":7}},
+        {"name":"Sandfish","type":"Angler","quality":{"normal":3,"silver":4,"gold":5,"iridium":8}},
+
+        {"name":"Sardine","type":"Base","quality":{"normal":2,"silver":3,"gold":4,"iridium":6}},
+        {"name":"Sardine","type":"Fisher","quality":{"normal":2,"silver":3,"gold":4,"iridium":7}},
+        {"name":"Sardine","type":"Angler","quality":{"normal":2,"silver":3,"gold":5,"iridium":7}},
+
+        {"name":"Scorpion Carp","type":"Base","quality":{"normal":3,"silver":4,"gold":6,"iridium":8}},
+        {"name":"Scorpion Carp","type":"Fisher","quality":{"normal":3,"silver":5,"gold":6,"iridium":8}},
+        {"name":"Scorpion Carp","type":"Angler","quality":{"normal":4,"silver":5,"gold":6,"iridium":8}},
+
+        {"name":"Sea Cucumber","type":"Base","quality":{"normal":2,"silver":4,"gold":5,"iridium":7}},
+        {"name":"Sea Cucumber","type":"Fisher","quality":{"normal":3,"silver":4,"gold":5,"iridium":7}},
+        {"name":"Sea Cucumber","type":"Angler","quality":{"normal":3,"silver":4,"gold":5,"iridium":8}},
+
+        {"name":"Shad","type":"Base","quality":{"normal":2,"silver":3,"gold":5,"iridium":7}},
+        {"name":"Shad","type":"Fisher","quality":{"normal":2,"silver":4,"gold":5,"iridium":7}},
+        {"name":"Shad","type":"Angler","quality":{"normal":3,"silver":4,"gold":5,"iridium":7}},
+
+        {"name":"Shrimp","type":"Base","quality":{"normal":2,"silver":3,"gold":null,"iridium":null}},
+        {"name":"Shrimp","type":"Fisher","quality":{"normal":2,"silver":4,"gold":null,"iridium":null}},
+        {"name":"Shrimp","type":"Angler","quality":{"normal":3,"silver":4,"gold":null,"iridium":null}},
+
+        {"name":"Slimejack","type":"Base","quality":{"normal":3,"silver":4,"gold":5,"iridium":8}},
+        {"name":"Slimejack","type":"Fisher","quality":{"normal":3,"silver":4,"gold":5,"iridium":8}},
+        {"name":"Slimejack","type":"Angler","quality":{"normal":3,"silver":4,"gold":6,"iridium":8}},
+
+        {"name":"Smallmouth Bass","type":"Base","quality":{"normal":2,"silver":3,"gold":4,"iridium":7}},
+        {"name":"Smallmouth Bass","type":"Fisher","quality":{"normal":2,"silver":3,"gold":5,"iridium":7}},
+        {"name":"Smallmouth Bass","type":"Angler","quality":{"normal":2,"silver":4,"gold":5,"iridium":7}},
+
+        {"name":"Snail","type":"Base","quality":{"normal":2,"silver":3,"gold":null,"iridium":null}},
+        {"name":"Snail","type":"Fisher","quality":{"normal":2,"silver":4,"gold":null,"iridium":null}},
+        {"name":"Snail","type":"Angler","quality":{"normal":3,"silver":4,"gold":null,"iridium":null}},
+
+        {"name":"Son of Crimsonfish","type":"Base","quality":{"normal":6,"silver":6,"gold":6,"iridium":8}},
+        {"name":"Son of Crimsonfish","type":"Fisher","quality":{"normal":6,"silver":6,"gold":6,"iridium":8}},
+        {"name":"Son of Crimsonfish","type":"Angler","quality":{"normal":6,"silver":6,"gold":6,"iridium":8}},
+
+        {"name":"Spook Fish","type":"Base","quality":{"normal":4,"silver":5,"gold":6,"iridium":8}},
+        {"name":"Spook Fish","type":"Fisher","quality":{"normal":4,"silver":6,"gold":6,"iridium":8}},
+        {"name":"Spook Fish","type":"Angler","quality":{"normal":5,"silver":6,"gold":6,"iridium":8}},
+
+        {"name":"Squid","type":"Base","quality":{"normal":2,"silver":4,"gold":5,"iridium":7}},
+        {"name":"Squid","type":"Fisher","quality":{"normal":3,"silver":4,"gold":5,"iridium":8}},
+        {"name":"Squid","type":"Angler","quality":{"normal":3,"silver":4,"gold":5,"iridium":8}},
+
+        {"name":"Stingray","type":"Base","quality":{"normal":3,"silver":5,"gold":6,"iridium":8}},
+        {"name":"Stingray","type":"Fisher","quality":{"normal":4,"silver":5,"gold":6,"iridium":8}},
+        {"name":"Stingray","type":"Angler","quality":{"normal":4,"silver":6,"gold":6,"iridium":8}},
+
+        {"name":"Stonefish","type":"Base","quality":{"normal":5,"silver":6,"gold":6,"iridium":8}},
+        {"name":"Stonefish","type":"Fisher","quality":{"normal":5,"silver":6,"gold":6,"iridium":8}},
+        {"name":"Stonefish","type":"Angler","quality":{"normal":6,"silver":6,"gold":6,"iridium":8}},
+
+        {"name":"Sturgeon","type":"Base","quality":{"normal":4,"silver":5,"gold":6,"iridium":8}},
+        {"name":"Sturgeon","type":"Fisher","quality":{"normal":4,"silver":6,"gold":6,"iridium":8}},
+        {"name":"Sturgeon","type":"Angler","quality":{"normal":5,"silver":6,"gold":6,"iridium":8}},
+
+        {"name":"Sunfish","type":"Base","quality":{"normal":2,"silver":3,"gold":4,"iridium":6}},
+        {"name":"Sunfish","type":"Fisher","quality":{"normal":2,"silver":3,"gold":4,"iridium":6}},
+        {"name":"Sunfish","type":"Angler","quality":{"normal":2,"silver":3,"gold":4,"iridium":7}},
+
+        {"name":"Super Cucumber","type":"Base","quality":{"normal":4,"silver":6,"gold":6,"iridium":8}},
+        {"name":"Super Cucumber","type":"Fisher","quality":{"normal":5,"silver":6,"gold":6,"iridium":8}},
+        {"name":"Super Cucumber","type":"Angler","quality":{"normal":5,"silver":6,"gold":6,"iridium":8}},
+
+        {"name":"Tiger Trout","type":"Base","quality":{"normal":3,"silver":4,"gold":6,"iridium":8}},
+        {"name":"Tiger Trout","type":"Fisher","quality":{"normal":3,"silver":5,"gold":6,"iridium":8}},
+        {"name":"Tiger Trout","type":"Angler","quality":{"normal":4,"silver":5,"gold":6,"iridium":8}},
+
+        {"name":"Tilapia","type":"Base","quality":{"normal":2,"silver":4,"gold":5,"iridium":7}},
+        {"name":"Tilapia","type":"Fisher","quality":{"normal":3,"silver":4,"gold":5,"iridium":7}},
+        {"name":"Tilapia","type":"Angler","quality":{"normal":3,"silver":4,"gold":5,"iridium":8}},
+
+        {"name":"Tuna","type":"Base","quality":{"normal":3,"silver":4,"gold":5,"iridium":8}},
+        {"name":"Tuna","type":"Fisher","quality":{"normal":3,"silver":4,"gold":5,"iridium":8}},
+        {"name":"Tuna","type":"Angler","quality":{"normal":3,"silver":4,"gold":6,"iridium":8}},
+
+        {"name":"Void Salmon","type":"Base","quality":{"normal":3,"silver":4,"gold":6,"iridium":8}},
+        {"name":"Void Salmon","type":"Fisher","quality":{"normal":3,"silver":5,"gold":6,"iridium":8}},
+        {"name":"Void Salmon","type":"Angler","quality":{"normal":4,"silver":5,"gold":6,"iridium":8}},
+
+        {"name":"Walleye","type":"Base","quality":{"normal":3,"silver":4,"gold":5,"iridium":8}},
+        {"name":"Walleye","type":"Fisher","quality":{"normal":3,"silver":4,"gold":5,"iridium":8}},
+        {"name":"Walleye","type":"Angler","quality":{"normal":3,"silver":4,"gold":6,"iridium":8}},
+
+        {"name":"Woodskip","type":"Base","quality":{"normal":2,"silver":4,"gold":5,"iridium":7}},
+        {"name":"Woodskip","type":"Fisher","quality":{"normal":3,"silver":4,"gold":5,"iridium":7}},
+        {"name":"Woodskip","type":"Angler","quality":{"normal":3,"silver":4,"gold":5,"iridium":8}}
+    ]
+}
+
+
+
+
