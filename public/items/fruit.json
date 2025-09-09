@@ -1,6 +1,6 @@
 {
   "category": "Fruit",
-  "items": [  
+  "items": [
     {"name":"Ancient Fruit","type":"Base","quality":{"normal":6,"silver":6,"gold":6,"iridium":8}},
     {"name":"Ancient Fruit","type":"Tiller","quality":{"normal":6,"silver":6,"gold":6,"iridium":8}},
     {"name":"Ancient Fruit","type":"Knowledge","quality":{"normal":null,"silver":null,"gold":null,"iridium":null}},

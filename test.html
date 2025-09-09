@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stardew Valley Fair Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans p-6">
+
+    <div id="app" class="max-w-6xl mx-auto">
+        <div class="text-center mb-8">
+            <h1 class="text-4xl font-bold text-green-800 mb-2 flex items-center justify-center gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                Stardew Valley Fair Calculator
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </h1>
+            <p class="text-gray-600">Plan your perfect Grange Display for the Fall Fair!</p>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-lg p-4 mb-6 border">
+            <h3 class="text-lg font-semibold mb-3">Select Your Professions:</h3>
+            <div class="flex flex-wrap gap-2">
+                <button
+                    v-for="prof in ['Base', 'Rancher', 'Tiller', 'Artisan', 'Fisher']"
+                    :key="prof"
+                    @click="profession = prof"
+                    :class="{'bg-green-500 text-white': profession === prof, 'bg-gray-200 text-gray-700 hover:bg-gray-300': profession !== prof}"
+                    class="px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+                >
+                    {{ prof === 'Base' ? 'No Professions' : prof }}
+                </button>
+            </div>
+            <p class="text-sm text-gray-600 mt-2">
+                This affects the scoring for profession-specific items (Rancher/Tiller boost animal/crop products, Artisan boosts artisan goods, Fisher boosts fish)
+            </p>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-lg p-6 mb-8 border-2 border-yellow-300">
+            <div class="flex items-center justify-between mb-4">
+                <h2 class="text-2xl font-bold text-gray-800 flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect><line x1="8" y1="6" x2="16" y2="6"></line><line x1="8" y1="10" x2="16" y2="10"></line><line x1="12" y1="14" x2="12" y2="18"></line></svg>
+                    Current Score
+                </h2>
+                <button
+                    @click="clearAll"
+                    class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg flex items-center gap-2 transition-colors"
+                >
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24"><path d="M1 4v6h6"></path><path d="M3.51 15a9 9 0 1 0 2.13-9.51A9.09 9.09 0 0 0 4.14 8"></path></svg>
+                    Clear All
+                </button>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="space-y-3">
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">Base Points:</span>
+                        <span class="font-semibold">{{ score.base }}</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">Item Slots ({{ selectedItems.length }}/9):</span>
+                        <span class="font-semibold">{{ score.itemCount }}</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">Categories ({{ getUniqueCategories().length }}/8):</span>
+                        <span class="font-semibold">{{ score.category }}</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">Item Points:</span>
+                        <span class="font-semibold">{{ score.items }}</span>
+                    </div>
+                    <div class="border-t-2 border-gray-200 pt-2">
+                        <div class="flex justify-between text-xl font-bold text-green-700">
+                            <span>Total Score:</span>
+                            <span class="text-2xl">{{ score.total }}</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="font-semibold mb-3">Selected Items:</h3>
+                    <div class="space-y-2 max-h-40 overflow-y-auto">
+                        <p v-if="selectedItems.length === 0" class="text-gray-500 text-sm">No items selected yet</p>
+                        <div v-else v-for="item in selectedItems" :key="item.id" class="flex justify-between items-center bg-gray-50 px-3 py-2 rounded text-sm">
+                            <div>
+                                <span class="font-medium">{{ item.name }}</span>
+                                <span :class="['ml-2 font-semibold', getQualityColor(item.quality)]">
+                                    ({{ getQualityDisplay(item.quality) }})
+                                </span>
+                                <span class="text-gray-500 ml-1">- {{ item.category }}</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="font-semibold text-green-600">{{ item.points }}pts</span>
+                                <button
+                                    @click="removeItem(item.id)"
+                                    class="text-red-500 hover:text-red-700 p-1"
+                                >
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <div class="border-b border-gray-200">
+                <div class="flex flex-wrap">
+                    <button
+                        v-for="(category, index) in categories"
+                        :key="index"
+                        @click="activeTab = index"
+                        :class="{'border-green-500 text-green-600 bg-green-50': activeTab === index, 'border-transparent text-gray-500 hover:text-gray-700 hover:bg-gray-50': activeTab !== index}"
+                        class="px-4 py-3 text-sm font-medium border-b-2 transition-colors"
+                    >
+                        {{ category.name }}
+                    </button>
+                </div>
+            </div>
+
+            <div class="p-6">
+                <h3 class="text-xl font-bold mb-4 text-gray-800">
+                    {{ categories[activeTab] ? categories[activeTab].name : 'Loading...' }}
+                </h3>
+                
+                <div class="grid sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4">
+                    <div
+                        v-for="(item, index) in filteredItems"
+                        :key="index"
+                        :class="[categories[activeTab].color, 'p-4 rounded-lg border-2']"
+                    >
+                        <div class="mb-3">
+                            <h4 class="font-semibold text-sm mb-1">
+                                {{ item.name }}
+                                <span v-if="item.type !== 'Base'" class="ml-2 text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">
+                                    {{ item.type }}
+                                </span>
+                            </h4>
+                        </div>
+                        
+                        <div class="grid grid-cols-2 gap-2">
+                            <button
+                                v-for="(points, quality) in item.quality"
+                                :key="quality"
+                                @click="addItem(activeTab, item, quality)"
+                                :disabled="selectedItems.length >= 9"
+                                class="py-2 px-3 rounded text-xs font-medium transition-colors border"
+                                :class="{'bg-gray-300 text-gray-500 cursor-not-allowed border-gray-300': selectedItems.length >= 9, 'bg-white hover:bg-gray-50 text-gray-700 border-gray-300 hover:border-green-400': selectedItems.length < 9}"
+                            >
+                                <div :class="['font-semibold', getQualityColor(quality)]">
+                                    {{ getQualityDisplay(quality) }}
+                                </div>
+                                <div class="text-green-600 font-bold">{{ points }}pts</div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-8 bg-blue-50 border border-blue-200 rounded-lg p-6">
+            <h3 class="text-lg font-bold text-blue-800 mb-3">💡 Tips for Winning:</h3>
+            <ul class="text-blue-700 space-y-2 text-sm">
+                <li>• You need 90+ points to win the competition</li>
+                <li>• Always fill all 9 slots for maximum item count points</li>
+                <li>• Try to include items from at least 6 different categories for category bonus</li>
+                <li>• Iridium quality items give the most points</li>
+                <li>• Profession bonuses can significantly boost certain item categories</li>
+                <li>• Sweet Gem Berry is always 8 points regardless of quality</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -6,45 +6,163 @@
     <title>Grange Fair Score Calculator</title>
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
     
 </head>
 <body>
-    <p class="typewriter" id="letter"></p>
-    <script src="typewriter.js"></script>
+    <!-- <p class="typewriter" id="letter"></p>
+    <script src="typewriter.js"></script> -->
+    <div id="app">
+ 
+        <h1>Stardew Valley Grange Fair</h1>
+        <p>Search for the item here or go through the tabs below to add to your display!</p>
 
-    <h1>Stardew Valley Grange Fair</h1>
-    <p>Add 9 items to maximise you're chance of getting 1st place in the Grange Display Fair!</p>
+        
+        <!-- Search Bar -->
+        <!-- <div class="search-bar">
+            <div class="row">
+                <div class="quality-dropdown">
+                    <div class="selected">Star</div>
+                        <ul class="options">
+                            <li data-value="" selected>None</li>
+                            <li data-value="silver"><img src="images/silver.png" /></li>
+                            <li data-value="gold"><img src="images/gold.png" /></li>
+                            <li data-value="iridium"><img src="images/iridium.png" /></li>
+                        </ul>
+                    </div>
 
-   
-    <div class="search-bar">
-        <div class="row">
-             <div class="quality-dropdown">
-                <div class="selected">Star</div>
-                    <ul class="options">
-                        <li data-value="" selected></li>
-                        <li data-value="silver"><img src="images/silver.png" /></li>
-                        <li data-value="gold"><img src="images/gold.png" /></li>
-                        <li data-value="iridium"><img src="images/iridium.png" /></li>
-                    </ul>
+
+                <input type="text" id="input-box" placeholder="type here..." autocomplete="off">
+                <ul id="item-list"></ul>
+            </div>
+        </div> -->
+
+        <!-- Modal -->
+        <div class="modal-container">
+            <button class="close-btn">x</button>
+            <div class="modal">
+                <h3>Selected Items: ({{ selectedItems.length }}/9)</h3>
+                <button @click="clearAll">Clear All</button>
+                <div>
+                    <div id="selected-items-container">
+                        <p id="no-items">No items selected yet</p>
+                    </div>
+                    <!-- Selected Items -->
+                    <div v-for="item in selectedItems" :key="item.id">
+                        <div>
+                            <span class="item-name">{{ item.name }}</span>
+                            <img src="images/{{ item.quality }}.png">
+                            <span class="item-quality"></span>
+                            <!-- <span>- {{ item.category }}</span> -->
+                        </div>
+                        <div>
+                            <span>{{ item.points }}pts</span>
+                            <button @click="removeItem(item.id)">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+           
+
+                <h2>Current Score</h2>
+                
+                --------------------------------
+                <div>
+                    <span>Base Points: {{ score.base }}</span>
                 </div>
 
+                <div>
+                    <span>Unique Categories ({{ getUniqueCategories().length }}/6): {{ score.category }}</span>
+                </div>
 
-            <input type="text" id="input-box" placeholder="type here..." autocomplete="off">
-            <ul id="item-list"></ul>
+                <div>
+                    <span>Item Points: {{ score.sumItems }}</span>
+                </div>
+
+                <div>
+                    <span>Total Score: {{ score.total }}</span>
+                </div>
+
+            </div>
+        </div>
+
+        <div>
+            <h3>Select Your Professions:</h3>
+            <div>
+                <button
+                    v-for="prof in ['Base', 'Rancher', 'Tiller', 'Artisan', 'Fisher']"
+                    :key="prof"
+                    @click="profession = prof"
+                >
+                    {{ prof === 'Base' ? 'No Professions' : prof }}
+                </button>
+            </div>
+        </div>
+    
+        <div class="stardew-items">
+            <div>
+                <div>
+                    <button
+                        v-for="(category, index) in categories"
+                        :key="index"
+                        @click="activeTab = index"
+                    >
+                        {{ category.category }}
+                    </button>
+                    <!-- get all items from active tab category -->
+                    <div v-for="item in filterItems" :key="item.id">
+                        {{ item.name }}
+                        <!-- Show profession items -->
+                        <span v-if="item.type !== 'Base'">{{ item.type }}</span>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div>
+                <div>
+                    <div
+                        v-for="(item, index) in filterItems"
+                        :key="index"
+                    >
+                        <div>
+                            <h4>
+                                {{ item.name }}
+                                <span v-if="item.type !== 'Base'">
+                                    {{ item.type }}
+                                </span>
+                            </h4>
+                        </div>
+                        
+                        <div>
+                            <button
+                                v-for="(points, quality) in item.quality"
+                                :key="quality"
+                                @click="addItem(item, quality, index)"
+                                :disabled="selectedItems.length >= 9"
+                            >
+                                <div>
+                                    <img src="images/silver.png">
+                                    <!-- {{ getQualityName(quality) }} -->
+                                </div>
+                                <div>{{ points }}pts</div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <h3>Chosen Items:</h3>
-    <ul id="chosen-list"></ul>
 
-    <button id="calculate-btn">Calculate Score</button>
-    <p id="score"></p>
-
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script> -->
     
-    <script src="score.js"></script>
-    <script src="searchBar.js"></script>
+    
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="script.js"></script>
+    <!-- <script src="score.js"></script> -->
+    <!-- <script src="searchBar.js"></script> -->
 
 </body>
 </html>

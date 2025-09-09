@@ -111,9 +111,6 @@ function addChosenItem(item) {
     // do different colours for each category
     li.innerHTML = `
         ${item.name} (Category: ${item.category})
-        <select>
-            ${qualities.map(q => `<option value="${q}">${q}</option>`).join('')}
-        </select>
         <button class="remove-btn">x</button>
     `;
 
@@ -124,22 +121,6 @@ function addChosenItem(item) {
 
     chosenUl.appendChild(li);
 }
-
-
-
-// Calculate score
-document.getElementById('calculate-btn').addEventListener('click', () => {
-    const chosenItems = [];
-    document.querySelectorAll('#item-list li').forEach((li) => {
-        const itemName = li.firstChild.textContent.split(' (')[0];
-        const item = allItems.find(i => i.name === itemName);
-        const quality = li.querySelector('select').value;
-        if (item && quality) chosenItems.push({ item, quality });
-    });
-
-    const score = calculateGrangeScore(chosenItems); // from score.js
-    document.getElementById('score').textContent = 'Score: ' + score;
-});
 
 // Start fetching items
 fetchAllItems();

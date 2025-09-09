@@ -24,6 +24,8 @@ function calculateGrangeScore(displayItems) {
   score += getCategoryPoints(displayItems);
 
   score += displayItems.reduce((sum, {item, quality}) => sum + getQualityPoints(item, quality), 0);
-
+  console.log(score)
   return score;
 }
+
+calculateGrangeScore()
