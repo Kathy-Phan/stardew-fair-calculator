@@ -1,164 +1,165 @@
 {
   "category": "Mineral",
   "items": [
-        {"name":"Aerinite","type":"Base","quality":{"normal":3}},
-        {"name":"Aerinite","type":"Gemologist","quality":{"normal":3}},
+    {"name":"Aerinite","type":"Base","quality":{"normal":3},"image":"images/minerals/Aerinite.png"},
+    {"name":"Aerinite","type":"Gemologist","quality":{"normal":3},"image":"images/minerals/Aerinite.png"},
 
-        {"name":"Alamite","type":"Base","quality":{"normal":3}},
-        {"name":"Alamite","type":"Gemologist","quality":{"normal":3}},
+    {"name":"Alamite","type":"Base","quality":{"normal":3},"image":"images/minerals/Alamite.png"},
+    {"name":"Alamite","type":"Gemologist","quality":{"normal":3},"image":"images/minerals/Alamite.png"},
 
-        {"name":"Amethyst","type":"Base","quality":{"normal":3}},
-        {"name":"Amethyst","type":"Gemologist","quality":{"normal":3}},
+    {"name":"Amethyst","type":"Base","quality":{"normal":3},"image":"images/minerals/Amethyst.png"},
+    {"name":"Amethyst","type":"Gemologist","quality":{"normal":3},"image":"images/minerals/Amethyst.png"},
 
-        {"name":"Aquamarine","type":"Base","quality":{"normal":3}},
-        {"name":"Aquamarine","type":"Gemologist","quality":{"normal":4}},
+    {"name":"Aquamarine","type":"Base","quality":{"normal":3},"image":"images/minerals/Aquamarine.png"},
+    {"name":"Aquamarine","type":"Gemologist","quality":{"normal":4},"image":"images/minerals/Aquamarine.png"},
 
-        {"name":"Baryte","type":"Base","quality":{"normal":2}},
-        {"name":"Baryte","type":"Gemologist","quality":{"normal":2}},
+    {"name":"Baryte","type":"Base","quality":{"normal":2},"image":"images/minerals/Baryte.png"},
+    {"name":"Baryte","type":"Gemologist","quality":{"normal":2},"image":"images/minerals/Baryte.png"},
 
-        {"name":"Basalt","type":"Base","quality":{"normal":3}},
-        {"name":"Basalt","type":"Gemologist","quality":{"normal":4}},
+    {"name":"Basalt","type":"Base","quality":{"normal":3},"image":"images/minerals/Basalt.png"},
+    {"name":"Basalt","type":"Gemologist","quality":{"normal":4},"image":"images/minerals/Basalt.png"},
 
-        {"name":"Bixite","type":"Base","quality":{"normal":5}},
-        {"name":"Bixite","type":"Gemologist","quality":{"normal":5}},
+    {"name":"Bixite","type":"Base","quality":{"normal":5},"image":"images/minerals/Bixite.png"},
+    {"name":"Bixite","type":"Gemologist","quality":{"normal":5},"image":"images/minerals/Bixite.png"},
 
-        {"name":"Calcite","type":"Base","quality":{"normal":2}},
-        {"name":"Calcite","type":"Gemologist","quality":{"normal":3}},
+    {"name":"Calcite","type":"Base","quality":{"normal":2},"image":"images/minerals/Calcite.png"},
+    {"name":"Calcite","type":"Gemologist","quality":{"normal":3},"image":"images/minerals/Calcite.png"},
 
-        {"name":"Celestine","type":"Base","quality":{"normal":3}},
-        {"name":"Celestine","type":"Gemologist","quality":{"normal":3}},
+    {"name":"Celestine","type":"Base","quality":{"normal":3},"image":"images/minerals/Celestine.png"},
+    {"name":"Celestine","type":"Gemologist","quality":{"normal":3},"image":"images/minerals/Celestine.png"},
 
-        {"name":"Diamond","type":"Base","quality":{"normal":6}},
-        {"name":"Diamond","type":"Gemologist","quality":{"normal":6}},
+    {"name":"Diamond","type":"Base","quality":{"normal":6},"image":"images/minerals/Diamond.png"},
+    {"name":"Diamond","type":"Gemologist","quality":{"normal":6},"image":"images/minerals/Diamond.png"},
 
-        {"name":"Dolomite","type":"Base","quality":{"normal":5}},
-        {"name":"Dolomite","type":"Gemologist","quality":{"normal":5}},
+    {"name":"Dolomite","type":"Base","quality":{"normal":5},"image":"images/minerals/Dolomite.png"},
+    {"name":"Dolomite","type":"Gemologist","quality":{"normal":5},"image":"images/minerals/Dolomite.png"},
 
-        {"name":"Earth Crystal","type":"Base","quality":{"normal":2}},
-        {"name":"Earth Crystal","type":"Gemologist","quality":{"normal":2}},
+    {"name":"Earth Crystal","type":"Base","quality":{"normal":2},"image":"images/minerals/Earth_Crystal.png"},
+    {"name":"Earth Crystal","type":"Gemologist","quality":{"normal":2},"image":"images/minerals/Earth_Crystal.png"},
 
-        {"name":"Emerald","type":"Base","quality":{"normal":4}},
-        {"name":"Emerald","type":"Gemologist","quality":{"normal":5}},
+    {"name":"Emerald","type":"Base","quality":{"normal":4},"image":"images/minerals/Emerald.png"},
+    {"name":"Emerald","type":"Gemologist","quality":{"normal":5},"image":"images/minerals/Emerald.png"},
 
-        {"name":"Esperite","type":"Base","quality":{"normal":3}},
-        {"name":"Esperite","type":"Gemologist","quality":{"normal":3}},
+    {"name":"Esperite","type":"Base","quality":{"normal":3},"image":"images/minerals/Esperite.png"},
+    {"name":"Esperite","type":"Gemologist","quality":{"normal":3},"image":"images/minerals/Esperite.png"},
 
-        {"name":"Fairy Stone","type":"Base","quality":{"normal":4}},
-        {"name":"Fairy Stone","type":"Gemologist","quality":{"normal":5}},
+    {"name":"Fairy Stone","type":"Base","quality":{"normal":4},"image":"images/minerals/Fairy_Stone.png"},
+    {"name":"Fairy Stone","type":"Gemologist","quality":{"normal":5},"image":"images/minerals/Fairy_Stone.png"},
 
-        {"name":"Fire Opal","type":"Base","quality":{"normal":5}},
-        {"name":"Fire Opal","type":"Gemologist","quality":{"normal":6}},
+    {"name":"Fire Opal","type":"Base","quality":{"normal":5},"image":"images/minerals/Fire_Opal.png"},
+    {"name":"Fire Opal","type":"Gemologist","quality":{"normal":6},"image":"images/minerals/Fire_Opal.png"},
 
-        {"name":"Fire Quartz","type":"Base","quality":{"normal":3}},
-        {"name":"Fire Quartz","type":"Gemologist","quality":{"normal":3}},
+    {"name":"Fire Quartz","type":"Base","quality":{"normal":3},"image":"images/minerals/Fire_Quartz.png"},
+    {"name":"Fire Quartz","type":"Gemologist","quality":{"normal":3},"image":"images/minerals/Fire_Quartz.png"},
 
-        {"name":"Fluorapatite","type":"Base","quality":{"normal":4}},
-        {"name":"Fluorapatite","type":"Gemologist","quality":{"normal":4}},
+    {"name":"Fluorapatite","type":"Base","quality":{"normal":4},"image":"images/minerals/Fluorapatite.png"},
+    {"name":"Fluorapatite","type":"Gemologist","quality":{"normal":4},"image":"images/minerals/Fluorapatite.png"},
 
-        {"name":"Frozen Tear","type":"Base","quality":{"normal":2}},
-        {"name":"Frozen Tear","type":"Gemologist","quality":{"normal":3}},
+    {"name":"Frozen Tear","type":"Base","quality":{"normal":2},"image":"images/minerals/Frozen_Tear.png"},
+    {"name":"Frozen Tear","type":"Gemologist","quality":{"normal":3},"image":"images/minerals/Frozen_Tear.png"},
 
-        {"name":"Geminite","type":"Base","quality":{"normal":3}},
-        {"name":"Geminite","type":"Gemologist","quality":{"normal":3}},
+    {"name":"Geminite","type":"Base","quality":{"normal":3},"image":"images/minerals/Geminite.png"},
+    {"name":"Geminite","type":"Gemologist","quality":{"normal":3},"image":"images/minerals/Geminite.png"},
 
-        {"name":"Ghost Crystal","type":"Base","quality":{"normal":4}},
-        {"name":"Ghost Crystal","type":"Gemologist","quality":{"normal":4}},
+    {"name":"Ghost Crystal","type":"Base","quality":{"normal":4},"image":"images/minerals/Ghost_Crystal.png"},
+    {"name":"Ghost Crystal","type":"Gemologist","quality":{"normal":4},"image":"images/minerals/Ghost_Crystal.png"},
 
-        {"name":"Granite","type":"Base","quality":{"normal":2}},
-        {"name":"Granite","type":"Gemologist","quality":{"normal":3}},
+    {"name":"Granite","type":"Base","quality":{"normal":2},"image":"images/minerals/Granite.png"},
+    {"name":"Granite","type":"Gemologist","quality":{"normal":3},"image":"images/minerals/Granite.png"},
 
-        {"name":"Helvite","type":"Base","quality":{"normal":6}},
-        {"name":"Helvite","type":"Gemologist","quality":{"normal":6}},
+    {"name":"Helvite","type":"Base","quality":{"normal":6},"image":"images/minerals/Helvite.png"},
+    {"name":"Helvite","type":"Gemologist","quality":{"normal":6},"image":"images/minerals/Helvite.png"},
 
-        {"name":"Hematite","type":"Base","quality":{"normal":3}},
-        {"name":"Hematite","type":"Gemologist","quality":{"normal":3}},
+    {"name":"Hematite","type":"Base","quality":{"normal":3},"image":"images/minerals/Hematite.png"},
+    {"name":"Hematite","type":"Gemologist","quality":{"normal":3},"image":"images/minerals/Hematite.png"},
 
-        {"name":"Jade","type":"Base","quality":{"normal":4}},
-        {"name":"Jade","type":"Gemologist","quality":{"normal":4}},
+    {"name":"Jade","type":"Base","quality":{"normal":4},"image":"images/minerals/Jade.png"},
+    {"name":"Jade","type":"Gemologist","quality":{"normal":4},"image":"images/minerals/Jade.png"},
 
-        {"name":"Jagoite","type":"Base","quality":{"normal":3}},
-        {"name":"Jagoite","type":"Gemologist","quality":{"normal":3}},
+    {"name":"Jagoite","type":"Base","quality":{"normal":3},"image":"images/minerals/Jagoite.png"},
+    {"name":"Jagoite","type":"Gemologist","quality":{"normal":3},"image":"images/minerals/Jagoite.png"},
 
-        {"name":"Jamborite","type":"Base","quality":{"normal":3}},
-        {"name":"Jamborite","type":"Gemologist","quality":{"normal":3}},
+    {"name":"Jamborite","type":"Base","quality":{"normal":3},"image":"images/minerals/Jamborite.png"},
+    {"name":"Jamborite","type":"Gemologist","quality":{"normal":3},"image":"images/minerals/Jamborite.png"},
 
-        {"name":"Jasper","type":"Base","quality":{"normal":3}},
-        {"name":"Jasper","type":"Gemologist","quality":{"normal":3}},
+    {"name":"Jasper","type":"Base","quality":{"normal":3},"image":"images/minerals/Jasper.png"},
+    {"name":"Jasper","type":"Gemologist","quality":{"normal":3},"image":"images/minerals/Jasper.png"},
 
-        {"name":"Kyanite","type":"Base","quality":{"normal":4}},
-        {"name":"Kyanite","type":"Gemologist","quality":{"normal":5}},
+    {"name":"Kyanite","type":"Base","quality":{"normal":4},"image":"images/minerals/Kyanite.png"},
+    {"name":"Kyanite","type":"Gemologist","quality":{"normal":5},"image":"images/minerals/Kyanite.png"},
 
-        {"name":"Lemon Stone","type":"Base","quality":{"normal":4}},
-        {"name":"Lemon Stone","type":"Gemologist","quality":{"normal":4}},
+    {"name":"Lemon Stone","type":"Base","quality":{"normal":4},"image":"images/minerals/Lemon_Stone.png"},
+    {"name":"Lemon Stone","type":"Gemologist","quality":{"normal":4},"image":"images/minerals/Lemon_Stone.png"},
 
-        {"name":"Limestone","type":"Base","quality":{"normal":1}},
-        {"name":"Limestone","type":"Gemologist","quality":{"normal":1}},
+    {"name":"Limestone","type":"Base","quality":{"normal":1},"image":"images/minerals/Limestone.png"},
+    {"name":"Limestone","type":"Gemologist","quality":{"normal":1},"image":"images/minerals/Limestone.png"},
 
-        {"name":"Lunarite","type":"Base","quality":{"normal":4}},
-        {"name":"Lunarite","type":"Gemologist","quality":{"normal":4}},
+    {"name":"Lunarite","type":"Base","quality":{"normal":4},"image":"images/minerals/Lunarite.png"},
+    {"name":"Lunarite","type":"Gemologist","quality":{"normal":4},"image":"images/minerals/Lunarite.png"},
 
-        {"name":"Malachite","type":"Base","quality":{"normal":3}},
-        {"name":"Malachite","type":"Gemologist","quality":{"normal":3}},
+    {"name":"Malachite","type":"Base","quality":{"normal":3},"image":"images/minerals/Malachite.png"},
+    {"name":"Malachite","type":"Gemologist","quality":{"normal":3},"image":"images/minerals/Malachite.png"},
 
-        {"name":"Marble","type":"Base","quality":{"normal":3}},
-        {"name":"Marble","type":"Gemologist","quality":{"normal":3}},
+    {"name":"Marble","type":"Base","quality":{"normal":3},"image":"images/minerals/Marble.png"},
+    {"name":"Marble","type":"Gemologist","quality":{"normal":3},"image":"images/minerals/Marble.png"},
 
-        {"name":"Mudstone","type":"Base","quality":{"normal":2}},
-        {"name":"Mudstone","type":"Gemologist","quality":{"normal":2}},
-
-        {"name":"Nekoite","type":"Base","quality":{"normal":2}},
-        {"name":"Nekoite","type":"Gemologist","quality":{"normal":3}},
-
-        {"name":"Neptunite","type":"Base","quality":{"normal":6}},
-        {"name":"Neptunite","type":"Gemologist","quality":{"normal":6}},
-
-        {"name":"Obsidian","type":"Base","quality":{"normal":4}},
-        {"name":"Obsidian","type":"Gemologist","quality":{"normal":4}},
-
-        {"name":"Ocean Stone","type":"Base","quality":{"normal":4}},
-        {"name":"Ocean Stone","type":"Gemologist","quality":{"normal":4}},
-
-        {"name":"Opal","type":"Base","quality":{"normal":3}},
-        {"name":"Opal","type":"Gemologist","quality":{"normal":3}},
-
-        {"name":"Orpiment","type":"Base","quality":{"normal":2}},
-        {"name":"Orpiment","type":"Gemologist","quality":{"normal":3}},
-
-        {"name":"Petrified Slime","type":"Base","quality":{"normal":3}},
-        {"name":"Petrified Slime","type":"Gemologist","quality":{"normal":3}},
-
-        {"name":"Prismatic Shard","type":"Base","quality":{"normal":6}},
-        {"name":"Prismatic Shard","type":"Gemologist","quality":{"normal":6}},
-
-        {"name":"Pyrite","type":"Base","quality":{"normal":3}},
-        {"name":"Pyrite","type":"Gemologist","quality":{"normal":3}},
-
-        {"name":"Quartz","type":"Base","quality":{"normal":2}},
-        {"name":"Quartz","type":"Gemologist","quality":{"normal":2}},
-
-        {"name":"Ruby","type":"Base","quality":{"normal":4}},
-        {"name":"Ruby","type":"Gemologist","quality":{"normal":5}},
-
-        {"name":"Sandstone","type":"Base","quality":{"normal":2}},
-        {"name":"Sandstone","type":"Gemologist","quality":{"normal":2}},
-
-        {"name":"Slate","type":"Base","quality":{"normal":2}},
-        {"name":"Slate","type":"Gemologist","quality":{"normal":3}},
-
-        {"name":"Soapstone","type":"Base","quality":{"normal":3}},
-        {"name":"Soapstone","type":"Gemologist","quality":{"normal":3}},
-
-        {"name":"Star Shards","type":"Base","quality":{"normal":6}},
-        {"name":"Star Shards","type":"Gemologist","quality":{"normal":6}},
-
-        {"name":"Thunder Egg","type":"Base","quality":{"normal":3}},
-        {"name":"Thunder Egg","type":"Gemologist","quality":{"normal":3}},
-
-        {"name":"Tigerseye","type":"Base","quality":{"normal":4}},
-        {"name":"Tigerseye","type":"Gemologist","quality":{"normal":5}},
-
-        {"name":"Topaz","type":"Base","quality":{"normal":2}},
-        {"name":"Topaz","type":"Gemologist","quality":{"normal":3}}
+        
+      {"name":"Mudstone","type":"Base","quality":{"normal":2},"image":"images/minerals/Mudstone.png"},
+      {"name":"Mudstone","type":"Gemologist","quality":{"normal":2},"image":"images/minerals/Mudstone.png"},
+  
+      {"name":"Nekoite","type":"Base","quality":{"normal":2},"image":"images/minerals/Nekoite.png"},
+      {"name":"Nekoite","type":"Gemologist","quality":{"normal":3},"image":"images/minerals/Nekoite.png"},
+  
+      {"name":"Neptunite","type":"Base","quality":{"normal":6},"image":"images/minerals/Neptunite.png"},
+      {"name":"Neptunite","type":"Gemologist","quality":{"normal":6},"image":"images/minerals/Neptunite.png"},
+  
+      {"name":"Obsidian","type":"Base","quality":{"normal":4},"image":"images/minerals/Obsidian.png"},
+      {"name":"Obsidian","type":"Gemologist","quality":{"normal":4},"image":"images/minerals/Obsidian.png"},
+  
+      {"name":"Ocean Stone","type":"Base","quality":{"normal":4},"image":"images/minerals/Ocean_Stone.png"},
+      {"name":"Ocean Stone","type":"Gemologist","quality":{"normal":4},"image":"images/minerals/Ocean_Stone.png"},
+  
+      {"name":"Opal","type":"Base","quality":{"normal":3},"image":"images/minerals/Opal.png"},
+      {"name":"Opal","type":"Gemologist","quality":{"normal":3},"image":"images/minerals/Opal.png"},
+  
+      {"name":"Orpiment","type":"Base","quality":{"normal":2},"image":"images/minerals/Orpiment.png"},
+      {"name":"Orpiment","type":"Gemologist","quality":{"normal":3},"image":"images/minerals/Orpiment.png"},
+  
+      {"name":"Petrified Slime","type":"Base","quality":{"normal":3},"image":"images/minerals/Petrified_Slime.png"},
+      {"name":"Petrified Slime","type":"Gemologist","quality":{"normal":3},"image":"images/minerals/Petrified_Slime.png"},
+  
+      {"name":"Prismatic Shard","type":"Base","quality":{"normal":6},"image":"images/minerals/Prismatic_Shard.png"},
+      {"name":"Prismatic Shard","type":"Gemologist","quality":{"normal":6},"image":"images/minerals/Prismatic_Shard.png"},
+  
+      {"name":"Pyrite","type":"Base","quality":{"normal":3},"image":"images/minerals/Pyrite.png"},
+      {"name":"Pyrite","type":"Gemologist","quality":{"normal":3},"image":"images/minerals/Pyrite.png"},
+  
+      {"name":"Quartz","type":"Base","quality":{"normal":2},"image":"images/minerals/Quartz.png"},
+      {"name":"Quartz","type":"Gemologist","quality":{"normal":2},"image":"images/minerals/Quartz.png"},
+  
+      {"name":"Ruby","type":"Base","quality":{"normal":4},"image":"images/minerals/Ruby.png"},
+      {"name":"Ruby","type":"Gemologist","quality":{"normal":5},"image":"images/minerals/Ruby.png"},
+  
+      {"name":"Sandstone","type":"Base","quality":{"normal":2},"image":"images/minerals/Sandstone.png"},
+      {"name":"Sandstone","type":"Gemologist","quality":{"normal":2},"image":"images/minerals/Sandstone.png"},
+  
+      {"name":"Slate","type":"Base","quality":{"normal":2},"image":"images/minerals/Slate.png"},
+      {"name":"Slate","type":"Gemologist","quality":{"normal":3},"image":"images/minerals/Slate.png"},
+  
+      {"name":"Soapstone","type":"Base","quality":{"normal":3},"image":"images/minerals/Soapstone.png"},
+      {"name":"Soapstone","type":"Gemologist","quality":{"normal":3},"image":"images/minerals/Soapstone.png"},
+  
+      {"name":"Star Shards","type":"Base","quality":{"normal":6},"image":"images/minerals/Star_Shards.png"},
+      {"name":"Star Shards","type":"Gemologist","quality":{"normal":6},"image":"images/minerals/Star_Shards.png"},
+  
+      {"name":"Thunder Egg","type":"Base","quality":{"normal":3},"image":"images/minerals/Thunder_Egg.png"},
+      {"name":"Thunder Egg","type":"Gemologist","quality":{"normal":3},"image":"images/minerals/Thunder_Egg.png"},
+  
+      {"name":"Tigerseye","type":"Base","quality":{"normal":4},"image":"images/minerals/Tigerseye.png"},
+      {"name":"Tigerseye","type":"Gemologist","quality":{"normal":5},"image":"images/minerals/Tigerseye.png"},
+  
+      {"name":"Topaz","type":"Base","quality":{"normal":2},"image":"images/minerals/Topaz.png"},
+      {"name":"Topaz","type":"Gemologist","quality":{"normal":3},"image":"images/minerals/Topaz.png"}
 
     ]
 }

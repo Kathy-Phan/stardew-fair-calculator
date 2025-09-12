@@ -1,82 +1,85 @@
 {
   "category": "Vegetable",
   "items": [
-    {"name":"Amaranth","type":"Base","quality":{"normal":3,"silver":4,"gold":6,"iridium":8}},
-    {"name":"Amaranth","type":"Tiller","quality":{"normal":3,"silver":5,"gold":6,"iridium":8}},
+    {"name":"Amaranth","type":"Base","quality":{"normal":3,"silver":4,"gold":6,"iridium":8}, "image":"images/vegetables/Amaranth.png"},
+    {"name":"Amaranth","type":"Tiller","quality":{"normal":3,"silver":5,"gold":6,"iridium":8}, "image":"images/vegetables/Amaranth.png"},
 
-    {"name":"Artichoke","type":"Base","quality":{"normal":3,"silver":5,"gold":6,"iridium":8}},
-    {"name":"Artichoke","type":"Tiller","quality":{"normal":3,"silver":5,"gold":6,"iridium":8}},
+    {"name":"Amaranth","type":"Base","quality":{"normal":3,"silver":4,"gold":6,"iridium":8},"image":"images/vegetables/Amaranth.png"},
+    {"name":"Amaranth","type":"Tiller","quality":{"normal":3,"silver":5,"gold":6,"iridium":8},"image":"images/vegetables/Amaranth.png"},
 
-    {"name":"Beet","type":"Base","quality":{"normal":3,"silver":4,"gold":5,"iridium":8}},
-    {"name":"Beet","type":"Tiller","quality":{"normal":3,"silver":4,"gold":5,"iridium":8}},
+    {"name":"Artichoke","type":"Base","quality":{"normal":3,"silver":5,"gold":6,"iridium":8},"image":"images/vegetables/Artichoke.png"},
+    {"name":"Artichoke","type":"Tiller","quality":{"normal":3,"silver":5,"gold":6,"iridium":8},"image":"images/vegetables/Artichoke.png"},
 
-    {"name":"Bok Choy","type":"Base","quality":{"normal":2,"silver":4,"gold":5,"iridium":7}},
-    {"name":"Bok Choy","type":"Tiller","quality":{"normal":2,"silver":4,"gold":5,"iridium":7}},
+    {"name":"Beet","type":"Base","quality":{"normal":3,"silver":4,"gold":5,"iridium":8},"image":"images/vegetables/Beet.png"},
+    {"name":"Beet","type":"Tiller","quality":{"normal":3,"silver":4,"gold":5,"iridium":8},"image":"images/vegetables/Beet.png"},
 
-    {"name":"Broccoli","type":"Base","quality":{"normal":2,"silver":3,"gold":5,"iridium":7}},
-    {"name":"Broccoli","type":"Tiller","quality":{"normal":2,"silver":4,"gold":5,"iridium":7}},
+    {"name":"Bok Choy","type":"Base","quality":{"normal":2,"silver":4,"gold":5,"iridium":7},"image":"images/vegetables/Bok_Choy.png"},
+    {"name":"Bok Choy","type":"Tiller","quality":{"normal":2,"silver":4,"gold":5,"iridium":7},"image":"images/vegetables/Bok_Choy.png"},
 
-    {"name":"Carrot","type":"Base","quality":{"normal":2,"silver":3,"gold":4,"iridium":6}},
-    {"name":"Carrot","type":"Tiller","quality":{"normal":2,"silver":3,"gold":4,"iridium":6}},
+    {"name":"Broccoli","type":"Base","quality":{"normal":2,"silver":3,"gold":5,"iridium":7},"image":"images/vegetables/Broccoli.png"},
+    {"name":"Broccoli","type":"Tiller","quality":{"normal":2,"silver":4,"gold":5,"iridium":7},"image":"images/vegetables/Broccoli.png"},
 
-    {"name":"Cauliflower","type":"Base","quality":{"normal":3,"silver":5,"gold":6,"iridium":8}},
-    {"name":"Cauliflower","type":"Tiller","quality":{"normal":3,"silver":5,"gold":6,"iridium":8}},
+    {"name":"Carrot","type":"Base","quality":{"normal":2,"silver":3,"gold":4,"iridium":6},"image":"images/vegetables/Carrot.png"},
+    {"name":"Carrot","type":"Tiller","quality":{"normal":2,"silver":3,"gold":4,"iridium":6},"image":"images/vegetables/Carrot.png"},
 
-    {"name":"Corn","type":"Base","quality":{"normal":2,"silver":3,"gold":4,"iridium":7}},
-    {"name":"Corn","type":"Tiller","quality":{"normal":2,"silver":3,"gold":4,"iridium":7}},
+    {"name":"Cauliflower","type":"Base","quality":{"normal":3,"silver":5,"gold":6,"iridium":8},"image":"images/vegetables/Cauliflower.png"},
+    {"name":"Cauliflower","type":"Tiller","quality":{"normal":3,"silver":5,"gold":6,"iridium":8},"image":"images/vegetables/Cauliflower.png"},
 
-    {"name":"Eggplant","type":"Base","quality":{"normal":2,"silver":3,"gold":5,"iridium":7}},
-    {"name":"Eggplant","type":"Tiller","quality":{"normal":2,"silver":3,"gold":5,"iridium":7}},
+    {"name":"Corn","type":"Base","quality":{"normal":2,"silver":3,"gold":4,"iridium":7},"image":"images/vegetables/Corn.png"},
+    {"name":"Corn","type":"Tiller","quality":{"normal":2,"silver":3,"gold":4,"iridium":7},"image":"images/vegetables/Corn.png"},
 
-    {"name":"Fiddlehead Fern","type":"Base","quality":{"normal":3,"silver":4,"gold":5,"iridium":7}},
-    {"name":"Fiddlehead Fern","type":"Tiller","quality":{"normal":3,"silver":4,"gold":5,"iridium":7}},
+    {"name":"Eggplant","type":"Base","quality":{"normal":2,"silver":3,"gold":5,"iridium":7},"image":"images/vegetables/Eggplant.png"},
+    {"name":"Eggplant","type":"Tiller","quality":{"normal":2,"silver":3,"gold":5,"iridium":7},"image":"images/vegetables/Eggplant.png"},
 
-    {"name":"Garlic","type":"Base","quality":{"normal":2,"silver":3,"gold":5,"iridium":7}},
-    {"name":"Garlic","type":"Tiller","quality":{"normal":2,"silver":3,"gold":5,"iridium":7}},
+    {"name":"Fiddlehead Fern","type":"Base","quality":{"normal":3,"silver":4,"gold":5,"iridium":7},"image":"images/vegetables/Fiddlehead_Fern.png"},
+    {"name":"Fiddlehead Fern","type":"Tiller","quality":{"normal":3,"silver":4,"gold":5,"iridium":7},"image":"images/vegetables/Fiddlehead_Fern.png"},
 
-    {"name":"Green Bean","type":"Base","quality":{"normal":2,"silver":3,"gold":4,"iridium":6}},
-    {"name":"Green Bean","type":"Tiller","quality":{"normal":2,"silver":3,"gold":4,"iridium":6}},
+    {"name":"Garlic","type":"Base","quality":{"normal":2,"silver":3,"gold":5,"iridium":7},"image":"images/vegetables/Garlic.png"},
+    {"name":"Garlic","type":"Tiller","quality":{"normal":2,"silver":3,"gold":5,"iridium":7},"image":"images/vegetables/Garlic.png"},
 
-    {"name":"Hops","type":"Base","quality":{"normal":2,"silver":3,"gold":4,"iridium":6}},
-    {"name":"Hops","type":"Tiller","quality":{"normal":2,"silver":3,"gold":4,"iridium":6}},
+    {"name":"Green Bean","type":"Base","quality":{"normal":2,"silver":3,"gold":4,"iridium":6},"image":"images/vegetables/Green_Bean.png"},
+    {"name":"Green Bean","type":"Tiller","quality":{"normal":2,"silver":3,"gold":4,"iridium":6},"image":"images/vegetables/Green_Bean.png"},
 
-    {"name":"Kale","type":"Base","quality":{"normal":3,"silver":4,"gold":5,"iridium":8}},
-    {"name":"Kale","type":"Tiller","quality":{"normal":3,"silver":4,"gold":5,"iridium":8}},
+    {"name":"Hops","type":"Base","quality":{"normal":2,"silver":3,"gold":4,"iridium":6},"image":"images/vegetables/Hops.png"},
+    {"name":"Hops","type":"Tiller","quality":{"normal":2,"silver":3,"gold":4,"iridium":6},"image":"images/vegetables/Hops.png"},
 
-    {"name":"Parsnip","type":"Base","quality":{"normal":2,"silver":3,"gold":4,"iridium":6}},
-    {"name":"Parsnip","type":"Tiller","quality":{"normal":2,"silver":3,"gold":4,"iridium":6}},
+    {"name":"Kale","type":"Base","quality":{"normal":3,"silver":4,"gold":5,"iridium":8},"image":"images/vegetables/Kale.png"},
+    {"name":"Kale","type":"Tiller","quality":{"normal":3,"silver":4,"gold":5,"iridium":8},"image":"images/vegetables/Kale.png"},
 
-    {"name":"Potato","type":"Base","quality":{"normal":2,"silver":4,"gold":5,"iridium":7}},
-    {"name":"Potato","type":"Tiller","quality":{"normal":2,"silver":4,"gold":5,"iridium":7}},
+    {"name":"Parsnip","type":"Base","quality":{"normal":2,"silver":3,"gold":4,"iridium":6},"image":"images/vegetables/Parsnip.png"},
+    {"name":"Parsnip","type":"Tiller","quality":{"normal":2,"silver":3,"gold":4,"iridium":6},"image":"images/vegetables/Parsnip.png"},
 
-    {"name":"Pumpkin","type":"Base","quality":{"normal":5,"silver":6,"gold":6,"iridium":8}},
-    {"name":"Pumpkin","type":"Tiller","quality":{"normal":5,"silver":6,"gold":6,"iridium":8}},
+    {"name":"Potato","type":"Base","quality":{"normal":2,"silver":4,"gold":5,"iridium":7},"image":"images/vegetables/Potato.png"},
+    {"name":"Potato","type":"Tiller","quality":{"normal":2,"silver":4,"gold":5,"iridium":7},"image":"images/vegetables/Potato.png"},
 
-    {"name":"Radish","type":"Base","quality":{"normal":3,"silver":4,"gold":5,"iridium":7}},
-    {"name":"Radish","type":"Tiller","quality":{"normal":3,"silver":4,"gold":5,"iridium":7}},
+    {"name":"Pumpkin","type":"Base","quality":{"normal":5,"silver":6,"gold":6,"iridium":8},"image":"images/vegetables/Pumpkin.png"},
+    {"name":"Pumpkin","type":"Tiller","quality":{"normal":5,"silver":6,"gold":6,"iridium":8},"image":"images/vegetables/Pumpkin.png"},
 
-    {"name":"Red Cabbage","type":"Base","quality":{"normal":4,"silver":6,"gold":6,"iridium":8}},
-    {"name":"Red Cabbage","type":"Tiller","quality":{"normal":4,"silver":6,"gold":6,"iridium":8}},
+    {"name":"Radish","type":"Base","quality":{"normal":3,"silver":4,"gold":5,"iridium":7},"image":"images/vegetables/Radish.png"},
+    {"name":"Radish","type":"Tiller","quality":{"normal":3,"silver":4,"gold":5,"iridium":7},"image":"images/vegetables/Radish.png"},
 
-    {"name":"Summer Squash","type":"Base","quality":{"normal":2,"silver":3,"gold":4,"iridium":7}},
-    {"name":"Summer Squash","type":"Tiller","quality":{"normal":2,"silver":3,"gold":4,"iridium":7}},
+    {"name":"Red Cabbage","type":"Base","quality":{"normal":4,"silver":6,"gold":6,"iridium":8},"image":"images/vegetables/Red_Cabbage.png"},
+    {"name":"Red Cabbage","type":"Tiller","quality":{"normal":4,"silver":6,"gold":6,"iridium":8},"image":"images/vegetables/Red_Cabbage.png"},
 
-    {"name":"Taro Root","type":"Base","quality":{"normal":3,"silver":4,"gold":5,"iridium":8}},
-    {"name":"Taro Root","type":"Tiller","quality":{"normal":3,"silver":4,"gold":5,"iridium":8}},
+    {"name":"Summer Squash","type":"Base","quality":{"normal":2,"silver":3,"gold":4,"iridium":7},"image":"images/vegetables/Summer_Squash.png"},
+    {"name":"Summer Squash","type":"Tiller","quality":{"normal":2,"silver":3,"gold":4,"iridium":7},"image":"images/vegetables/Summer_Squash.png"},
 
-    {"name":"Tea Leaves","type":"Base","quality":{"normal":2,"silver":null,"gold":null,"iridium":null}},
-    {"name":"Tea Leaves","type":"Tiller","quality":{"normal":2,"silver":null,"gold":null,"iridium":null}},
+    {"name":"Taro Root","type":"Base","quality":{"normal":3,"silver":4,"gold":5,"iridium":8},"image":"images/vegetables/Taro_Root.png"},
+    {"name":"Taro Root","type":"Tiller","quality":{"normal":3,"silver":4,"gold":5,"iridium":8},"image":"images/vegetables/Taro_Root.png"},
 
-    {"name":"Tomato","type":"Base","quality":{"normal":2,"silver":3,"gold":5,"iridium":7}},
-    {"name":"Tomato","type":"Tiller","quality":{"normal":2,"silver":3,"gold":5,"iridium":7}},
+    {"name":"Tea Leaves","type":"Base","quality":{"normal":2,"silver":null,"gold":null,"iridium":null},"image":"images/vegetables/Tea_Leaves.png"},
+    {"name":"Tea Leaves","type":"Tiller","quality":{"normal":2,"silver":null,"gold":null,"iridium":null},"image":"images/vegetables/Tea_Leaves.png"},
 
-    {"name":"Unmilled Rice","type":"Base","quality":{"normal":2,"silver":3,"gold":4,"iridium":6}},
-    {"name":"Unmilled Rice","type":"Tiller","quality":{"normal":2,"silver":3,"gold":4,"iridium":6}},
+    {"name":"Tomato","type":"Base","quality":{"normal":2,"silver":3,"gold":5,"iridium":7},"image":"images/vegetables/Tomato.png"},
+    {"name":"Tomato","type":"Tiller","quality":{"normal":2,"silver":3,"gold":5,"iridium":7},"image":"images/vegetables/Tomato.png"},
 
-    {"name":"Wheat","type":"Base","quality":{"normal":2,"silver":3,"gold":4,"iridium":6}},
-    {"name":"Wheat","type":"Tiller","quality":{"normal":2,"silver":3,"gold":4,"iridium":6}},
+    {"name":"Unmilled Rice","type":"Base","quality":{"normal":2,"silver":3,"gold":4,"iridium":6},"image":"images/vegetables/Unmilled_Rice.png"},
+    {"name":"Unmilled Rice","type":"Tiller","quality":{"normal":2,"silver":3,"gold":4,"iridium":6},"image":"images/vegetables/Unmilled_Rice.png"},
 
-    {"name":"Yam","type":"Base","quality":{"normal":3,"silver":5,"gold":6,"iridium":8}},
-    {"name":"Yam","type":"Tiller","quality":{"normal":3,"silver":5,"gold":6,"iridium":8}}
+    {"name":"Wheat","type":"Base","quality":{"normal":2,"silver":3,"gold":4,"iridium":6},"image":"images/vegetables/Wheat.png"},
+    {"name":"Wheat","type":"Tiller","quality":{"normal":2,"silver":3,"gold":4,"iridium":6},"image":"images/vegetables/Wheat.png"},
+
+    {"name":"Yam","type":"Base","quality":{"normal":3,"silver":5,"gold":6,"iridium":8},"image":"images/vegetables/Yam.png"},
+    {"name":"Yam","type":"Tiller","quality":{"normal":3,"silver":5,"gold":6,"iridium":8},"image":"images/vegetables/Yam.png"}
   ]
 }
