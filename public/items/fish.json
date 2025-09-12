@@ -1,7 +1,7 @@
 {
     "category": "Fish",
     "items": [
-        {"name":"Albacore","type":"Base","quality":{"normal":2,"silver":4,"gold":5,"iridium":7},"image":"images/fish/Albacore.png"},
+        {"name":"Albacore","type":"Base","quality":{"normal":2,"silver":4,"gold":5,"iridium":7}, "image":"images/fish/Albacore.png"},
         {"name":"Albacore","type":"Fisher","quality":{"normal":3,"silver":4,"gold":5,"iridium":7},"image":"images/fish/Albacore.png"},
         {"name":"Albacore","type":"Angler","quality":{"normal":3,"silver":4,"gold":5,"iridium":8},"image":"images/fish/Albacore.png"},
 
