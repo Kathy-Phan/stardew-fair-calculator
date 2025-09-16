@@ -49,13 +49,13 @@
         {"name":"Cockle","type":"Fisher","quality":{"normal":2,"silver":3,"gold":5,"iridium":7},"image":"images/fish/Cockle.png"},
         {"name":"Cockle","type":"Angler","quality":{"normal":2,"silver":4,"gold":5,"iridium":7},"image":"images/fish/Cockle.png"},
 
-        {"name":"Crab","type":"Base","quality":{"normal":3,"silver":4,"gold":null,"iridium":null},"image":"images/fish/Crab.png"},
-        {"name":"Crab","type":"Fisher","quality":{"normal":3,"silver":4,"gold":null,"iridium":null},"image":"images/fish/Crab.png"},
-        {"name":"Crab","type":"Angler","quality":{"normal":3,"silver":4,"gold":null,"iridium":null},"image":"images/fish/Crab.png"},
+        {"name":"Crab","type":"Base","quality":{"normal":3,"silver":4},"image":"images/fish/Crab.png"},
+        {"name":"Crab","type":"Fisher","quality":{"normal":3,"silver":4},"image":"images/fish/Crab.png"},
+        {"name":"Crab","type":"Angler","quality":{"normal":3,"silver":4},"image":"images/fish/Crab.png"},
 
-        {"name":"Crayfish","type":"Base","quality":{"normal":2,"silver":4,"gold":null,"iridium":null},"image":"images/fish/Crayfish.png"},
-        {"name":"Crayfish","type":"Fisher","quality":{"normal":3,"silver":4,"gold":null,"iridium":null},"image":"images/fish/Crayfish.png"},
-        {"name":"Crayfish","type":"Angler","quality":{"normal":3,"silver":4,"gold":null,"iridium":null},"image":"images/fish/Crayfish.png"},
+        {"name":"Crayfish","type":"Base","quality":{"normal":2,"silver":4},"image":"images/fish/Crayfish.png"},
+        {"name":"Crayfish","type":"Fisher","quality":{"normal":3,"silver":4},"image":"images/fish/Crayfish.png"},
+        {"name":"Crayfish","type":"Angler","quality":{"normal":3,"silver":4},"image":"images/fish/Crayfish.png"},
 
         {"name":"Crimsonfish","type":"Base","quality":{"normal":6,"silver":6,"gold":6,"iridium":8},"image":"images/fish/Crimsonfish.png"},
         {"name":"Crimsonfish","type":"Fisher","quality":{"normal":6,"silver":6,"gold":6,"iridium":8},"image":"images/fish/Crimsonfish.png"},
@@ -125,9 +125,9 @@
         {"name":"Lionfish","type":"Fisher","quality":{"normal":3,"silver":4,"gold":5,"iridium":8},"image":"images/fish/Lionfish.png"},
         {"name":"Lionfish","type":"Angler","quality":{"normal":3,"silver":4,"gold":6,"iridium":8},"image":"images/fish/Lionfish.png"},
 
-        {"name":"Lobster","type":"Base","quality":{"normal":3,"silver":4,"gold":null,"iridium":null},"image":"images/fish/Lobster.png"},
-        {"name":"Lobster","type":"Fisher","quality":{"normal":3,"silver":4,"gold":null,"iridium":null},"image":"images/fish/Lobster.png"},
-        {"name":"Lobster","type":"Angler","quality":{"normal":3,"silver":5,"gold":null,"iridium":null},"image":"images/fish/Lobster.png"},
+        {"name":"Lobster","type":"Base","quality":{"normal":3,"silver":4},"image":"images/fish/Lobster.png"},
+        {"name":"Lobster","type":"Fisher","quality":{"normal":3,"silver":4},"image":"images/fish/Lobster.png"},
+        {"name":"Lobster","type":"Angler","quality":{"normal":3,"silver":5},"image":"images/fish/Lobster.png"},
 
         {"name":"Midnight Carp","type":"Base","quality":{"normal":3,"silver":4,"gold":6,"iridium":8},"image":"images/fish/Midnight_Carp.png"},
         {"name":"Midnight Carp","type":"Fisher","quality":{"normal":3,"silver":5,"gold":6,"iridium":8},"image":"images/fish/Midnight_Carp.png"},
@@ -161,9 +161,9 @@
         {"name":"Perch","type":"Fisher","quality":{"normal":2,"silver":3,"gold":5,"iridium":7},"image":"images/fish/Perch.png"},
         {"name":"Perch","type":"Angler","quality":{"normal":2,"silver":4,"gold":5,"iridium":7},"image":"images/fish/Perch.png"},
 
-        {"name":"Periwinkle","type":"Base","quality":{"normal":2,"silver":3,"gold":null,"iridium":null},"image":"images/fish/Periwinkle.png"},
-        {"name":"Periwinkle","type":"Fisher","quality":{"normal":2,"silver":3,"gold":null,"iridium":null},"image":"images/fish/Periwinkle.png"},
-        {"name":"Periwinkle","type":"Angler","quality":{"normal":2,"silver":3,"gold":null,"iridium":null},"image":"images/fish/Periwinkle.png"},
+        {"name":"Periwinkle","type":"Base","quality":{"normal":2,"silver":3},"image":"images/fish/Periwinkle.png"},
+        {"name":"Periwinkle","type":"Fisher","quality":{"normal":2,"silver":3},"image":"images/fish/Periwinkle.png"},
+        {"name":"Periwinkle","type":"Angler","quality":{"normal":2,"silver":3},"image":"images/fish/Periwinkle.png"},
 
         {"name":"Pike","type":"Base","quality":{"normal":3,"silver":4,"gold":5,"iridium":8},"image":"images/fish/Pike.png"},
         {"name":"Pike","type":"Fisher","quality":{"normal":3,"silver":4,"gold":5,"iridium":8},"image":"images/fish/Pike.png"},
@@ -213,9 +213,9 @@
         {"name":"Shad","type":"Fisher","quality":{"normal":2,"silver":4,"gold":5,"iridium":7},"image":"images/fish/Shad.png"},
         {"name":"Shad","type":"Angler","quality":{"normal":3,"silver":4,"gold":5,"iridium":7},"image":"images/fish/Shad.png"},
 
-        {"name":"Shrimp","type":"Base","quality":{"normal":2,"silver":3,"gold":null,"iridium":null},"image":"images/fish/Shrimp.png"},
-        {"name":"Shrimp","type":"Fisher","quality":{"normal":2,"silver":4,"gold":null,"iridium":null},"image":"images/fish/Shrimp.png"},
-        {"name":"Shrimp","type":"Angler","quality":{"normal":3,"silver":4,"gold":null,"iridium":null},"image":"images/fish/Shrimp.png"},
+        {"name":"Shrimp","type":"Base","quality":{"normal":2,"silver":3},"image":"images/fish/Shrimp.png"},
+        {"name":"Shrimp","type":"Fisher","quality":{"normal":2,"silver":4},"image":"images/fish/Shrimp.png"},
+        {"name":"Shrimp","type":"Angler","quality":{"normal":3,"silver":4},"image":"images/fish/Shrimp.png"},
 
         {"name":"Slimejack","type":"Base","quality":{"normal":3,"silver":4,"gold":5,"iridium":8},"image":"images/fish/Slimejack.png"},
         {"name":"Slimejack","type":"Fisher","quality":{"normal":3,"silver":4,"gold":5,"iridium":8},"image":"images/fish/Slimejack.png"},
@@ -225,9 +225,9 @@
         {"name":"Smallmouth Bass","type":"Fisher","quality":{"normal":2,"silver":3,"gold":5,"iridium":7},"image":"images/fish/Smallmouth_Bass.png"},
         {"name":"Smallmouth Bass","type":"Angler","quality":{"normal":2,"silver":4,"gold":5,"iridium":7},"image":"images/fish/Smallmouth_Bass.png"},
 
-        {"name":"Snail","type":"Base","quality":{"normal":2,"silver":3,"gold":null,"iridium":null},"image":"images/fish/Snail.png"},
-        {"name":"Snail","type":"Fisher","quality":{"normal":2,"silver":4,"gold":null,"iridium":null},"image":"images/fish/Snail.png"},
-        {"name":"Snail","type":"Angler","quality":{"normal":3,"silver":4,"gold":null,"iridium":null},"image":"images/fish/Snail.png"},
+        {"name":"Snail","type":"Base","quality":{"normal":2,"silver":3},"image":"images/fish/Snail.png"},
+        {"name":"Snail","type":"Fisher","quality":{"normal":2,"silver":4},"image":"images/fish/Snail.png"},
+        {"name":"Snail","type":"Angler","quality":{"normal":3,"silver":4},"image":"images/fish/Snail.png"},
 
         {"name":"Son of Crimsonfish","type":"Base","quality":{"normal":6,"silver":6,"gold":6,"iridium":8},"image":"images/fish/Son_of_Crimsonfish.png"},
         {"name":"Son of Crimsonfish","type":"Fisher","quality":{"normal":6,"silver":6,"gold":6,"iridium":8},"image":"images/fish/Son_of_Crimsonfish.png"},

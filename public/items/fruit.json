@@ -3,136 +3,87 @@
   "items": [
     {"name":"Ancient Fruit","type":"Base","quality":{"normal":6,"silver":6,"gold":6,"iridium":8}, "image": "images/fruit/Ancient_Fruit.png"},
     {"name":"Ancient Fruit","type":"Tiller","quality":{"normal":6,"silver":6,"gold":6,"iridium":8}, "image": "images/fruit/Ancient_Fruit.png"},
-    {"name":"Ancient Fruit","type":"Knowledge","quality":{"normal":null,"silver":null,"gold":null,"iridium":null}, "image": "images/fruit/Ancient_Fruit.png"},
-    {"name":"Ancient Fruit","type":"TillerAndKnowledge","quality":{"normal":null,"iridium":8}, "image": "images/fruit/Ancient_Fruit.png"},
 
     {"name":"Apple","type":"Base","quality":{"normal":3,"silver":4,"gold":5,"iridium":8},"image":"images/fruit/Apple.png"},
     {"name":"Apple","type":"Tiller","quality":{"normal":3,"silver":4,"gold":5,"iridium":8},"image":"images/fruit/Apple.png"},
-    {"name":"Apple","type":"Knowledge","quality":{"normal":null,"silver":null,"gold":null,"iridium":null},"image":"images/fruit/Apple.png"},
-    {"name":"Apple","type":"TillerAndKnowledge","quality":{"normal":null,"iridium":8},"image":"images/fruit/Apple.png"},
 
     {"name":"Apricot","type":"Base","quality":{"normal":2,"silver":3,"gold":4,"iridium":7},"image":"images/fruit/Apricot.png"},
     {"name":"Apricot","type":"Tiller","quality":{"normal":2,"silver":3,"gold":4,"iridium":7},"image":"images/fruit/Apricot.png"},
-    {"name":"Apricot","type":"Knowledge","quality":{"normal":null,"silver":null,"gold":null,"iridium":null},"image":"images/fruit/Apricot.png"},
-    {"name":"Apricot","type":"TillerAndKnowledge","quality":{"normal":null,"iridium":7},"image":"images/fruit/Apricot.png"},
 
     {"name":"Banana","type":"Base","quality":{"normal":3,"silver":4,"gold":6,"iridium":8},"image":"images/fruit/Banana.png"},
     {"name":"Banana","type":"Tiller","quality":{"normal":3,"silver":5,"gold":6,"iridium":8},"image":"images/fruit/Banana.png"},
-    {"name":"Banana","type":"Knowledge","quality":{"normal":null,"silver":null,"gold":null,"iridium":null},"image":"images/fruit/Banana.png"},
-    {"name":"Banana","type":"TillerAndKnowledge","quality":{"normal":null,"iridium":8},"image":"images/fruit/Banana.png"},
 
     {"name":"Blackberry","type":"Base","quality":{"normal":2,"silver":3,"gold":4,"iridium":6},"image":"images/fruit/Blackberry.png"},
     {"name":"Blackberry","type":"Tiller","quality":{"normal":2,"silver":3,"gold":4,"iridium":6},"image":"images/fruit/Blackberry.png"},
     {"name":"Blackberry","type":"Knowledge","quality":{"normal":2,"silver":3,"gold":5,"iridium":7},"image":"images/fruit/Blackberry.png"},
-    {"name":"Blackberry","type":"TillerAndKnowledge","quality":{"normal":2,"iridium":7},"image":"images/fruit/Blackberry.png"},
+    {"name":"Blackberry","type":"Tiller+Knowledge","quality":{"normal":2,"iridium":7},"image":"images/fruit/Blackberry.png"},
 
     {"name":"Blueberry","type":"Base","quality":{"normal":2,"silver":3,"gold":4,"iridium":7},"image":"images/fruit/Blueberry.png"},
     {"name":"Blueberry","type":"Tiller","quality":{"normal":2,"silver":3,"gold":4,"iridium":7},"image":"images/fruit/Blueberry.png"},
-    {"name":"Blueberry","type":"Knowledge","quality":{"normal":null,"silver":null,"gold":null,"iridium":null},"image":"images/fruit/Blueberry.png"},
-    {"name":"Blueberry","type":"TillerAndKnowledge","quality":{"normal":null,"iridium":null},"image":"images/fruit/Blueberry.png"},
 
     {"name":"Cactus Fruit","type":"Base","quality":{"normal":2,"silver":4,"gold":5,"iridium":7},"image":"images/fruit/Cactus_Fruit.png"},
     {"name":"Cactus Fruit","type":"Tiller","quality":{"normal":2,"silver":4,"gold":5,"iridium":7},"image":"images/fruit/Cactus_Fruit.png"},
-    {"name":"Cactus Fruit","type":"Knowledge","quality":{"normal":null,"silver":null,"gold":null,"iridium":null},"image":"images/fruit/Cactus_Fruit.png"},
-    {"name":"Cactus Fruit","type":"TillerAndKnowledge","quality":{"normal":null,"iridium":null},"image":"images/fruit/Cactus_Fruit.png"},
 
     {"name":"Cherry","type":"Base","quality":{"normal":2,"silver":4,"gold":5,"iridium":7},"image":"images/fruit/Cherry.png"},
     {"name":"Cherry","type":"Tiller","quality":{"normal":2,"silver":4,"gold":5,"iridium":7},"image":"images/fruit/Cherry.png"},
-    {"name":"Cherry","type":"Knowledge","quality":{"normal":null,"silver":null,"gold":null,"iridium":null},"image":"images/fruit/Cherry.png"},
-    {"name":"Cherry","type":"TillerAndKnowledge","quality":{"normal":null,"iridium":null},"image":"images/fruit/Cherry.png"},
 
     {"name":"Coconut","type":"Base","quality":{"normal":3,"silver":4,"gold":5,"iridium":8},"image":"images/fruit/Coconut.png"},
     {"name":"Coconut","type":"Tiller","quality":{"normal":3,"silver":4,"gold":5,"iridium":8},"image":"images/fruit/Coconut.png"},
-    {"name":"Coconut","type":"Knowledge","quality":{"normal":null,"silver":null,"gold":null,"iridium":null},"image":"images/fruit/Coconut.png"},
-    {"name":"Coconut","type":"TillerAndKnowledge","quality":{"normal":null,"iridium":null},"image":"images/fruit/Coconut.png"},
 
     {"name":"Cranberries","type":"Base","quality":{"normal":2,"silver":4,"gold":5,"iridium":7},"image":"images/fruit/Cranberries.png"},
     {"name":"Cranberries","type":"Tiller","quality":{"normal":2,"silver":4,"gold":5,"iridium":7},"image":"images/fruit/Cranberries.png"},
-    {"name":"Cranberries","type":"Knowledge","quality":{"normal":null,"silver":null,"gold":null,"iridium":null},"image":"images/fruit/Cranberries.png"},
-    {"name":"Cranberries","type":"TillerAndKnowledge","quality":{"normal":null,"iridium":null},"image":"images/fruit/Cranberries.png"},
 
     {"name":"Crystal Fruit","type":"Base","quality":{"normal":3,"silver":4,"gold":6,"iridium":8},"image":"images/fruit/Crystal_Fruit.png"},
     {"name":"Crystal Fruit","type":"Tiller","quality":{"normal":3,"silver":5,"gold":6,"iridium":8},"image":"images/fruit/Crystal_Fruit.png"},
-    {"name":"Crystal Fruit","type":"Knowledge","quality":{"normal":null,"silver":null,"gold":null,"iridium":null},"image":"images/fruit/Crystal_Fruit.png"},
-    {"name":"Crystal Fruit","type":"TillerAndKnowledge","quality":{"normal":null,"iridium":null},"image":"images/fruit/Crystal_Fruit.png"},
 
     {"name":"Grape","type":"Base","quality":{"normal":2,"silver":4,"gold":5,"iridium":7},"image":"images/fruit/Grape.png"},
     {"name":"Grape","type":"Tiller","quality":{"normal":2,"silver":4,"gold":5,"iridium":7},"image":"images/fruit/Grape.png"},
-    {"name":"Grape","type":"Knowledge","quality":{"normal":null,"silver":null,"gold":null,"iridium":null},"image":"images/fruit/Grape.png"},
-    {"name":"Grape","type":"TillerAndKnowledge","quality":{"normal":null,"iridium":null},"image":"images/fruit/Grape.png"},
 
     {"name":"Hot Pepper","type":"Base","quality":{"normal":2,"silver":3,"gold":4,"iridium":6},"image":"images/fruit/Hot_Pepper.png"},
     {"name":"Hot Pepper","type":"Tiller","quality":{"normal":2,"silver":3,"gold":4,"iridium":6},"image":"images/fruit/Hot_Pepper.png"},
-    {"name":"Hot Pepper","type":"Knowledge","quality":{"normal":null,"silver":null,"gold":null,"iridium":null},"image":"images/fruit/Hot_Pepper.png"},
-    {"name":"Hot Pepper","type":"TillerAndKnowledge","quality":{"normal":null,"iridium":null},"image":"images/fruit/Hot_Pepper.png"},
 
     {"name":"Mango","type":"Base","quality":{"normal":3,"silver":4,"gold":5,"iridium":8},"image":"images/fruit/Mango.png"},
     {"name":"Mango","type":"Tiller","quality":{"normal":3,"silver":4,"gold":6,"iridium":8},"image":"images/fruit/Mango.png"},
-    {"name":"Mango","type":"Knowledge","quality":{"normal":null,"silver":null,"gold":null,"iridium":null},"image":"images/fruit/Mango.png"},
-    {"name":"Mango","type":"TillerAndKnowledge","quality":{"normal":null,"iridium":null},"image":"images/fruit/Mango.png"},
 
     {"name":"Melon","type":"Base","quality":{"normal":4,"silver":6,"gold":6,"iridium":8},"image":"images/fruit/Melon.png"},
     {"name":"Melon","type":"Tiller","quality":{"normal":4,"silver":6,"gold":6,"iridium":8},"image":"images/fruit/Melon.png"},
-    {"name":"Melon","type":"Knowledge","quality":{"normal":null,"silver":null,"gold":null,"iridium":null},"image":"images/fruit/Melon.png"},
-    {"name":"Melon","type":"TillerAndKnowledge","quality":{"normal":null,"iridium":null},"image":"images/fruit/Melon.png"},
 
     {"name":"Orange","type":"Base","quality":{"normal":3,"silver":4,"gold":5,"iridium":8},"image":"images/fruit/Orange.png"},
     {"name":"Orange","type":"Tiller","quality":{"normal":3,"silver":4,"gold":5,"iridium":8},"image":"images/fruit/Orange.png"},
-    {"name":"Orange","type":"Knowledge","quality":{"normal":null,"silver":null,"gold":null,"iridium":null},"image":"images/fruit/Orange.png"},
-    {"name":"Orange","type":"TillerAndKnowledge","quality":{"normal":null,"iridium":null},"image":"images/fruit/Orange.png"},
 
     {"name":"Peach","type":"Base","quality":{"normal":3,"silver":4,"gold":6,"iridium":8},"image":"images/fruit/Peach.png"},
     {"name":"Peach","type":"Tiller","quality":{"normal":3,"silver":4,"gold":6,"iridium":8},"image":"images/fruit/Peach.png"},
-    {"name":"Peach","type":"Knowledge","quality":{"normal":null,"silver":null,"gold":null,"iridium":null},"image":"images/fruit/Peach.png"},
-    {"name":"Peach","type":"TillerAndKnowledge","quality":{"normal":null,"iridium":null},"image":"images/fruit/Peach.png"},
 
     {"name":"Pineapple","type":"Base","quality":{"normal":5,"silver":6,"gold":6,"iridium":8},"image":"images/fruit/Pineapple.png"},
     {"name":"Pineapple","type":"Tiller","quality":{"normal":5,"silver":6,"gold":6,"iridium":8},"image":"images/fruit/Pineapple.png"},
-    {"name":"Pineapple","type":"Knowledge","quality":{"normal":null,"silver":null,"gold":null,"iridium":null},"image":"images/fruit/Pineapple.png"},
-    {"name":"Pineapple","type":"TillerAndKnowledge","quality":{"normal":null,"iridium":null},"image":"images/fruit/Pineapple.png"},
 
     {"name":"Pomegranate","type":"Base","quality":{"normal":3,"silver":4,"gold":6,"iridium":8},"image":"images/fruit/Pomegranate.png"},
     {"name":"Pomegranate","type":"Tiller","quality":{"normal":3,"silver":4,"gold":6,"iridium":8},"image":"images/fruit/Pomegranate.png"},
-    {"name":"Pomegranate","type":"Knowledge","quality":{"normal":null,"silver":null,"gold":null,"iridium":null},"image":"images/fruit/Pomegranate.png"},
-    {"name":"Pomegranate","type":"TillerAndKnowledge","quality":{"normal":null,"iridium":null},"image":"images/fruit/Pomegranate.png"},
 
     {"name":"Powdermelon","type":"Base","quality":{"normal":2,"silver":3,"gold":5,"iridium":7},"image":"images/fruit/Powdermelon.png"},
     {"name":"Powdermelon","type":"Tiller","quality":{"normal":2,"silver":3,"gold":5,"iridium":7},"image":"images/fruit/Powdermelon.png"},
-    {"name":"Powdermelon","type":"Knowledge","quality":{"normal":null,"silver":null,"gold":null,"iridium":null},"image":"images/fruit/Powdermelon.png"},
-    {"name":"Powdermelon","type":"TillerAndKnowledge","quality":{"normal":null,"iridium":null},"image":"images/fruit/Powdermelon.png"},
 
     {"name":"Qi Fruit","type":"Base","quality":{"normal":1,"silver":null,"gold":null,"iridium":1},"image":"images/fruit/Qi_Fruit.png"},
     {"name":"Qi Fruit","type":"Tiller","quality":{"normal":1,"silver":null,"gold":null,"iridium":1},"image":"images/fruit/Qi_Fruit.png"},
-    {"name":"Qi Fruit","type":"Knowledge","quality":{"normal":null,"silver":null,"gold":null,"iridium":null},"image":"images/fruit/Qi_Fruit.png"},
-    {"name":"Qi Fruit","type":"TillerAndKnowledge","quality":{"normal":null,"iridium":1},"image":"images/fruit/Qi_Fruit.png"},
 
     {"name":"Rhubarb","type":"Base","quality":{"normal":4,"silver":5,"gold":6,"iridium":8},"image":"images/fruit/Rhubarb.png"},
     {"name":"Rhubarb","type":"Tiller","quality":{"normal":4,"silver":6,"gold":6,"iridium":8},"image":"images/fruit/Rhubarb.png"},
-    {"name":"Rhubarb","type":"Knowledge","quality":{"normal":null,"silver":null,"gold":null,"iridium":null},"image":"images/fruit/Rhubarb.png"},
-    {"name":"Rhubarb","type":"TillerAndKnowledge","quality":{"normal":null,"iridium":8},"image":"images/fruit/Rhubarb.png"},
 
     {"name":"Salmonberry","type":"Base","quality":{"normal":1,"silver":2,"gold":3,"iridium":5},"image":"images/fruit/Salmonberry.png"},
     {"name":"Salmonberry","type":"Tiller","quality":{"normal":1,"silver":2,"gold":3,"iridium":5},"image":"images/fruit/Salmonberry.png"},
     {"name":"Salmonberry","type":"Knowledge","quality":{"normal":1,"silver":2,"gold":4,"iridium":6},"image":"images/fruit/Salmonberry.png"},
-    {"name":"Salmonberry","type":"TillerAndKnowledge","quality":{"normal":1,"iridium":6},"image":"images/fruit/Salmonberry.png"},
+    {"name":"Salmonberry","type":"Tiller+Knowledge","quality":{"normal":1,"iridium":6},"image":"images/fruit/Salmonberry.png"},
 
     {"name":"Spice Berry","type":"Base","quality":{"normal":2,"silver":4,"gold":5,"iridium":7},"image":"images/fruit/Spice_Berry.png"},
     {"name":"Spice Berry","type":"Tiller","quality":{"normal":2,"silver":4,"gold":5,"iridium":7},"image":"images/fruit/Spice_Berry.png"},
-    {"name":"Spice Berry","type":"Knowledge","quality":{"normal":null,"silver":null,"gold":null,"iridium":null},"image":"images/fruit/Spice_Berry.png"},
-    {"name":"Spice Berry","type":"TillerAndKnowledge","quality":{"normal":null,"iridium":null},"image":"images/fruit/Spice_Berry.png"},
 
     {"name":"Starfruit","type":"Base","quality":{"normal":6,"silver":6,"gold":6,"iridium":8},"image":"images/fruit/Starfruit.png"},
     {"name":"Starfruit","type":"Tiller","quality":{"normal":6,"silver":6,"gold":6,"iridium":8},"image":"images/fruit/Starfruit.png"},
-    {"name":"Starfruit","type":"Knowledge","quality":{"normal":null,"silver":null,"gold":null,"iridium":null},"image":"images/fruit/Starfruit.png"},
-    {"name":"Starfruit","type":"TillerAndKnowledge","quality":{"normal":null,"iridium":8},"image":"images/fruit/Starfruit.png"},
 
     {"name":"Strawberry","type":"Base","quality":{"normal":3,"silver":4,"gold":5,"iridium":8},"image":"images/fruit/Strawberry.png"},
     {"name":"Strawberry","type":"Tiller","quality":{"normal":3,"silver":4,"gold":5,"iridium":8},"image":"images/fruit/Strawberry.png"},
-    {"name":"Strawberry","type":"Knowledge","quality":{"normal":null,"silver":null,"gold":null,"iridium":null},"image":"images/fruit/Strawberry.png"},
-    {"name":"Strawberry","type":"TillerAndKnowledge","quality":{"normal":null,"iridium":8},"image":"images/fruit/Strawberry.png"},
 
     {"name":"Wild Plum","type":"Base","quality":{"normal":2,"silver":4,"gold":5,"iridium":7},"image":"images/fruit/Wild_Plum.png"},
-    {"name":"Wild Plum","type":"Tiller","quality":{"normal":2,"silver":4,"gold":5,"iridium":7},"image":"images/fruit/Wild_Plum.png"},
-    {"name":"Wild Plum","type":"Knowledge","quality":{"normal":null,"silver":null,"gold":null,"iridium":null},"image":"images/fruit/Wild_Plum.png"},
-    {"name":"Wild Plum","type":"TillerAndKnowledge","quality":{"normal":null,"iridium":7},"image":"images/fruit/Wild_Plum.png"}  ]
+    {"name":"Wild Plum","type":"Tiller","quality":{"normal":2,"silver":4,"gold":5,"iridium":7},"image":"images/fruit/Wild_Plum.png"}
+  ]
 }

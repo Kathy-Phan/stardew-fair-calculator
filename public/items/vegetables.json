@@ -67,8 +67,8 @@
     {"name":"Taro Root","type":"Base","quality":{"normal":3,"silver":4,"gold":5,"iridium":8},"image":"images/vegetables/Taro_Root.png"},
     {"name":"Taro Root","type":"Tiller","quality":{"normal":3,"silver":4,"gold":5,"iridium":8},"image":"images/vegetables/Taro_Root.png"},
 
-    {"name":"Tea Leaves","type":"Base","quality":{"normal":2,"silver":null,"gold":null,"iridium":null},"image":"images/vegetables/Tea_Leaves.png"},
-    {"name":"Tea Leaves","type":"Tiller","quality":{"normal":2,"silver":null,"gold":null,"iridium":null},"image":"images/vegetables/Tea_Leaves.png"},
+    {"name":"Tea Leaves","type":"Base","quality":{"normal":2},"image":"images/vegetables/Tea_Leaves.png"},
+    {"name":"Tea Leaves","type":"Tiller","quality":{"normal":2},"image":"images/vegetables/Tea_Leaves.png"},
 
     {"name":"Tomato","type":"Base","quality":{"normal":2,"silver":3,"gold":5,"iridium":7},"image":"images/vegetables/Tomato.png"},
     {"name":"Tomato","type":"Tiller","quality":{"normal":2,"silver":3,"gold":5,"iridium":7},"image":"images/vegetables/Tomato.png"},
