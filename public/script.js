@@ -4,8 +4,8 @@ const app = Vue.createApp({
             categories: [],
             selectedItems: [],
             profession: 'Base',
-            activeTab: 0
-
+            activeTab: 0,
+            searchTerm: ''
         }
     },
     async mounted() {
@@ -26,16 +26,30 @@ const app = Vue.createApp({
             // fetch all JSON files and store in this.categories
             try {
                 const fetchPromises = data.map(JSONfile =>
-                    fetch(JSONfile).then(res => res.json())
+                    fetch(JSONfile)
+                        .then(res => res.json())
+                        .then(category => {
+                            category.items = category.items.map(item => ({
+                                ...item,
+                                type: item.type || 'Base'
+                            }));
+                            return category;
+                        })
                 );
+        
                 const fetchedCategories = await Promise.all(fetchPromises);
-                this.categories = fetchedCategories;
+                const allItems = fetchedCategories.flatMap(c => c.items);
+        
+                this.categories = [
+                    { category: 'All', items: allItems },
+                    ...fetchedCategories
+                ];
             } catch (e) {
                 console.log("Could not fetch data: ", e)
                 this.categories = [];
             }
         },
-        addItem(item, quality, index) {
+        addItem(item, quality, category) {
             if (this.selectedItems.length > 9) {
                 alert("Maximum 9 items");
                 return;
@@ -45,7 +59,7 @@ const app = Vue.createApp({
             const newItem = {
                 name: item.name,
                 quality: quality,
-                category: this.categories[index].name,
+                category: category.category,
                 points: points,
                 type: item.type,
                 id: Date.now() + Math.random()
@@ -78,6 +92,29 @@ const app = Vue.createApp({
         },
         getUniqueCategories() {
             return [...new Set(this.selectedItems.map(item => item.category))];
+        },
+        getOverlayImage(name) {
+            let key = '';
+
+            if (name.includes('Aged Roe')) key = 'Aged_Roe';
+            else if (name.includes('Dried Fruit')) key = 'Dried_Fruit';
+            else if (name.includes('Honey') && name !== 'Honey (Wild)') key = 'Honey';
+            else if (name.includes('Jelly') && name !== 'Jelly') key = 'Jelly';
+            else if (name.includes('Wine') && name !== 'Wine') key = 'Wine';
+            else if (name.includes('Juice') && name !== 'Juice') key = 'Juice';
+            else if (name.includes('Pickles') && name !== 'Pickles') key = 'Pickles';
+            else return '';
+
+            switch(key) {
+                case 'Aged_Roe': return 'images/artisanGoods/Aged_Roe_Overlay.png';
+                case 'Dried_Fruit': return 'images/artisanGoods/Dried_Fruit_Overlay.png';
+                case 'Honey': return 'images/artisanGoods/Honey_Overlay.png';
+                case 'Jelly': return 'images/artisanGoods/Jelly_Overlay.png';
+                case 'Wine': return 'images/artisanGoods/Wine_Overlay.png';
+                case 'Juice': return 'images/artisanGoods/Juice_Overlay.png';
+                case 'Pickles': return 'images/artisanGoods/Pickles_Overlay.png';
+                default: return '';
+            }
         }
     },
     computed: {
@@ -104,7 +141,9 @@ const app = Vue.createApp({
             }
             const items = this.categories[this.activeTab].items;
             return items.filter(item => {
-                return item.type === this.profession;
+                const matchProf = item.type === this.profession;
+                const matchSearch = item.name.toLowerCase().includes(this.searchTerm.toLowerCase());
+                return matchProf && matchSearch;
             });
         }
     }

@@ -17,7 +17,11 @@ body {
     font-weight: 500;
 }
 
-.normal { color: gray }
+/* .normal { color: gray }
 .silver { color: silver}
 .gold { color: gold }
-.iridium { color: purple }
+.iridium { color: purple } */
+
+#bin {
+    width: 10px;
+}

@@ -10,142 +10,153 @@
     
 </head>
 <body>
-    <!-- <p class="typewriter" id="letter"></p>
-    <script src="typewriter.js"></script> -->
     <div id="app">
- 
-        <h1>Stardew Valley Grange Fair</h1>
-        <p>Search for the item here or go through the tabs below to add to your display!</p>
+        <div class="card-container">
+            <h1>Stardew Valley Grange Fair Calculator</h1>
+            <p>This is a <b>fan-made</b> calculator, built to simplify calculating points in the Grange Display for the <i>Stardew Valley Fair</i>. </p>
+            <br>
 
-        
-        <!-- Search Bar -->
-        <!-- <div class="search-bar">
-            <div class="row">
-                <div class="quality-dropdown">
-                    <div class="selected">Star</div>
-                        <ul class="options">
-                            <li data-value="" selected>None</li>
-                            <li data-value="silver"><img src="images/silver.png" /></li>
-                            <li data-value="gold"><img src="images/gold.png" /></li>
-                            <li data-value="iridium"><img src="images/iridium.png" /></li>
-                        </ul>
-                    </div>
-
-
-                <input type="text" id="input-box" placeholder="type here..." autocomplete="off">
-                <ul id="item-list"></ul>
+            <!-- Search Bar -->
+            <div class="search-bar">
+                <div class="row">
+                    <img src="images/search-icon.png" alt="search icon" class="search-icon">
+                    <input type="text" id="input-box" placeholder="Search items..." autocomplete="off" v-model="searchTerm">
+                    <ul id="item-list"></ul>
+                </div>
             </div>
-        </div> -->
 
-        <!-- Modal -->
-        <div class="modal-container">
-            <button class="close-btn">x</button>
-            <div class="modal">
-                <h3>Selected Items: ({{ selectedItems.length }}/9)</h3>
-                <button @click="clearAll">Clear All</button>
-                <div>
-                    <div id="selected-items-container">
-                        <p id="no-items">No items selected yet</p>
-                    </div>
-                    <!-- Selected Items -->
-                    <div v-for="item in selectedItems" :key="item.id">
-                        <div>
-                            <span class="item-name">{{ item.name }}</span>
-                            <img src="images/{{ item.quality }}.png">
-                            <span class="item-quality"></span>
-                            <!-- <span>- {{ item.category }}</span> -->
+            <!-- Modal -->
+            <!-- <div class="modal-container">
+                <button class="close-btn">x</button>
+                <div class="modal">
+                    <h3>Selected Items: ({{ selectedItems.length }}/9)</h3>
+                    <button @click="clearAll">Clear All</button>
+                    <div>
+                        <div id="selected-items-container">
+                            <p id="no-items">No items selected yet</p>
                         </div>
-                        <div>
-                            <span>{{ item.points }}pts</span>
-                            <button @click="removeItem(item.id)">
-                            </button>
+                        <div v-for="item in selectedItems" :key="item.id">
+                            <div>
+                                <span class="item-name">{{ item.name }}&nbsp;</span>
+                                <img v-if="item.quality !== 'normal'" :src="'images/' + item.quality + '.png'">
+                                <span class="item-quality"></span>
+                                <span>{{ item.points ?? 0 }}pts</span>
+                                <button @click="removeItem(item.id)">
+                                    <img id="bin" src="images/bin.png">
+                                </button>
+                            </div>
                         </div>
                     </div>
-                </div>
-           
+            
 
-                <h2>Current Score</h2>
-                
-                --------------------------------
-                <div>
-                    <span>Base Points: {{ score.base }}</span>
-                </div>
+                    <h2>Current Score</h2>
+                    
+                    --------------------------------
+                    <div>
+                        <span>Base Points: {{ score.base }}</span>
+                    </div>
 
-                <div>
-                    <span>Unique Categories ({{ getUniqueCategories().length }}/6): {{ score.category }}</span>
-                </div>
+                    <div>
+                        <span>Unique Categories ({{ getUniqueCategories().length }}/6): {{ score.category }}</span>
+                    </div>
 
-                <div>
-                    <span>Item Points: {{ score.sumItems }}</span>
-                </div>
+                    <div>
+                        <span>Item Points: {{ score.sumItems }}</span>
+                    </div>
 
-                <div>
-                    <span>Total Score: {{ score.total }}</span>
-                </div>
+                    <div>
+                        <span>Total Score: {{ score.total }}</span>
+                    </div>
 
+                </div>
+            </div> -->
+
+            <div>
+                <h3>Select Your Professions:</h3>
+                <div class="profession-tabs">
+                    <button
+                        v-for="prof in ['Base', 'Rancher', 'Tiller', 'Artisan', 'Fisher', 'Gemologist']"
+                        :key="prof"
+                        @click="profession = prof"
+                        :class="['item-profession', prof.toLowerCase()]"
+
+                    >
+                        {{ prof === 'Base' ? 'No Professions' : prof }}
+                    </button>
+                </div>
             </div>
         </div>
-
-        <div>
-            <h3>Select Your Professions:</h3>
-            <div>
+        
+        <div class="categories-container">
+            <!-- Category Tabs -->
+            <div class="category-tabs">
                 <button
-                    v-for="prof in ['Base', 'Rancher', 'Tiller', 'Artisan', 'Fisher']"
-                    :key="prof"
-                    @click="profession = prof"
+                    v-for="(category, index) in categories"
+                    :key="index"
+                    @click="activeTab = index"
+                    :class="[{ active: activeTab == index }, category.category]"
                 >
-                    {{ prof === 'Base' ? 'No Professions' : prof }}
+                {{ category.category }}
                 </button>
             </div>
-        </div>
-    
-        <div class="stardew-items">
-            <div>
-                <div>
-                    <button
-                        v-for="(category, index) in categories"
-                        :key="index"
-                        @click="activeTab = index"
-                    >
-                        {{ category.category }}
-                    </button>
-                    <!-- get all items from active tab category -->
-                    <div v-for="item in filterItems" :key="item.id">
-                        {{ item.name }}
-                        <!-- Show profession items -->
-                        <span v-if="item.type !== 'Base'">{{ item.type }}</span>
-                    </div>
-                </div>
-            </div>
 
-            
-            <div>
-                <div>
-                    <div
-                        v-for="(item, index) in filterItems"
-                        :key="index"
-                    >
-                        <div>
-                            <h4>
-                                {{ item.name }}
-                                <span v-if="item.type !== 'Base'">
-                                    {{ item.type }}
+            <div class="stardew-items">
+                <span v-if="filterItems.length == 0">No items for this profession</span>
+                <div
+                    v-for="(item, index) in filterItems"
+                    :key="index"
+                >
+                    <div class="item-card">
+                        <div class="item-image-and-name-container">
+                            <div class="item-and-overlay-container">
+                                <!-- Item Image -->
+                                <img 
+                                    v-if="item.image" 
+                                    :src="item.image" 
+                                    :alt="item.name" 
+                                    class="item-image"
+                                >
+                                
+                                <!-- Item image overlay for Artisan Goods -->
+                                <img
+                                    v-if="categories[activeTab].category == 'Artisan Good' || 'All'"
+                                    :src="getOverlayImage(item.name)"
+                                    class="overlay-image"
+                                >
+                                
+                            </div>
+
+                            <div class="item-name-and-prof-container">
+                                <!-- Item name in card -->
+                                <span 
+                                    class="item-name">
+                                    {{ item.name }}
                                 </span>
-                            </h4>
+
+                                <!-- Profession name in card -->
+                                <div 
+                                    v-if="item.type !== 'Base'"
+                                    :class="['item-profession', item.type.toLowerCase()]"
+                                >
+                                    {{ item.type }}
+                                </div>
+                            </div>
                         </div>
                         
-                        <div>
+                        <div class="points-btn-container">
                             <button
                                 v-for="(points, quality) in item.quality"
                                 :key="quality"
-                                @click="addItem(item, quality, index)"
+                                @click="addItem(item, quality, categories[activeTab])"
                                 :disabled="selectedItems.length >= 9"
                             >
-                                <div>
-                                    <img src="images/silver.png">
-                                    <!-- {{ getQualityName(quality) }} -->
+                                <div class="item-star-container">
+                                    <img 
+                                        :src="quality !== 'normal' ? 'images/' + quality + '.png' : 'images/stop.svg'"
+                                        class="quality-image"
+                                    />
                                 </div>
-                                <div>{{ points }}pts</div>
+                                <div>{{ points ?? 0 }}pts</div>
                             </button>
                         </div>
                     </div>
@@ -155,14 +166,7 @@
     </div>
 
 
-    <!-- <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script> -->
-    
-    
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="script.js"></script>
-    <!-- <script src="score.js"></script> -->
-    <!-- <script src="searchBar.js"></script> -->
-
 </body>
 </html>
