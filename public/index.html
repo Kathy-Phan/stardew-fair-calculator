@@ -98,7 +98,7 @@
                         :class="['item-profession', prof]"
                     >
                         <img
-                            :src="prof === 'Base' ? 'images/stop.svg' : '/images/professions/' + prof + '.png'" 
+                            :src="prof === 'Base' ? 'images/stop.svg' : 'images/professions/' + prof.toLowerCase() + '.png'" 
                             :alt="prof" 
                             class="profession-image"
                         >
