@@ -13,8 +13,6 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^5.1.0",
-    "lucide-react": "^0.542.0",
-    "react": "^19.1.1",
     "@vue/cli-service": "^5.0.9"
   },
   "devDependencies": {
