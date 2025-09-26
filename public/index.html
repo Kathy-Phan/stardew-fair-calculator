@@ -25,6 +25,17 @@
                 </div>
             </div>
 
+            <!-- Info -->
+            <p>Here's how the Grange Display works:</p>
+            <div class="description">Bring <b>up to</b> 9 items to put into the display. The display will be graded by the quality and diversity of the items.
+                You will be rewarded with star tokens <img src="images/silver.png"> which can be used in Pierre's stand. 
+                The display is shared in multiplayer but you must claim the prize <b>individually</b> by talking to Mayor Lewis.</div>
+            
+            <p>Tips:</p>
+            <p>You can enter the competition first, then explore the fair to spend your newly earned star tokens.</p>
+            <p>(We made the mistake of grinding for star tokens before entering the competition.)</p>
+            
+
             <!-- Modal -->
             <!-- <div class="modal-container">
                 <button class="close-btn">x</button>
@@ -71,23 +82,31 @@
                 </div>
             </div> -->
 
-            <div>
+            
+        </div>
+        
+        <div class="bottom-card">
+            <!-- Profession Tabs -->
+            <div class="professions">
                 <h3>Select Your Professions:</h3>
+                <p>Having certain skills grants extra points for specific items</p>
                 <div class="profession-tabs">
                     <button
-                        v-for="prof in ['Base', 'Rancher', 'Tiller', 'Artisan', 'Fisher', 'Gemologist']"
+                        v-for="prof in ['Base', 'Rancher', 'Mastery', 'Tapper', 'Tiller', 'Artisan', 'Fisher', 'Angler', 'Knowledge', 'Tiller+Knowledge', 'Gemologist']"
                         :key="prof"
                         @click="profession = prof"
-                        :class="['item-profession', prof.toLowerCase()]"
-
+                        :class="['item-profession', prof]"
                     >
-                        {{ prof === 'Base' ? 'No Professions' : prof }}
+                        <img
+                            :src="prof === 'Base' ? 'images/stop.svg' : 'images/professions/' + prof + '.png'" 
+                            :alt="prof" 
+                            class="profession-image"
+                        >
+                        <!-- {{ prof === 'Base' ? 'No Professions' : prof }} -->
                     </button>
                 </div>
             </div>
-        </div>
-        
-        <div class="categories-container">
+
             <!-- Category Tabs -->
             <div class="category-tabs">
                 <button
@@ -101,7 +120,7 @@
             </div>
 
             <div class="stardew-items">
-                <span v-if="filterItems.length == 0">No items for this profession</span>
+                <span v-if="filterItems.length == 0">No items</span>
                 <div
                     v-for="(item, index) in filterItems"
                     :key="index"

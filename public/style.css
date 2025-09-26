@@ -39,6 +39,7 @@ p {
     border-radius: 5px;
     position: relative;
     border: 1px solid grey;
+    margin-bottom: 50px;
 }
 
 .row {
@@ -60,13 +61,72 @@ input {
     color: #333;
 }
 
+/* Description */
+.description {
+    max-width: 600px;
+}
+
 /* Profession */
+.professions p {
+
+}
+
+.professions h3 {
+    padding-left: 10px;
+}
+
 .profession-tabs {
+    display: flex;
+    justify-content: space-between;
 }
 
 .profession-tabs button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 10px;
+
 }
+
+.profession-tabs button:hover {
+    background-color: #8db5f6;
+}
+
+
+
+.item-profession {
+    background-color: #fff;
+    font-size: 10px;
+    border: none;
+    border-radius: 8px;
+    padding: 2px 5px 2px 5px;
+    text-align: center;
+}
+
+.rancher {
+    background-color: rgb(224, 36, 33);
+}
+
+.tiller {
+    background-color: rgb(21, 122, 49);
+}
+
+.artisan {
+    background-color: rgb(187, 180, 57);
+}
+
+.fisher {
+    background-color: rgb(42, 180, 226);;
+}
+
+.gemologist {
+    background-color: rgb(197, 30, 180);
+}
+
+.profession-image {
+    width: 30px;
+}
+
 /* 
 #item-list {
     position: absolute;
@@ -104,8 +164,8 @@ input {
 
 
 
-/* Category Tabs */
-.categories-container {
+/* Bottom Container */
+.bottom-card {
     background-color: #fff;
     border: 1px solid grey;
     position: relative;
@@ -140,7 +200,7 @@ input {
 /* Item card */
 .stardew-items {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     gap: 20px;
     padding: 20px;
 }
@@ -176,35 +236,6 @@ input {
     font-weight: 200;
     text-align: center;
     height: 20px;
-}
-
-.item-profession {
-    background-color: rgb(74, 74, 74);
-    color: white;
-    font-size: 10px;
-    border-radius: 8px;
-    padding: 2px 5px 2px 5px;
-    text-align: center;
-}
-
-.rancher {
-    background-color: rgb(224, 36, 33);
-}
-
-.tiller {
-    background-color: rgb(21, 122, 49);
-}
-
-.artisan {
-    background-color: rgb(187, 180, 57);
-}
-
-.fisher {
-    background-color: rgb(42, 180, 226);;
-}
-
-.gemologist {
-    background-color: rgb(197, 30, 180);
 }
 
 .item-image {
