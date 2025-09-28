@@ -85,13 +85,16 @@ input {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
     width: 60px;
+    cursor: pointer;
+    padding: 20px 50px 0px 50px;
 
 }
-
+.profession-tabs button.active {
+    background-color: #d6befb;
+}
 .profession-tabs button:hover {
-    background-color: #8db5f6;
+    background-color: #d6befb;
 }
 
 .item-profession {
@@ -103,79 +106,55 @@ input {
     text-align: center;
 }
 
+/* Profession category colour */
 .rancher {
-    background-color: rgb(224, 36, 33);
+    background-color: rgb(246, 114, 111);
 }
-
+.mastery {
+    background-color: rgb(217, 217, 201);
+}
+.tapper {
+    background-color: rgb(247, 198, 106);
+}
 .tiller {
-    background-color: rgb(21, 122, 49);
+    background-color: rgb(66, 196, 103);
 }
-
 .artisan {
     background-color: rgb(187, 180, 57);
 }
-
 .fisher {
     background-color: rgb(42, 180, 226);;
 }
-
+.angler {
+    background-color: rgb(114, 114, 243);
+}
+.knowledge {
+    background-color: rgb(178, 136, 136);
+}
+.tiller\+knowledge {
+    background-color: rgb(122, 166, 120);
+}
 .gemologist {
-    background-color: rgb(197, 30, 180);
+    background-color: rgb(227, 107, 215);
 }
 
 .tiller_knowledge {
     display: flex;
+    margin-bottom: -2px;
 }
 .tiller_img {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
 }
 .knowledge_img {
-    width: 30px; 
-    height: 30px;
+    width: 40px; 
+    height: 40px;
 
 }
 
 .profession-image {
-    width: 30px;
+    width: 40px;
 }
-
-/* 
-#item-list {
-    position: absolute;
-    top: 35px;
-    width: 455px;
-    list-style: none;
-    border: 1px solid #ccc;
-    border-top: none;
-    border-radius: 0 0 5px 5px;
-    max-height: 200px;
-    overflow-y: auto;
-    background-color: #fff;
-}
-
-#item-list li {
-    padding: 10px;
-    cursor: pointer;
-}
-
-#item-list li:hover {
-    background-color: #f0f0f0;
-} */
-
-
-/* .icon {
-    display: inline-block;
-    width: 1.5em;
-    height: 1.5em;
-    stroke-width: 2;
-    stroke: currentColor;
-    fill: none;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-} */
-
-
 
 /* Bottom Container */
 .bottom-card {
@@ -197,7 +176,8 @@ input {
     background-color: #fff;
     padding: 10px;
     border: none;
-    width: 110px;
+    width: 150px;
+    cursor: pointer;
 }
 
 .category-tabs button.active {

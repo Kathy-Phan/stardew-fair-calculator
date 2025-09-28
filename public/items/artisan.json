@@ -1,5 +1,5 @@
 {
-    "category": "Artisan Good",
+    "category": "Artisan",
     "items": [
         {"name": "Aged Roe (Albacore)", "type": "Base", "quality": {"normal": 3}, "image": "images/fish/Albacore.png"},
         {"name": "Aged Roe (Albacore)", "type": "Artisan", "quality": {"normal": 3}, "image": "images/fish/Albacore.png"},

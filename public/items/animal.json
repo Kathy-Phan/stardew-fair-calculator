@@ -1,5 +1,5 @@
 {
-  "category": "Animal Product",
+  "category": "Animal",
   "items": [
     {"name":"Duck Egg","type":"Base","quality":{"normal":3,"silver":4,"gold":5,"iridium":7}, "image": "images/animalProducts/Duck_Egg.png"},
     {"name":"Duck Egg","type":"Rancher","quality":{"normal":3,"silver":4,"gold":5,"iridium":8}, "image": "images/animalProducts/Duck_Egg.png"},

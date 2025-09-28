@@ -26,10 +26,10 @@
             </div>
 
             <!-- Info -->
-            <p>Here's how the Grange Display works:</p>
-            <div class="description">Bring <b>up to</b> 9 items to put into the display. The display will be graded by the quality and diversity of the items.
-                You will be rewarded with star tokens <img src="images/silver.png"> which can be used in Pierre's stand. 
-                The display is shared in multiplayer but you must claim the prize <b>individually</b> by talking to Mayor Lewis.</div>
+            <h2>How to use:</h2>
+            <p>Add up to 9 items into the cart. You'd want 9 items for maximise points.
+            <p>Having certain skills grants extra points for specific items</p>
+
             
             <p>Tips:</p>
             <p>You can enter the competition first, then explore the fair to spend your newly earned star tokens.</p>
@@ -89,13 +89,12 @@
             <!-- Profession Tabs -->
             <div class="professions">
                 <h3>Select Your Professions:</h3>
-                <p>Having certain skills grants extra points for specific items</p>
                 <div class="profession-tabs">
                     <button
                         v-for="prof in ['Base', 'Rancher', 'Mastery', 'Tapper', 'Tiller', 'Artisan', 'Fisher', 'Angler', 'Knowledge', 'Tiller+Knowledge', 'Gemologist']"
                         :key="prof"
                         @click="profession = prof"
-                        :class="['item-profession', prof]"
+                        :class="['item-profession', prof, {active: profession === prof}]"
                     >
                         <div v-if="prof === 'Tiller+Knowledge'" class="tiller_knowledge">
                             <img src="images/professions/tiller.png" class="tiller_img">
@@ -104,8 +103,8 @@
                         </div>
                         
                         <img v-else :src="prof == 'Base' ? 'images/stop.svg' : 'images/professions/' + prof.toLowerCase() + '.png'" class="profession-image">
-                        
-                        {{ prof === 'Base' ? 'None' : prof }}
+
+                        <h4>{{ prof === 'Base' ? 'None' : prof }}</h4>
                     </button>
                 </div>
             </div>
