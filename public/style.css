@@ -94,8 +94,6 @@ input {
     background-color: #8db5f6;
 }
 
-
-
 .item-profession {
     background-color: #fff;
     font-size: 10px;
@@ -123,6 +121,19 @@ input {
 
 .gemologist {
     background-color: rgb(197, 30, 180);
+}
+
+.tiller_knowledge {
+    display: flex;
+}
+.tiller_img {
+    width: 30px;
+    height: 30px;
+}
+.knowledge_img {
+    width: 30px; 
+    height: 30px;
+
 }
 
 .profession-image {

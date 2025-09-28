@@ -97,11 +97,14 @@
                         @click="profession = prof"
                         :class="['item-profession', prof]"
                     >
-                        <img
-                            :src="prof === 'Base' ? 'images/stop.svg' : 'images/professions/' + prof.toLowerCase() + '.png'" 
-                            :alt="prof" 
-                            class="profession-image"
-                        >
+                        <div v-if="prof === 'Tiller+Knowledge'" class="tiller_knowledge">
+                            <img src="images/professions/tiller.png" class="tiller_img">
+                            <h2>+</h2>
+                            <img src="images/professions/knowledge.png" class="knowledge_img">
+                        </div>
+                        
+                        <img v-else :src="prof == 'Base' ? 'images/stop.svg' : 'images/professions/' + prof.toLowerCase() + '.png'" class="profession-image">
+                        
                         {{ prof === 'Base' ? 'None' : prof }}
                     </button>
                 </div>
