@@ -22,6 +22,12 @@ button {
     margin-bottom: 20px;
 }
 
+.cart {
+    display: flex;
+    justify-content: end;
+    width: 40px;
+}
+
 h1  {
     text-align: center;
     font-weight: 700;
@@ -274,3 +280,9 @@ input {
     background-color: #3c82f5;
 }
 
+
+/* Footer */
+footer {
+    text-align: center;
+    padding-top: 20px;
+}
