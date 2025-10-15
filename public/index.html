@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grange Fair Score Calculator</title>
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="icon" type="image/x-icon" href="/public/images/junimo pink.png">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Short+Stack&display=swap">
+    
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="modal.css">
     
@@ -39,9 +42,13 @@
             
 
             <!-- Modal -->
-            <div class="modal-container">
-                <button class="close-btn">x</button>
+            <button onClick="document.getElementById('modal-container').style.display='block'">
+                open
+            </button>
+            <div id="modal-container">
                 <div class="modal">
+                    <span onClick="document.getElementById('modal-container').style.display='none'" class="close-btn">x</span>
+                    
                     <h3>Selected Items: ({{ selectedItems.length }}/9)</h3>
                     <button @click="clearAll">Clear All</button>
                     <div>
