@@ -14,7 +14,7 @@
 </head>
 <body>
     <div id="app">
-        <div class="card-container">
+        <div class="top-card">
             <img src="images/junimo pink.png" class="cart">
             <h1>Stardew Valley Grange Fair Calculator</h1>
             
@@ -29,17 +29,6 @@
                     <ul id="item-list"></ul>
                 </div>
             </div>
-
-            <!-- Info -->
-            <h2>How to use:</h2>
-            <p>Add up to 9 items into the cart. You'd want 9 items for maximise points.
-            <p>Having certain skills grants extra points for specific items</p>
-
-            
-            <p>Tips:</p>
-            <p>You can enter the competition first, then explore the fair to spend your newly earned star tokens.</p>
-            <p>(We made the mistake of grinding for star tokens before entering the competition.)</p>
-            
 
             <!-- Modal -->
             <button onClick="document.getElementById('modal-container').style.display='block'">
@@ -77,7 +66,8 @@
                     </div>
 
                     <div>
-                        <span>Unique Categories ({{ getUniqueCategories().length }}/6): {{ score.category }}</span>
+                        <span>Unique Categories ({{ Math.min(getUniqueCategories().length, 6) }}/6): {{ score.category }}</span>
+                        
                     </div>
 
                     <div>

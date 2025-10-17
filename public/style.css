@@ -12,7 +12,7 @@ button {
     font-family: inherit;
 }
 
-.card-container {
+.top-card {
     background-color: #fff;
     border: 1px solid grey;
     border-radius: 10px;
@@ -94,7 +94,8 @@ input {
     width: 60px;
     cursor: pointer;
     padding: 20px 50px 0px 50px;
-    font-size: 10px;
+    color: rgb(91, 90, 90);
+    font-size: 15px;
 
 }
 .profession-tabs button.active {
@@ -149,7 +150,7 @@ input {
 
 .tiller_knowledge {
     display: flex;
-    margin-bottom: -2px;
+    margin-bottom: -27px;
 }
 .tiller_img {
     width: 40px;
@@ -170,6 +171,7 @@ input {
     background-color: #fff;
     border: 1px solid grey;
     position: relative;
+    border-radius: 10px;
 }
 
 .category-tabs {

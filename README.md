@@ -14,17 +14,14 @@ If you dont know what items you have, click items on tables
 
 FIX:
 [x]fix minerals category
-* add images to items
-    * fix gap in artisan goods image + name
-* add alert/note for professions that do not have items
-* unique categories go beyond 6/6 -> 7/6, need to fix
-
-* add a copyright statement at the bottom of page - e.g. all image rights to stardew
-
-* search bar
-    * add points to each item when searching for an item
-
-* sort ascending/descending points for each star 
+[x] add images to items
+[x] fix gap in artisan goods image + name
+[x] add alert/note for professions that do not have items
+[x] fix unique categories - goes to 7/6 
+[x] add a copyright statement at the bottom of page - e.g. all image rights to stardew
+[ ] add professions in cart 
+[ ] add none image
+[ ] sort ascending/descending points for each star 
 
 
 
