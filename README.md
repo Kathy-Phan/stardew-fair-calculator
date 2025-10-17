@@ -13,7 +13,7 @@ If you know what items you have and would like to add up the score, use search b
 If you dont know what items you have, click items on tables
 
 FIX:
-[x]fix minerals category
+[x] fix minerals category
 [x] add images to items
 [x] fix gap in artisan goods image + name
 [x] add alert/note for professions that do not have items
