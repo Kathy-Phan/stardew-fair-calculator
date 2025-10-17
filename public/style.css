@@ -30,10 +30,12 @@ button {
 h1  {
     text-align: center;
     font-weight: 700;
+    font-size: 50px;
 }
 
 p {
     text-align: center;
+    font-size: 20px;
 }
 
 /* Search bar */
@@ -85,7 +87,6 @@ input {
     justify-content: space-between;
     padding: 10px;
 }
-
 .profession-tabs button {
     display: flex;
     flex-direction: column;
@@ -93,6 +94,7 @@ input {
     width: 60px;
     cursor: pointer;
     padding: 20px 50px 0px 50px;
+    font-size: 10px;
 
 }
 .profession-tabs button.active {
@@ -104,11 +106,13 @@ input {
 
 .item-profession {
     background-color: #fff;
-    font-size: 10px;
+    font-size: 15px;
     border: none;
     border-radius: 8px;
     padding: 2px 5px 2px 5px;
     text-align: center;
+    font-size: 13px;
+
 }
 
 /* Profession category colour */
@@ -171,6 +175,7 @@ input {
 .category-tabs {
     border-bottom: 1px solid grey;
     white-space: nowrap;
+    
 }
 
 .category-tabs button.All {
@@ -183,6 +188,7 @@ input {
     border: none;
     width: 150px;
     cursor: pointer;
+    font-size: 20px;
 }
 
 .category-tabs button.active {
