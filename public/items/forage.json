@@ -1,16 +1,16 @@
 {
   "category": "Forage",
   "items": [
-    {"name":"Maple Syrup","type":"Base","quality":{"normal":4,"silver":null,"gold":null,"iridium":null},"image":"images/forage/Maple_Syrup.png"},
+    {"name":"Maple Syrup","type":"Base","quality":{"normal":4},"image":"images/forage/Maple_Syrup.png"},
     {"name":"Maple Syrup","type":"Tapper","quality":{"normal":4},"image":"images/forage/Maple_Syrup.png"},
     
-    {"name":"Mystic Syrup","type":"Base","quality":{"normal":6,"silver":null,"gold":null,"iridium":null},"image":"images/forage/Mystic_Syrup.png"},
+    {"name":"Mystic Syrup","type":"Base","quality":{"normal":6},"image":"images/forage/Mystic_Syrup.png"},
     {"name":"Mystic Syrup","type":"Tapper","quality":{"normal":6},"image":"images/forage/Mystic_Syrup.png"},
 
-    {"name":"Oak Resin","type":"Base","quality":{"normal":3,"silver":null,"gold":null,"iridium":null},"image":"images/forage/Oak_Resin.png"},
+    {"name":"Oak Resin","type":"Base","quality":{"normal":3},"image":"images/forage/Oak_Resin.png"},
     {"name":"Oak Resin","type":"Tapper","quality":{"normal":3},"image":"images/forage/Oak_Resin.png"},
 
-    {"name":"Pine Tar","type":"Base","quality":{"normal":3,"silver":null,"gold":null,"iridium":null},"image":"images/forage/Pine_Tar.png"},
+    {"name":"Pine Tar","type":"Base","quality":{"normal":3},"image":"images/forage/Pine_Tar.png"},
     {"name":"Pine Tar","type":"Tapper","quality":{"normal":3},"image":"images/forage/Pine_Tar.png"},
 
     {"name":"Blue Jazz","type":"Base","quality":{"normal":2,"silver":3,"gold":4,"iridium":7},"image":"images/forage/Blue_Jazz.png"},
@@ -37,7 +37,7 @@
     {"name":"Tulip","type":"Base","quality":{"normal":2,"silver":3,"gold":4,"iridium":6},"image":"images/forage/Tulip.png"},
     {"name":"Tulip","type":"Tiller","quality":{"normal":2,"silver":3,"gold":4,"iridium":6},"image":"images/forage/Tulip.png"},
 
-    {"name":"Cave Carrot","type":"Base","quality":{"normal":2,"silver":null,"gold":null,"iridium":null},"image":"images/forage/Cave_Carrot.png"},
+    {"name":"Cave Carrot","type":"Base","quality":{"normal":2},"image":"images/forage/Cave_Carrot.png"},
 
     {"name":"Chanterelle","type":"Base","quality":{"normal":3,"silver":5,"gold":6,"iridium":8},"image":"images/forage/Chanterelle.png"},
 
@@ -47,7 +47,7 @@
 
     {"name":"Dandelion","type":"Base","quality":{"normal":2,"silver":3,"gold":4,"iridium":6},"image":"images/forage/Dandelion.png"},
 
-    {"name":"Ginger","type":"Base","quality":{"normal":2,"silver":null,"gold":null,"iridium":null},"image":"images/forage/Ginger.png"},
+    {"name":"Ginger","type":"Base","quality":{"normal":2},"image":"images/forage/Ginger.png"},
 
     {"name":"Hazelnut","type":"Base","quality":{"normal":3,"silver":4,"gold":5,"iridium":7},"image":"images/forage/Hazelnut.png"},
 
@@ -63,7 +63,7 @@
 
     {"name":"Red Mushroom","type":"Base","quality":{"normal":2,"silver":4,"gold":5,"iridium":7},"image":"images/forage/Red_Mushroom.png"},
 
-    {"name":"Sap","type":"Base","quality":{"normal":1,"silver":null,"gold":null,"iridium":null},"image":"images/forage/Sap.png"},
+    {"name":"Sap","type":"Base","quality":{"normal":1},"image":"images/forage/Sap.png"},
 
     {"name":"Snow Yam","type":"Base","quality":{"normal":3,"silver":4,"gold":5,"iridium":8},"image":"images/forage/Snow_Yam.png"},
 

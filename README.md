@@ -22,6 +22,9 @@ FIX:
 [ ] add professions in cart 
 [ ] add none image
 [ ] sort ascending/descending points for each star 
+[ ] scroll for items in cart
+[ ] remove items with 0pts
+
 
 
 

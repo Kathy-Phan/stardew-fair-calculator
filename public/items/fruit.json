@@ -63,8 +63,8 @@
     {"name":"Powdermelon","type":"Base","quality":{"normal":2,"silver":3,"gold":5,"iridium":7},"image":"images/fruit/Powdermelon.png"},
     {"name":"Powdermelon","type":"Tiller","quality":{"normal":2,"silver":3,"gold":5,"iridium":7},"image":"images/fruit/Powdermelon.png"},
 
-    {"name":"Qi Fruit","type":"Base","quality":{"normal":1,"silver":null,"gold":null,"iridium":1},"image":"images/fruit/Qi_Fruit.png"},
-    {"name":"Qi Fruit","type":"Tiller","quality":{"normal":1,"silver":null,"gold":null,"iridium":1},"image":"images/fruit/Qi_Fruit.png"},
+    {"name":"Qi Fruit","type":"Base","quality":{"normal":1,"iridium":1},"image":"images/fruit/Qi_Fruit.png"},
+    {"name":"Qi Fruit","type":"Tiller","quality":{"normal":1,"iridium":1},"image":"images/fruit/Qi_Fruit.png"},
 
     {"name":"Rhubarb","type":"Base","quality":{"normal":4,"silver":5,"gold":6,"iridium":8},"image":"images/fruit/Rhubarb.png"},
     {"name":"Rhubarb","type":"Tiller","quality":{"normal":4,"silver":6,"gold":6,"iridium":8},"image":"images/fruit/Rhubarb.png"},
