@@ -2,7 +2,7 @@ const app = Vue.createApp({
     data() {
         return {
             categories: [],
-            selectedItems: [],
+            uniqueItems: [],
             profession: 'Base',
             activeTab: 0,
             searchTerm: ''
@@ -50,27 +50,45 @@ const app = Vue.createApp({
             }
         },
         addItem(item, quality, category) {
-            if (this.selectedItems.length > 9) {
+            if (this.uniqueItems.reduce((sum, item) => item.quantity + sum, 1) > 9) {
                 alert("Maximum 9 items");
                 return;
             }
 
-            const points = item.quality[quality]
-            const newItem = {
-                name: item.name,
-                quality: quality,
-                category: category.category,
-                points: points,
-                type: item.type,
-                id: Date.now() + Math.random()
+            const exists = this.uniqueItems.find(
+                i => i.name == item.name && i.quality == item.quality
+            )
+
+            if (exists) {
+                exists.quantity++;
+            } else {
+                const points = item.quality[quality]
+                const newItem = {
+                    name: item.name,
+                    quality: quality,
+                    image: item.image,
+                    category: category.category,
+                    points: points,
+                    type: item.type,
+                    id: Date.now() + Math.random(),
+                    quantity: 1
+                }
+                this.uniqueItems.push(newItem)
             }
-            this.selectedItems.push(newItem)
+
+           
         },
         removeItem(id) {
-            this.selectedItems = this.selectedItems.filter(item => item.id !== id)
+            this.uniqueItems = this.uniqueItems.filter(item => item.id !== id)
+        },
+        decrementItem(id) {
+            const item = this.uniqueItems.find(i => i.id == id);
+            if (item.quantity > 0) {
+                item.quantity--;
+            }
         },
         clearAll() {
-            this.selectedItems = []
+            this.uniqueItems = []
         },
         getQualityName(quality) {
             switch(quality) {
@@ -91,7 +109,7 @@ const app = Vue.createApp({
             }
         },
         getUniqueCategories() {
-            return [...new Set(this.selectedItems.map(item => item.category))];
+            return [...new Set(this.uniqueItems.map(item => item.category))];
         },
         getOverlayImage(name) {
             let key = '';
@@ -121,18 +139,18 @@ const app = Vue.createApp({
         score() {
             const basePoints = 14;
             // 2x-9 (Where x is the number of items on display).
-            const numItemsPoints = (2 * this.selectedItems.length) - 9;
+            const numItemsPoints = (2 * this.uniqueItems.reduce((sum, item) => sum + item.quantity, 0)) - 9;
             const uniqueCategoryPoints = this.getUniqueCategories();
             // Each category represented in the display earns 5 points, up to a maximum of 30 points
             const categoryPoints = Math.min(30, (5 * uniqueCategoryPoints.length));
-            const itemPoints = this.selectedItems.reduce((sum, item) => sum + item.points, 0);
+            const itemPoints = this.uniqueItems.reduce((sum, item) => sum + (item.points * item.quantity), 0);
 
             return {
                 base: basePoints,
                 numOfItems: numItemsPoints,
                 category: categoryPoints,
                 sumItems: itemPoints,
-                total: basePoints + numItemsPoints + categoryPoints + itemPoints
+                total: basePoints + numItemsPoints + itemPoints + categoryPoints
             }
         },
         filterItems() {

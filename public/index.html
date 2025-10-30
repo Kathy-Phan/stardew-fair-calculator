@@ -14,180 +14,179 @@
 </head>
 <body>
     <div id="app">
-        <div class="top-card">
-            <img src="images/junimo pink.png" class="cart">
-            <h1>Stardew Valley Grange Fair Calculator</h1>
-            
-            <p>This is a <b>fan-made</b> calculator, built to simplify calculating points in the Grange Display for the <i>Stardew Valley Fair</i>. </p>
-            <br>
+        <div class="left-column-container">
+            <div class="top-card">
+                <h1>Stardew Valley Grange Fair Calculator</h1>
+                
+                <p>This is a <b>fan-made</b> calculator, built to simplify calculating points in the Grange Display for the <i>Stardew Valley Fair</i>. </p>
+                <br>
 
-            <!-- Search Bar -->
-            <div class="search-bar">
-                <div class="row">
-                    <img src="images/search-icon.png" alt="search icon" class="search-icon">
-                    <input type="text" id="input-box" placeholder="Search items..." autocomplete="off" v-model="searchTerm">
-                    <ul id="item-list"></ul>
+                <!-- Search Bar -->
+                <div class="search-bar">
+                    <div class="row">
+                        <img src="images/search-icon.png" alt="search icon" class="search-icon">
+                        <input type="text" id="input-box" placeholder="Search items..." autocomplete="off" v-model="searchTerm">
+                        <ul id="item-list"></ul>
+                    </div>
                 </div>
             </div>
 
-            <!-- Modal -->
-            <button onClick="document.getElementById('modal-container').style.display='block'">
-                open
-            </button>
-            <div id="modal-container">
-                <div class="modal">
-                    <span onClick="document.getElementById('modal-container').style.display='none'" class="close-btn">x</span>
-                    
-                    <h3>Selected Items: ({{ selectedItems.length }}/9)</h3>
-                    <button @click="clearAll">Clear All</button>
-                    <div>
-                        <div id="selected-items-container">
-                            <p id="no-items">No items selected yet</p>
-                        </div>
-                        <div v-for="item in selectedItems" :key="item.id">
-                            <div>
-                                <span class="item-name">{{ item.name }}&nbsp;</span>
-                                <img v-if="item.quality !== 'normal'" :src="'images/' + item.quality + '.png'">
-                                <span class="item-quality"></span>
-                                <span>{{ item.points ?? 0 }}pts</span>
-                                <button @click="removeItem(item.id)">
-                                    <img id="bin" src="images/bin.png">
+            <div class="bottom-card">
+                <!-- Profession Tabs -->
+                <div class="professions">
+                    <h3>Select Your Professions:</h3>
+                    <div class="profession-tabs">
+                        <button
+                            v-for="prof in ['Base', 'Rancher', 'Mastery', 'Tapper', 'Tiller', 'Artisan', 'Fisher', 'Angler', 'Knowledge', 'Tiller+Knowledge', 'Gemologist']"
+                            :key="prof"
+                            @click="profession = prof"
+                            :class="['item-profession', prof, {active: profession === prof}]"
+                        >
+                            <div v-if="prof === 'Tiller+Knowledge'" class="tiller_knowledge">
+                                <img src="images/professions/tiller.png" class="tiller_img">
+                                <h2>+</h2>
+                                <img src="images/professions/knowledge.png" class="knowledge_img">
+                            </div>
+                            
+                            <img v-else :src="prof == 'Base' ? 'images/stop.svg' : 'images/professions/' + prof.toLowerCase() + '.png'" class="profession-image">
+    
+                            <h4>{{ prof === 'Base' ? 'None' : prof }}</h4>
+                        </button>
+                    </div>
+                </div>
+    
+                <!-- Category Tabs -->
+                <div class="category-tabs">
+                    <button
+                        v-for="(category, index) in categories"
+                        :key="index"
+                        @click="activeTab = index"
+                        :class="[{ active: activeTab == index }, category.category]"
+                    >
+                    {{ category.category }}
+                    </button>
+                </div>
+    
+                <div class="stardew-items">
+                    <span v-if="filterItems.length == 0">No items</span>
+                    <div
+                        v-for="(item, index) in filterItems"
+                        :key="index"
+                    >
+                        <div class="item-card">
+                            <div class="item-image-and-name-container">
+                                <div class="item-and-overlay-container">
+                                    <!-- Item Image -->
+                                    <img 
+                                        v-if="item.image" 
+                                        :src="item.image" 
+                                        :alt="item.name" 
+                                        class="item-image"
+                                    >
+                                    
+                                    <!-- Item image overlay for Artisan Goods -->
+                                    <img
+                                        v-if="categories[activeTab].category == 'Artisan Good' || 'All'"
+                                        :src="getOverlayImage(item.name)"
+                                        class="overlay-image"
+                                    >
+                                    
+                                </div>
+    
+                                <div class="item-name-and-prof-container">
+                                    <!-- Item name in card -->
+                                    <span 
+                                        class="item-name">
+                                        {{ item.name }}
+                                    </span>
+    
+                                    <!-- Profession name in card -->
+                                    <div 
+                                        v-if="item.type !== 'Base'"
+                                        :class="['item-profession', item.type.toLowerCase()]"
+                                    >
+                                        {{ item.type }}
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="points-btn-container">
+                                <button
+                                    v-for="(points, quality) in item.quality"
+                                    :key="quality"
+                                    @click="addItem(item, quality, categories[activeTab])"
+                                >
+                                    <div class="item-star-container">
+                                        <img 
+                                            :src="quality !== 'normal' ? 'images/' + quality + '.png' : 'images/stop.svg'"
+                                            class="quality-image"
+                                        />
+                                    </div>
+                                    <div>{{ points ?? 0 }}pts</div>
                                 </button>
                             </div>
                         </div>
                     </div>
-            
-
-                    <h2>Current Score</h2>
-                    
-                    --------------------------------
-                    <div>
-                        <span>Base Points: {{ score.base }}</span>
-                    </div>
-
-                    <div>
-                        <span>Unique Categories ({{ Math.min(getUniqueCategories().length, 6) }}/6): {{ score.category }}</span>
-                        
-                    </div>
-
-                    <div>
-                        <span>Item Points: {{ score.sumItems }}</span>
-                    </div>
-
-                    <div>
-                        <span>Total Score: {{ score.total }}</span>
-                    </div>
-
                 </div>
             </div>
 
-            
-            
+            <footer>
+                All information & images are sourced from <i>Stardew Valley</i> &copy; ConcernedApe.
+            </footer>
         </div>
         
-        <div class="bottom-card">
-            <!-- Profession Tabs -->
-            <div class="professions">
-                <h3>Select Your Professions:</h3>
-                <div class="profession-tabs">
-                    <button
-                        v-for="prof in ['Base', 'Rancher', 'Mastery', 'Tapper', 'Tiller', 'Artisan', 'Fisher', 'Angler', 'Knowledge', 'Tiller+Knowledge', 'Gemologist']"
-                        :key="prof"
-                        @click="profession = prof"
-                        :class="['item-profession', prof, {active: profession === prof}]"
-                    >
-                        <div v-if="prof === 'Tiller+Knowledge'" class="tiller_knowledge">
-                            <img src="images/professions/tiller.png" class="tiller_img">
-                            <h2>+</h2>
-                            <img src="images/professions/knowledge.png" class="knowledge_img">
-                        </div>
-                        
-                        <img v-else :src="prof == 'Base' ? 'images/stop.svg' : 'images/professions/' + prof.toLowerCase() + '.png'" class="profession-image">
+        <div class="right-card">
+                <h3>Selected Items: ({{ uniqueItems.reduce((sum, item) => sum + item.quantity, 0) }}/9)</h3>
+                <!-- <button @click="clearAll">Clear</button> -->
 
-                        <h4>{{ prof === 'Base' ? 'None' : prof }}</h4>
-                    </button>
+                <hr>
+
+                <div id="selected-items-container" v-if="uniqueItems.length == 0">
+                    <p id="no-items">No items selected yet</p>
                 </div>
-            </div>
-
-            <!-- Category Tabs -->
-            <div class="category-tabs">
-                <button
-                    v-for="(category, index) in categories"
-                    :key="index"
-                    @click="activeTab = index"
-                    :class="[{ active: activeTab == index }, category.category]"
-                >
-                {{ category.category }}
-                </button>
-            </div>
-
-            <div class="stardew-items">
-                <span v-if="filterItems.length == 0">No items</span>
-                <div
-                    v-for="(item, index) in filterItems"
-                    :key="index"
-                >
-                    <div class="item-card">
-                        <div class="item-image-and-name-container">
-                            <div class="item-and-overlay-container">
-                                <!-- Item Image -->
-                                <img 
-                                    v-if="item.image" 
-                                    :src="item.image" 
-                                    :alt="item.name" 
-                                    class="item-image"
-                                >
-                                
-                                <!-- Item image overlay for Artisan Goods -->
-                                <img
-                                    v-if="categories[activeTab].category == 'Artisan Good' || 'All'"
-                                    :src="getOverlayImage(item.name)"
-                                    class="overlay-image"
-                                >
-                                
+                
+                <div v-for="item in uniqueItems" :key="item.id" class="cart-items">
+                    <div class="cart-item-image">
+                        <img :src="item.image" :alt="item.name" class="item-image">
+                    </div>
+                    <div class="cart-item-description">
+                        <span class="item-name">{{ item.name }} </span>
+                        <div>{{ item.points ?? 0}}pts</div>
+                        <div class="quantity-selector-box">
+                            <div class="quantity-selector">
+                                <button class="increment-count" @click="decrementItem(item.id)">-</button>
+                                <span class="item-count">{{ item.quantity }}</span>
+                                <button class="decrement-count" @click="addItem(item, quality, categories[activeTab])">+</button>
                             </div>
-
-                            <div class="item-name-and-prof-container">
-                                <!-- Item name in card -->
-                                <span 
-                                    class="item-name">
-                                    {{ item.name }}
-                                </span>
-
-                                <!-- Profession name in card -->
-                                <div 
-                                    v-if="item.type !== 'Base'"
-                                    :class="['item-profession', item.type.toLowerCase()]"
-                                >
-                                    {{ item.type }}
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="points-btn-container">
-                            <button
-                                v-for="(points, quality) in item.quality"
-                                :key="quality"
-                                @click="addItem(item, quality, categories[activeTab])"
-                                :disabled="selectedItems.length >= 9"
-                            >
-                                <div class="item-star-container">
-                                    <img 
-                                        :src="quality !== 'normal' ? 'images/' + quality + '.png' : 'images/stop.svg'"
-                                        class="quality-image"
-                                    />
-                                </div>
-                                <div>{{ points ?? 0 }}pts</div>
+                            <button class="remove-item" @click="removeItem(item.id)">
+                                Remove
                             </button>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+                        
+        
+                <hr>
 
-        <footer>
-            All information & images are sourced from <i>Stardew Valley</i> &copy; ConcernedApe.
-        </footer>
+                <h2>Current Score</h2>
+                <div>
+                    <span>Base Points: {{ score.base }}</span>
+                </div>
+
+                <div>
+                    <span>Unique Categories ({{ Math.min(getUniqueCategories().length, 6) }}/6): {{ score.category }}</span>
+                    
+                </div>
+
+                <div>
+                    <span>Item Points: {{ score.sumItems }}</span>
+                </div>
+
+                <div>
+                    <span>Total Score: {{ score.total }}</span>
+                </div>
+
+            </div>
     </div>
 
 

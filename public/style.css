@@ -1,15 +1,27 @@
+#app {
+    display: flex;
+    gap: 10px;
+}
+
+.left-column-container {
+    width: calc(100% - 320px);
+    padding-left: 70px;
+}
+
 body {
     background-color: #d9d9ff;
     font-family: 'Patrick Hand', 'Short Stack', 'Open Sans', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;      
-    margin: 10px;
+    margin: 0;
+    padding: 10px;
+    overflow-x: hidden;
 }
 
 button {
     font-family: inherit;
+}
+
+hr {
+    border-top: 1px solid rgb(204, 204, 204);
 }
 
 .top-card {
@@ -19,12 +31,6 @@ button {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     padding: 40px;
     margin-bottom: 20px;
-}
-
-.cart {
-    display: flex;
-    justify-content: end;
-    width: 40px;
 }
 
 h1  {
@@ -68,16 +74,49 @@ input {
     color: #333;
 }
 
-/* Description */
-.description {
-    max-width: 600px;
+/* Cart */
+.right-card {
+    width: 200px;      
+    position: sticky;
+    top: 1px;
+    align-self: flex-start; 
+    border: 1px solid grey;
+    background-color: #fff;
+    height: 100vh;
+    right: 0;
+    padding: 20px;
+    border-radius: 10px;
 }
+
+.cart-items {
+    display: flex;
+    height: 70px;
+}
+.cart-item-image {
+    padding: 10px;
+}
+
+.quantity-selector-box {
+    display: flex;
+}
+.quantity-selector {
+    border: 1px solid black
+}
+.increment-count, 
+.decrement-count,
+.remove-item {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.item-count {
+    padding: 10px;
+}
+
+
+
 
 /* Profession */
-.professions p {
-
-}
-
 .professions h3 {
     padding-left: 10px;
 }
@@ -172,6 +211,7 @@ input {
     border: 1px solid grey;
     position: relative;
     border-radius: 10px;
+    flex: 1;
 }
 
 .category-tabs {
@@ -186,11 +226,11 @@ input {
 
 .category-tabs button{
     background-color: #fff;
-    padding: 10px;
+    padding: 10px 20px;
     border: none;
-    width: 150px;
+    width: 133px;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .category-tabs button.active {
