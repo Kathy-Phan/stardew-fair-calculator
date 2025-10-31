@@ -54,10 +54,9 @@ const app = Vue.createApp({
                 alert("Maximum 9 items");
                 return;
             }
-
             const exists = this.uniqueItems.find(
-                i => i.name == item.name && i.quality == item.quality
-            )
+                i => i.name === item.name && i.quality === quality
+            );
 
             if (exists) {
                 exists.quantity++;
@@ -75,11 +74,18 @@ const app = Vue.createApp({
                 }
                 this.uniqueItems.push(newItem)
             }
-
-           
         },
         removeItem(id) {
             this.uniqueItems = this.uniqueItems.filter(item => item.id !== id)
+        },
+        incrementItem(item) {
+            let exists = this.uniqueItems.find(
+                i => i.name === item.name && i.quality === item.quality
+            )
+
+            if (exists) {
+                exists.quantity++;
+            }
         },
         decrementItem(id) {
             const item = this.uniqueItems.find(i => i.id == id);

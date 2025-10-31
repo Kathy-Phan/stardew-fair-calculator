@@ -151,9 +151,9 @@
                             <div>{{ item.points ?? 0}}pts</div>
                             <div class="quantity-selector-box">
                                 <div class="quantity-selector">
-                                    <button class="increment-count" @click="decrementItem(item.id)">-</button>
+                                    <button class="decrement-count" @click="decrementItem(item.id)">-</button>
                                     <span class="item-count">{{ item.quantity }}</span>
-                                    <button class="decrement-count" @click="addItem(item, quality, categories[activeTab])">+</button>
+                                    <button class="increment-count" @click="incrementItem(item)">+</button>
                                 </div>
                                 <button class="remove-item" @click="removeItem(item.id)">
                                     Remove

@@ -82,7 +82,6 @@ input {
     align-self: flex-start; 
     border: 1px solid grey;
     background-color: #fff;
-    /* height: 92vh; */
     right: 0;
     padding: 20px;
     border-radius: 10px;
@@ -94,7 +93,6 @@ input {
 }
 .cart-items {
     display: flex;
-    /* height: 70vh; */
 }
 .cart-item-image {
     padding: 10px;
