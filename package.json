@@ -1,6 +1,7 @@
 {
   "name": "stardew-fair-calculator",
   "version": "1.0.0",
+  "type": "module",
   "description": "A Stardew Valley Fair calculator for players who want to optimise their Grange Display and maximize star tokens.",
   "main": "script.js",
   "scripts": {
