@@ -19,11 +19,12 @@ FIX:
 [x] add alert/note for professions that do not have items
 [x] fix unique categories - goes to 7/6 
 [x] add a copyright statement at the bottom of page - e.g. all image rights to stardew
-[ ] add professions in cart 
-[ ] add none image
+[x] add professions in cart 
+[x] add none image
 [ ] sort ascending/descending points for each star 
-[ ] scroll for items in cart
-[ ] remove items with 0pts
+[x] scroll for items in cart
+[x] remove items with 0pts
+[ ] mobile responsiveness 
 
 
 

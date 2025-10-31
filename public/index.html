@@ -118,7 +118,8 @@
                                 >
                                     <div class="item-star-container">
                                         <img 
-                                            :src="quality !== 'normal' ? 'images/' + quality + '.png' : 'images/stop.svg'"
+                                            v-if="quality !== 'normal'"
+                                            :src="'images/' + quality + '.png'"
                                             class="quality-image"
                                         />
                                     </div>
@@ -148,7 +149,13 @@
                         </div>
                         <div class="cart-item-description">
                             <span class="item-name">{{ item.name }} </span>
-                            <div>{{ item.points ?? 0}}pts</div>
+                            <br>
+                            <span>{{ item.points ?? 0}}pts</span>
+                            &nbsp;
+                            <img 
+                                v-if="item.quality !== 'normal'"
+                                :src="'images/' + item.quality + '.png'"
+                            >
                             <div class="quantity-selector-box">
                                 <div class="quantity-selector">
                                     <button class="decrement-count" @click="decrementItem(item.id)">-</button>
