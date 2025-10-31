@@ -79,6 +79,10 @@ const app = Vue.createApp({
             this.uniqueItems = this.uniqueItems.filter(item => item.id !== id)
         },
         incrementItem(item) {
+            if (this.uniqueItems.reduce((sum, item) => sum + item.quantity, 1) > 9) {
+                return;
+            }
+            
             let exists = this.uniqueItems.find(
                 i => i.name === item.name && i.quality === item.quality
             )
@@ -89,8 +93,11 @@ const app = Vue.createApp({
         },
         decrementItem(id) {
             const item = this.uniqueItems.find(i => i.id == id);
-            if (item.quantity > 0) {
+
+            if (item.quantity > 1) {
                 item.quantity--;
+            } else {
+                this.removeItem(id)
             }
         },
         clearAll() {
