@@ -141,30 +141,27 @@
 
                 <hr>
 
-                <div id="selected-items-container" v-if="uniqueItems.length == 0">
-                    <p id="no-items">No items selected yet</p>
-                </div>
-                
-                <div v-for="item in uniqueItems" :key="item.id" class="cart-items">
-                    <div class="cart-item-image">
-                        <img :src="item.image" :alt="item.name" class="item-image">
-                    </div>
-                    <div class="cart-item-description">
-                        <span class="item-name">{{ item.name }} </span>
-                        <div>{{ item.points ?? 0}}pts</div>
-                        <div class="quantity-selector-box">
-                            <div class="quantity-selector">
-                                <button class="increment-count" @click="decrementItem(item.id)">-</button>
-                                <span class="item-count">{{ item.quantity }}</span>
-                                <button class="decrement-count" @click="addItem(item, quality, categories[activeTab])">+</button>
+                <div class="cart-container">
+                    <div v-for="item in uniqueItems" :key="item.id" class="cart-items">
+                        <div class="cart-item-image">
+                            <img :src="item.image" :alt="item.name" class="item-image">
+                        </div>
+                        <div class="cart-item-description">
+                            <span class="item-name">{{ item.name }} </span>
+                            <div>{{ item.points ?? 0}}pts</div>
+                            <div class="quantity-selector-box">
+                                <div class="quantity-selector">
+                                    <button class="increment-count" @click="decrementItem(item.id)">-</button>
+                                    <span class="item-count">{{ item.quantity }}</span>
+                                    <button class="decrement-count" @click="addItem(item, quality, categories[activeTab])">+</button>
+                                </div>
+                                <button class="remove-item" @click="removeItem(item.id)">
+                                    Remove
+                                </button>
                             </div>
-                            <button class="remove-item" @click="removeItem(item.id)">
-                                Remove
-                            </button>
                         </div>
                     </div>
-                </div>
-                        
+                </div>  
         
                 <hr>
 
