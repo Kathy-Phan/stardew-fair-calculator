@@ -80,14 +80,12 @@
                                         :alt="item.name" 
                                         class="item-image"
                                     >
-                                    
                                     <!-- Item image overlay for Artisan Goods -->
                                     <img
                                         v-if="categories[activeTab].category == 'Artisan Good' || 'All'"
                                         :src="getOverlayImage(item.name)"
                                         class="overlay-image"
                                     >
-                                    
                                 </div>
     
                                 <div class="item-name-and-prof-container">
@@ -96,7 +94,6 @@
                                         class="item-name">
                                         {{ item.name }}
                                     </span>
-    
                                     <!-- Profession name in card -->
                                     <div 
                                         v-if="item.type !== 'Base'"
@@ -136,9 +133,7 @@
         <div class="right-card">
                 <h3>Selected Items: ({{ uniqueItems.reduce((sum, item) => sum + item.quantity, 0) }}/9)</h3>
                 <!-- <button @click="clearAll">Clear</button> -->
-
                 <hr>
-
                 <div class="cart-container">
                     <div v-for="item in uniqueItems" :key="item.id" class="cart-items">
                         <div class="cart-item-image">
