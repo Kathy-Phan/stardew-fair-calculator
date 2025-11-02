@@ -54,7 +54,7 @@ p {
 }
 
 /* Search bar */
-.search-bar {
+#search-bar {
     width: 40vw;
     background: #fff;
     margin: 0 auto 0;
@@ -68,7 +68,7 @@ p {
     display: flex;
     align-items: center;
 }
-.search-icon {
+#search-icon {
     width: 20px;
     padding: 20px;
 }
@@ -119,15 +119,13 @@ input {
     overflow: scroll;
     max-width: 100px; 
 }
-.quantity-selector-box {
+#quantity-selector-box {
     display: flex;
 }
-.quantity-selector {
+#quantity-selector {
     border: 1px solid black
 }
-.increment-count, 
-.decrement-count,
-.remove-item {
+.cart-btn{
     border: none;
     background: none;
     cursor: pointer;
@@ -207,7 +205,7 @@ input {
     background-color: rgb(227, 107, 215);
 }
 
-.tiller_knowledge {
+#tiller_knowledge {
     display: flex;
     margin-bottom: -27px;
 }
@@ -221,7 +219,7 @@ input {
 
 }
 
-.profession-image {
+#profession-image {
     width: 40px;
 }
 
@@ -278,12 +276,12 @@ input {
     box-shadow: 4px 4px 8px rgba(0,0,0,0.1);
 }
 
-.item-image-and-name-container {
+#item-image-and-name-container {
     border-radius: 12px;
     padding: 10px;    
 }
 
-.item-and-overlay-container {
+#item-and-overlay-container {
     position: relative;
     display: flex;
     justify-content: center;
@@ -291,7 +289,7 @@ input {
     padding: 10px;
 }
 
-.item-name-and-prof-container {
+#item-name-and-prof-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -319,7 +317,7 @@ input {
 }
 
 /* Points Button */
-.item-star-container {
+#item-star-container {
     height: 16px;
     padding-bottom: 3px;
 }
@@ -329,24 +327,24 @@ input {
     padding: 2px;
 }
 
-.points-btn-container {
+#points-btn-container {
     padding: 10px;
     display: flex;
     justify-content: center;
     gap: 5px;
 }
 
-.points-btn-container button {
+#points-btn-container button {
     background-color: #f5f5f5;
     border: 1px solid #d1d2d4;
     border-radius: 10px;
 }
 
-.points-btn-container button:active {
+#points-btn-container button:active {
     background-color: #3c82f5;
 }
 
-.score-calculation p {
+#score-calculation p {
     font-size: 15px;
     text-align: left;
     margin: 0;

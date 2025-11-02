@@ -19,9 +19,9 @@
                 <br>
 
                 <!-- Search Bar -->
-                <div class="search-bar">
+                <div id="search-bar">
                     <div class="row">
-                        <img src="images/search-icon.png" alt="search icon" class="search-icon">
+                        <img src="images/search-icon.png" alt="search icon" id="search-icon">
                         <input type="text" id="input-box" placeholder="Search items..." autocomplete="off" v-model="searchTerm">
                         <ul id="item-list"></ul>
                     </div>
@@ -40,13 +40,13 @@
                             @click="profession = prof"
                             :class="['item-profession', prof, {active: profession === prof}]"
                         >
-                            <div v-if="prof === 'Tiller+Knowledge'" class="tiller_knowledge">
+                            <div v-if="prof === 'Tiller+Knowledge'" id="tiller_knowledge">
                                 <img src="images/professions/tiller.png" class="tiller_img">
                                 <p>+</p>
                                 <img src="images/professions/knowledge.png" class="knowledge_img">
                             </div>
                             
-                            <img v-else :src="prof == 'Base' ? 'images/stop.svg' : 'images/professions/' + prof.toLowerCase() + '.png'" class="profession-image">
+                            <img v-else :src="prof == 'Base' ? 'images/stop.svg' : 'images/professions/' + prof.toLowerCase() + '.png'" id="profession-image">
     
                             <h4>{{ prof === 'Base' ? 'None' : prof }}</h4>
                         </button>
@@ -72,8 +72,8 @@
                         :key="index"
                     >
                         <div class="item-card">
-                            <div class="item-image-and-name-container">
-                                <div class="item-and-overlay-container">
+                            <div id="item-image-and-name-container">
+                                <div id="item-and-overlay-container">
                                     <!-- Item Image -->
                                     <img 
                                         v-if="item.image" 
@@ -89,7 +89,7 @@
                                     >
                                 </div>
     
-                                <div class="item-name-and-prof-container">
+                                <div id="item-name-and-prof-container">
                                     <!-- Item name in card -->
                                     <span 
                                         class="item-name">
@@ -105,13 +105,13 @@
                                 </div>
                             </div>
                             
-                            <div class="points-btn-container">
+                            <div id="points-btn-container">
                                 <button
                                     v-for="(points, quality) in item.quality"
                                     :key="quality"
                                     @click="addItem(item, quality, categories[activeTab])"
                                 >
-                                    <div class="item-star-container">
+                                    <div id="item-star-container">
                                         <img 
                                             v-if="quality !== 'normal'"
                                             :src="'images/' + quality + '.png'"
@@ -133,7 +133,7 @@
         
         <div class="right-card">
                 <h3>Selected Items: ({{ uniqueItems.reduce((sum, item) => sum + item.quantity, 0) }}/9)</h3>
-                <button @click="clearAll" class="clear-btn">Clear</button>
+                <button @click="clearAll">Clear</button>
                 <hr>
                 <div class="cart-container">
                     <div v-for="item in uniqueItems" :key="item.id" class="cart-items">
@@ -154,15 +154,13 @@
                                 v-if="item.quality !== 'normal'"
                                 :src="'images/' + item.quality + '.png'"
                             >
-                            <div class="quantity-selector-box">
-                                <div class="quantity-selector">
-                                    <button class="decrement-count" @click="decrementItem(item.id)">-</button>
+                            <div id="quantity-selector-box">
+                                <div id="quantity-selector">
+                                    <button class="cart-btn" @click="decrementItem(item.id)">-</button>
                                     <span class="item-count">{{ item.quantity }}</span>
-                                    <button class="increment-count" @click="incrementItem(item)">+</button>
+                                    <button class="cart-btn" @click="incrementItem(item)">+</button>
                                 </div>
-                                <button class="remove-item" @click="removeItem(item.id)">
-                                    Remove
-                                </button>
+                                <button class="cart-btn" @click="removeItem(item.id)">Remove</button>
                             </div>
                         </div>
                     </div>
@@ -171,7 +169,7 @@
                 <hr>
                                 
                 <h2>Current Score</h2>
-                <div class="score-calculation">
+                <div id="score-calculation">
                     <p>Base Points: {{ score.base }}</p>
                     <p>Unique Categories ({{ Math.min(getUniqueCategories().length, 6) }}/6): {{ score.category }}</p>
                     <p>Item Points: {{ score.sumItems }}</p>
@@ -179,8 +177,7 @@
                 </div>
             </div>
     </div>
-
-
+    
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="script.js"></script>
 </body>
