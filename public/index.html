@@ -32,6 +32,7 @@
                 <!-- Profession Tabs -->
                 <div class="professions">
                     <h3>Select Your Professions:</h3>
+
                     <div class="profession-tabs">
                         <button
                             v-for="prof in ['Base', 'Rancher', 'Mastery', 'Tapper', 'Tiller', 'Artisan', 'Fisher', 'Angler', 'Knowledge', 'Tiller+Knowledge', 'Gemologist']"
@@ -41,7 +42,7 @@
                         >
                             <div v-if="prof === 'Tiller+Knowledge'" class="tiller_knowledge">
                                 <img src="images/professions/tiller.png" class="tiller_img">
-                                <h2>+</h2>
+                                <p>+</p>
                                 <img src="images/professions/knowledge.png" class="knowledge_img">
                             </div>
                             
@@ -132,14 +133,19 @@
         
         <div class="right-card">
                 <h3>Selected Items: ({{ uniqueItems.reduce((sum, item) => sum + item.quantity, 0) }}/9)</h3>
-                <!-- <button @click="clearAll">Clear</button> -->
+                <button @click="clearAll" class="clear-btn">Clear</button>
                 <hr>
                 <div class="cart-container">
                     <div v-for="item in uniqueItems" :key="item.id" class="cart-items">
-                        <div class="cart-item-image">
+                        <div class="cart-item-left">
                             <img :src="item.image" :alt="item.name" class="item-image">
+                            <div 
+                                v-if="item.type !== 'Base'" 
+                                :class="['cart-item-profession', item.type.toLowerCase()]">
+                                {{ item.type }}
+                            </div>
                         </div>
-                        <div class="cart-item-description">
+                        <div class="cart-item-right">
                             <span class="item-name">{{ item.name }} </span>
                             <br>
                             <span>{{ item.points ?? 0}}pts</span>
@@ -163,25 +169,14 @@
                 </div>  
         
                 <hr>
-
+                                
                 <h2>Current Score</h2>
-                <div>
-                    <span>Base Points: {{ score.base }}</span>
+                <div class="score-calculation">
+                    <p>Base Points: {{ score.base }}</p>
+                    <p>Unique Categories ({{ Math.min(getUniqueCategories().length, 6) }}/6): {{ score.category }}</p>
+                    <p>Item Points: {{ score.sumItems }}</p>
+                    <p>Total Score: {{ score.total }}</p>
                 </div>
-
-                <div>
-                    <span>Unique Categories ({{ Math.min(getUniqueCategories().length, 6) }}/6): {{ score.category }}</span>
-                    
-                </div>
-
-                <div>
-                    <span>Item Points: {{ score.sumItems }}</span>
-                </div>
-
-                <div>
-                    <span>Total Score: {{ score.total }}</span>
-                </div>
-
             </div>
     </div>
 

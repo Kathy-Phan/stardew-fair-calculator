@@ -20,6 +20,15 @@ button {
     font-family: inherit;
 }
 
+h2 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
 hr {
     border-top: 1px solid rgb(204, 204, 204);
 }
@@ -87,6 +96,7 @@ input {
     border-radius: 10px;
     overflow: hidden;
 }
+
 .cart-container {
     height: 62vh;
     overflow: scroll;
@@ -94,10 +104,21 @@ input {
 .cart-items {
     display: flex;
 }
-.cart-item-image {
+.cart-item-left {
     padding: 10px;
+    max-width: 30px;
 }
+.cart-item-profession {
+    font-size: 15px;
+    border: none;
+    border-radius: 6px;
+    padding: 1px 3px 1px 3px;
+    font-size: 10px;
 
+    white-space: nowrap;
+    overflow: scroll;
+    max-width: 100px; 
+}
 .quantity-selector-box {
     display: flex;
 }
@@ -151,8 +172,7 @@ input {
     border-radius: 8px;
     padding: 2px 5px 2px 5px;
     text-align: center;
-    font-size: 13px;
-
+    font-size: 12px;
 }
 
 /* Profession category colour */
@@ -287,7 +307,6 @@ input {
 .item-image {
     display: block;
     width: 25px;
-    /* opacity: 0.5; */
 }
 
 .overlay-image {
@@ -327,7 +346,12 @@ input {
     background-color: #3c82f5;
 }
 
-
+.score-calculation p {
+    font-size: 15px;
+    text-align: left;
+    margin: 0;
+}
+    
 /* Footer */
 footer {
     text-align: center;

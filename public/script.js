@@ -51,11 +51,10 @@ const app = Vue.createApp({
         },
         addItem(item, quality, category) {
             if (this.uniqueItems.reduce((sum, item) => item.quantity + sum, 1) > 9) {
-                alert("Maximum 9 items");
                 return;
             }
             const exists = this.uniqueItems.find(
-                i => i.name === item.name && i.quality === quality
+                i => i.name === item.name && i.quality === quality && i.type === item.type
             );
 
             if (exists) {
