@@ -1,6 +1,6 @@
 # Stardew Fair Calculator
 
-A **Stardew Valley Fair calculator** for players who want to **optimize their Grange Display** and **maximize star tokens**.  
+A **Stardew Valley Fair calculator** for players who want to **optimise their Grange Display** and **maximise star tokens**.  
 
 Check it out live: [stardew-fair-calculator.vercel.app](https://stardew-fair-calculator.vercel.app)
 
@@ -11,10 +11,10 @@ Check it out live: [stardew-fair-calculator.vercel.app](https://stardew-fair-cal
 - **Calculate your Grange Display score** based on the items you own.  
 - **Search items** using the search bar if you know what you have.  
 - **Select items manually** via clickable tables if you’re unsure.  
-- **Profession support**: Alerts for professions that don’t have items.  
+- **Professions**: Includes items for specific professions. 
 - **Cart improvements**: Scrollable cart, no items with 0 points.  
-- **Images for all items**, including a placeholder for missing items.  
-- **Unique category scoring fixes**: Ensures correct category calculations.  
+- **Images for all items**: Includes Aged/Dried items. 
+- **Unique category scoring fixes**: Calculations based on -- .  
 
 **Planned / To-Do Features:**  
 
@@ -25,8 +25,10 @@ Check it out live: [stardew-fair-calculator.vercel.app](https://stardew-fair-cal
 
 ## Tech Stack
 
-- **Backend:** Node.js (`server.js`)  
-- **Frontend:** Tailwind CSS  
+- HTML
+- CSS
+- JS
+- Vue
 
 ---
 
@@ -34,7 +36,13 @@ Check it out live: [stardew-fair-calculator.vercel.app](https://stardew-fair-cal
 
 1. Open the live app or run locally.  
 2. **Search for items** you have or click items on the tables to add them to your cart.  
-3. See your **total score** and optimize your display accordingly.  
+3. See your **total score** and optimise your display accordingly.  
+
+---
+
+## Screenshots / Demo
+
+
 
 ---
 
