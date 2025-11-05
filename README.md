@@ -1,43 +1,70 @@
-# stardew-fair-calculator
-A Stardew Valley Fair calculator for players who want to optimise their Grange Display and maximize star tokens.
+# Stardew Fair Calculator
 
+A **Stardew Valley Fair calculator** for players who want to **optimize their Grange Display** and **maximize star tokens**.  
 
-Backend
-node server.js
+Check it out live: [stardew-fair-calculator.vercel.app](https://stardew-fair-calculator.vercel.app)
 
-Frontend
-tailwind
+---
 
-If you know what items you have and would like to add up the score, use search bar
+## Features
 
-If you dont know what items you have, click items on tables
+- **Calculate your Grange Display score** based on the items you own.  
+- **Search items** using the search bar if you know what you have.  
+- **Select items manually** via clickable tables if you’re unsure.  
+- **Profession support**: Alerts for professions that don’t have items.  
+- **Cart improvements**: Scrollable cart, no items with 0 points.  
+- **Images for all items**, including a placeholder for missing items.  
+- **Unique category scoring fixes**: Ensures correct category calculations.  
 
-FIX:
-[x] fix minerals category
-[x] add images to items
-[x] fix gap in artisan goods image + name
-[x] add alert/note for professions that do not have items
-[x] fix unique categories - goes to 7/6 
-[x] add a copyright statement at the bottom of page - e.g. all image rights to stardew
-[x] add professions in cart 
-[x] add none image
-[ ] sort ascending/descending points for each star 
-[x] scroll for items in cart
-[x] remove items with 0pts
-[ ] mobile responsiveness 
+**Planned / To-Do Features:**  
 
+- Sort items ascending/descending by points.  
+- Mobile responsiveness.  
 
+---
 
+## Tech Stack
 
+- **Backend:** Node.js (`server.js`)  
+- **Frontend:** Tailwind CSS  
 
-Next project?:
-https://stardewvalleywiki.com/Preserves_Jar 
-- want to know whats profitable for preserves jar only
-- amaranth costs 150g to grow
-    - preserved amaranth sells for 350g so profit is 350 - 150 = 200g profit
-    - categorise by season
-    - factor in crops that grow multiple times e.g. corn vs cauliflower
+---
 
-* VERY ADVANCED - filter checkboxes
-    * what season user is at e.g. fall year 1 means no winter stuff
-    * check if user has coops/barn e.g. no barn means no cow so no milk
+## How to Use
+
+1. Open the live app or run locally.  
+2. **Search for items** you have or click items on the tables to add them to your cart.  
+3. See your **total score** and optimize your display accordingly.  
+
+---
+
+## Project Status / Fixes
+
+✅ Fixed:  
+- Minerals category scoring  
+- Added images to items  
+- Gap issues in artisan goods (image + name)  
+- Alerts for professions with no items  
+- Unique category calculation  
+- Professions in cart  
+- Removed items with 0 points  
+
+⚠️ To-Do:  
+- Sort ascending/descending by points  
+- Mobile responsiveness  
+
+---
+
+## Next Project Ideas
+
+- **Preserves Jar Profit Calculator**:  
+  - Calculate profitability of crops for preserves jars.  
+  - Include seasonal availability.  
+  - Factor multi-harvest crops (e.g., corn vs cauliflower).  
+  - Advanced filtering: seasons, coops/barn ownership, etc.  
+
+---
+
+## License
+
+All images and game content rights belong to **Stardew Valley / ConcernedApe**. This project is for educational and personal use.
