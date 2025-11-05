@@ -41,7 +41,7 @@ Check it out live: [stardew-fair-calculator.vercel.app](https://stardew-fair-cal
 ---
 
 ## Screenshots / Demo
-![Homepage Screenshot](./screenshots/homepage.png)
+![Homepage Screenshot](./public/screenshots/homepage.png)
 
 
 ---
