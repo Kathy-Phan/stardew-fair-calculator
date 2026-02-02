@@ -50,7 +50,7 @@ Check it out live: [stardew-fair-calculator.vercel.app](https://stardew-fair-cal
 
 ✅ Fixed:  
 - Minerals category scoring  
-- Added images to items  
+- Added images to items
 - Gap issues in artisan goods (image + name)  
 - Alerts for professions with no items  
 - Unique category calculation  
@@ -60,6 +60,8 @@ Check it out live: [stardew-fair-calculator.vercel.app](https://stardew-fair-cal
 ⚠️ To-Do:  
 - Sort ascending/descending by points  
 - Mobile responsiveness  
+- First Place/Second Place results alert
+- Added description for newbies
 
 ---
 
