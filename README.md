@@ -14,13 +14,8 @@ Check it out live: [stardew-fair-calculator.vercel.app](https://stardew-fair-cal
 - **Professions**: Includes items for specific professions. 
 - **Cart improvements**: Scrollable cart, no items with 0 points.  
 - **Images for all items**: Includes Aged/Dried items. 
-- **Unique category scoring fixes**: Calculations based on -- .  
-
-**Planned / To-Do Features:**  
-
-- Sort items ascending/descending by points.  
-- Mobile responsiveness.  
-
+- **Unique category scoring fixes**: Calculations from the official website (https://stardewvalleywiki.com/Stardew_Valley_Fair) .
+  
 ---
 
 ## Tech Stack
@@ -58,20 +53,11 @@ Check it out live: [stardew-fair-calculator.vercel.app](https://stardew-fair-cal
 - Removed items with 0 points  
 
 ⚠️ To-Do:  
-- Sort ascending/descending by points  
-- Mobile responsiveness  
-- First Place/Second Place results alert
-- Added description for newbies
-
----
-
-## Next Project Ideas
-
-- **Preserves Jar Profit Calculator**:  
-  - Calculate profitability of crops for preserves jars.  
-  - Include seasonal availability.  
-  - Factor multi-harvest crops (e.g., corn vs cauliflower).  
-  - Advanced filtering: seasons, coops/barn ownership, etc.  
+- Sort items ascending/descending by points.  
+- Mobile responsiveness (TOP PRIORITY)  
+- Fix description to be beginner friendly.
+- Add rankings (e.g. 90+ required for 1st place")
+- Add front end tests + CI tests
 
 ---
 
