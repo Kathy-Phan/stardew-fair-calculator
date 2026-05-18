@@ -178,8 +178,14 @@
                 <h3>Selected Items: ({{ uniqueItems.reduce((sum, item) => sum + item.quantity, 0) }}/9)</h3>
                 <button @click="clearAll">Clear</button>
                 <hr>
-                <div class="cart-container">
-                    <div v-for="item in uniqueItems" :key="item.id" class="cart-items">
+                <div class="cart-container" ref="cartContainer">
+                    <div
+                        v-for="item in uniqueItems"
+                        :key="item.id"
+                        class="cart-items"
+                        :data-cart-item-id="item.id"
+                        :class="{ 'cart-item-highlight': activeCartItemId === item.id }"
+                    >
                         <div class="cart-item-left">
                             <img :src="item.image" :alt="item.name" class="item-image">
                             <div 

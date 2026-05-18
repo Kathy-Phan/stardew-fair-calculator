@@ -6,7 +6,9 @@ const app = Vue.createApp({
             profession: 'Base',
             activeTab: 0,
             searchTerm: '',
-            isCartVisible: false
+            isCartVisible: false,
+            activeCartItemId: null,
+            cartHighlightTimer: null
         }
     },
     async mounted() {
@@ -19,10 +21,37 @@ const app = Vue.createApp({
     beforeUnmount() {
         window.removeEventListener('scroll', this.handleScroll);
         window.removeEventListener('resize', this.updateCartVisibility);
+        if (this.cartHighlightTimer) {
+            clearTimeout(this.cartHighlightTimer);
+        }
     },
     methods: {
         handleScroll() {
             this.updateCartVisibility();
+        },
+        scrollToCartItem(itemId) {
+            this.isCartVisible = true;
+
+            this.$nextTick(() => {
+                const cartContainer = this.$refs.cartContainer;
+                const targetItem = cartContainer?.querySelector(`[data-cart-item-id="${itemId}"]`);
+
+                if (targetItem) {
+                    targetItem.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }
+
+                this.activeCartItemId = itemId;
+
+                if (this.cartHighlightTimer) {
+                    clearTimeout(this.cartHighlightTimer);
+                }
+
+                this.cartHighlightTimer = setTimeout(() => {
+                    if (this.activeCartItemId === itemId) {
+                        this.activeCartItemId = null;
+                    }
+                }, 1400);
+            });
         },
         updateCartVisibility() {
             const searchBar = document.getElementById('search-bar');
@@ -83,6 +112,7 @@ const app = Vue.createApp({
 
             if (exists) {
                 exists.quantity++;
+                this.scrollToCartItem(exists.id);
             } else {
                 const points = item.quality[quality]
                 const newItem = {
@@ -96,6 +126,7 @@ const app = Vue.createApp({
                     quantity: 1
                 }
                 this.uniqueItems.push(newItem)
+                this.scrollToCartItem(newItem.id);
             }
         },
         removeItem(id) {
