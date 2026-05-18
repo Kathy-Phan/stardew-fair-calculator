@@ -14,7 +14,7 @@ Check it out live: [stardew-fair-calculator.vercel.app](https://stardew-fair-cal
 - **Professions**: Includes items for specific professions.
 - **Cart improvements**: Scrollable cart, no items with 0 points.
 - **Images for all items**: Includes Aged/Dried items.
-- **Unique category scoring fixes**: Calculations based on -- .
+- **Unique category scoring fixes**: Calculations based on from the official website (https://stardewvalleywiki.com/Stardew_Valley_Fair) .
 
 **Planned / To-Do Features:**
 
