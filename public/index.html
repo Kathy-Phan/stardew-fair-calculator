@@ -16,6 +16,49 @@
                 <h1>Stardew Valley Grange Fair Calculator</h1>
                 
                 <p>This is a <b>fan-made</b> calculator, built to simplify calculating points in the Grange Display for the <i>Stardew Valley Fair</i>. </p>
+                
+                <hr />
+                <div class="description">
+                    <h3>How to use:</h3>
+                    <ol> 
+                        <li><u>Search</u> for your items</li>
+                        <ul>
+                            <li>Use the search bar to type the name of items you plan to bring</li>
+                            <li>Click or tap items to add them to your display list</li>
+                            <li>Repeat until you’ve added all 9 items for your Grange Display</li>
+                        </ul>
+                        <br>
+                        <li><u>Scroll down</u> for your items</li>
+                        <ul>
+                            <li>See below for all selected items</li>
+                            <li>Look out for item quality <img src="images/silver.png" /> <img src="images/gold.png" /> <img src="images/iridium.png" />. The higher the quality, the more points you get!</li>
+                            
+                            <li>Remove/Replace items in the cart if needed</li>
+                        </ul>
+                        <br>
+                        <li>Add your <u>Professions</u></li>
+                        <ul>
+                            <li>Click any relevant skills your character has.</li> 
+                            <li>Some items have more points depending on your profession. e.g.</li>
+                            <li>If you're a <b>Rancher</b>, an iridium duck egg is worth 8pts instead of 7pts! </li>
+                        </ul>
+                        <br>
+                        <li>Check your <u>score</u>!</li>
+                        <ul>
+                            <li>Everything is automatically calculated for you!</li> 
+                            <li>If you don't trust it, just cross-reference it using the wiki.</li>
+                            <li>Use this to optimise your score!</li>
+                            <li>FYI: Mayor Lewis' shorts are NOT included. Use at your discretion!</li>
+                        </ul>
+                    </ol>
+                </div>
+
+                <hr />
+                <h2>Hope this is helpful!</h2>
+
+                <p>This is a little passion project to help new stardew players not feel overwhelmed when calculating the grange fair display.</p>
+                <p>Feedback is welcomed! If you have any advice, feel free to comment on my linkedIn post <a href="https://www.linkedin.com/feed/update/urn:li:activity:7390693953500561408/">here</a>.</p>
+
                 <br>
 
                 <!-- Search Bar -->
@@ -131,7 +174,7 @@
             </footer>
         </div>
         
-        <div class="right-card">
+            <div :class="['right-card', { 'cart-visible': isCartVisible }]">
                 <h3>Selected Items: ({{ uniqueItems.reduce((sum, item) => sum + item.quantity, 0) }}/9)</h3>
                 <button @click="clearAll">Clear</button>
                 <hr>

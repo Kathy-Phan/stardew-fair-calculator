@@ -5,13 +5,36 @@ const app = Vue.createApp({
             uniqueItems: [],
             profession: 'Base',
             activeTab: 0,
-            searchTerm: ''
+            searchTerm: '',
+            isCartVisible: false
         }
     },
     async mounted() {
+        this.updateCartVisibility();
+        window.addEventListener('scroll', this.handleScroll, { passive: true });
+        window.addEventListener('resize', this.updateCartVisibility);
         await this.fetchData();
+        this.updateCartVisibility();
+    },
+    beforeUnmount() {
+        window.removeEventListener('scroll', this.handleScroll);
+        window.removeEventListener('resize', this.updateCartVisibility);
     },
     methods: {
+        handleScroll() {
+            this.updateCartVisibility();
+        },
+        updateCartVisibility() {
+            const searchBar = document.getElementById('search-bar');
+
+            if (!searchBar) {
+                this.isCartVisible = window.scrollY > 0;
+                return;
+            }
+
+            const searchBarTop = searchBar.getBoundingClientRect().top + window.scrollY;
+            this.isCartVisible = window.scrollY >= searchBarTop - 10;
+        },
         async fetchData() {
             const data = [
                 'items/animal.json',
