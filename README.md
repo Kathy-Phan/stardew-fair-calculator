@@ -44,6 +44,12 @@ Check it out live: [stardew-fair-calculator.vercel.app](https://stardew-fair-cal
 
 ![Homepage Screenshot](./public/screenshots/homepage.png)
 
+18/05/26 - Added mobile responsiveness! 
+I realised that most people have phones and would rather view on phone than pc so I added it in. 
+
+https://github.com/user-attachments/assets/533471e2-bb72-4943-bcda-a5e753bb3467
+
+
 ---
 
 ## Project Status / Fixes
@@ -58,14 +64,15 @@ Check it out live: [stardew-fair-calculator.vercel.app](https://stardew-fair-cal
 - Professions in cart
 - Removed items with 0 points
 - NEW: Mobile responsiveness!
--
+- Added description for newbies
 
 ⚠️ To-Do:
 
 - Sort ascending/descending by points
 - ~~Mobile responsiveness~~
 - First Place/Second Place results alert
-- Added description for newbies
+- ~~Added description for newbies~~
+- Make error alerts pretty -> its just an alert() rn lol
 
 ---
 
